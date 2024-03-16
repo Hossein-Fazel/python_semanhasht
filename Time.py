@@ -1,7 +1,5 @@
-from overloading.overloading import overload
-
 class Time :
-    def __init__(self, got_time):
+    def __init__(self, got_time : str):
         self.hour = 0
         self.minute = 0
         self.type = ""
@@ -9,7 +7,8 @@ class Time :
         size = len(got_time)
         thour = ""
         tminute = ""
-        ttype = got_time[size - 2] + got_time[size - 1]
+        ttype = got_time[size-2: size]
+
         self.set_type(ttype)
 
         is_check = 0
@@ -42,15 +41,16 @@ class Time :
         if type.lower() == "am" or type.lower() == "pm":
             self.type = type;
         else :
-            raise ValueError("Invalid minute value")
+            raise ValueError(f"{type} Invalid Type value")
 
     def __iadd__(self, number : int):
         if(not isinstance(number, int)):
             raise ValueError("not an int")
         self.minute += number
         if self.minute >= 60 :
-            self.minute -= 1
-            self.hour += 1
+            count = int(self.minute / 60)
+            self.minute %= 60
+            self.hour += count
 
             if self.hour == 12 :
                 if self.type.lower() == "am":
@@ -59,15 +59,15 @@ class Time :
                     self.type = "AM"
             
             elif self.hour > 12 :
-                self.hour -= 12
+                self.hour %= 12
         
         return self
-    
+
     def __str__(self):
         time = f"{self.hour}"
         if self.minute != 0 :
             time = time + f":{self.minute} "
-        time = time  + f"{self.type}"
+        time = time  + f" {self.type}"
 
         return time
     
