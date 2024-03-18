@@ -94,9 +94,3 @@ class Time(metaclass=MultipleMeta):
     
     def get_type(self):
         return self.type
-
-
-t1 = Time()
-t2 = Time(10,23, "AM")
-print(t1)
-print(t2)
