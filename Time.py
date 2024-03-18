@@ -1,4 +1,5 @@
-class Time :
+from multidispatch import *
+class Time(metaclass=MultipleMeta):
     def __init__(self, got_time : str):
         self.hour = 0
         self.minute = 0
@@ -24,6 +25,20 @@ class Time :
 
         self.set_hour(int(thour))
         self.set_minute(int(tminute))
+
+    def __init__(self):
+        self.hour = 0
+        self.minute = 0
+        self.type = "AM"
+
+    def __init__(self, hour:int, minute:int, type:str):
+        self.hour = 0
+        self.minute = 0
+        self.type = ""
+
+        self.set_type(type)
+        self.set_hour(hour)
+        self.set_minute(minute)
 
     def set_hour(self,hour : int):
         if hour <= 12 and hour >= 0 :
@@ -79,3 +94,9 @@ class Time :
     
     def get_type(self):
         return self.type
+
+
+t1 = Time()
+t2 = Time(10,23, "AM")
+print(t1)
+print(t2)
