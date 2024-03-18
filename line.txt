@@ -1,0 +1,175 @@
+l1:
+Tajrish
+Gheytariyeh
+2
+Gheytariyeh
+Gholhak
+3
+Gholhak
+Mirdamad
+4
+Mirdamad
+Shahid Haghani
+5
+Shahid Haghani
+Shahid Beheshti
+7
+Shahid Beheshti
+Shahid Mofatteh
+2
+Shahid Mofatteh
+Haftom-e Tir
+2
+Haftom-e Tir
+Taleghani
+2
+Taleghani
+Darvazeh Dowlat
+1
+Darvazeh Dowlat
+Panzdah-e Khordad
+4
+Panzdah-e Khordad
+Shoush
+6
+Shoush
+Jonoub Terminal
+3
+Jonoub Terminal
+Shahr-e Rey
+9
+Shahr-e Rey
+Kahrizak
+13
+end
+l3:
+Gha'em
+Aghdasiyeh
+4
+Aghdasiyeh
+Shahid Zeynoddin
+10
+Shahid Zeynoddin
+Shahid Ghodousi
+5
+Shahid Ghodousi
+Sohrevardi
+2
+Sohrevardi
+Shahid Beheshti
+1
+Shahid Beheshti
+Merza-ye Shirazi
+3
+Merza-ye Shirazi
+Meydan-e Jahad
+2
+Meydan-e Jahad
+Meydan-e Hazrat-e ValiAsr
+1
+Meydan-e Hazrat-e ValiAsr
+Teatr-e Shahr
+2
+Teatr-e Shahr
+Moniriyeh
+4
+Moniriyeh
+Mahdiyeh
+3
+Mahdiyeh
+Rahahan
+1
+Rahahan
+Javadiyeh
+2
+Javadiyeh
+Zamzam
+2
+Zamzam
+Azadegan
+8
+end
+l4:
+Shahid Kolahdouz
+Nirou Havaei
+7
+Nirou Havaei
+Nabard
+1
+Nabard
+Pirouzi
+1
+Pirouzi
+Ebn-e Sina
+3
+Ebn-e Sina
+Meydan-e Shohada
+1
+Meydan-e Shohada
+Darvazeh Shemiran
+2
+Darvazeh Shemiran
+Darvazeh Dowlat
+2
+Darvazeh Dowlat
+Ferdowsi
+1
+Ferdowsi
+Teatr-e Shahr
+1
+Teatr-e Shahr
+Meydan-e Enghelab-e Eslami
+3
+Meydan-e Enghelab-e Eslami
+Towhid
+1
+Towhid
+Shademan
+2
+Shademan
+Ostad Mo'in
+4
+Ostad Mo'in
+Meydan-e Azadi
+2
+Meydan-e Azadi
+Eram-e Sabz
+6
+Eram-e Sabz
+Allameh Jafari
+5
+Allameh Jafari
+Kashani
+4
+Kashani
+Chaharbagh
+5
+end
+l6:
+Haram-e Hazrat-e Abdolazim
+Shahid Rezaei
+10
+Shahid Rezaei
+Meydan-e Shohada
+6
+Meydan-e Shohada
+Emam Hossein
+2
+Emam Hossein
+Haftom-e Tir
+5
+Haftom-e Tir
+Meydan-e Hazrat-e ValiAsr
+2
+Meydan-e Hazrat-e ValiAsr
+Boostan-e laleh
+2
+Boostan-e laleh
+Yadegar-e Emam
+8
+Yadegar-e Emam
+Kashani
+6
+Kashani
+Kouhsar
+10
