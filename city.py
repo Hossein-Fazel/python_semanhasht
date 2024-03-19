@@ -30,6 +30,7 @@ class paths:
         for item in self.edges:
             if item.line == line and item.vehicle == name:
                 return item
+        return edge("", "")
 
 @dataclass
 class save_direction:
@@ -146,3 +147,52 @@ class Tehran:
             print(" --> ", end="")
         
         print(path.stations[len(path.stations) - 1])
+    
+    def travel_line(self, line : str, vehicle:str, src:str, t1: Time, dj_table: dd[str, save_direction], visited: set[str]):
+        src_index = self.lines[line].index(src)
+        m1 = machine(vehicle)
+        start_time = dj_table[src]
+
+        for i in range(src_index, len(self.lines[line])-1):
+            if self.lines[line][i+1] not in visited:
+
+                if i == src_index:
+                    if len(start_time.line) == 0:
+                        start_time.value += m1.get_in_time(t1 + start_time.value)
+                    elif start_time.line[len(start_time.line) - 1] != line:
+                        start_time.value += m1.get_in_time(t1 + start_time.value)
+                    elif start_time.vehicle[len(start_time.vehicle) - 1] != vehicle:
+                        start_time.value += m1.get_in_time(t1 + start_time.value)
+                
+                start_time.value += self.city_graph[self.lines[line][i]][self.lines[line][i+1]].get_vehicle(vehicle).value * m1.get_path_time(t1 + start_time.distance)
+                start_time.stations.append(self.lines[line][i+1])
+                start_time.line.append(line)
+                start_time.vehicle.append(vehicle)
+
+                if start_time.value < dj_table[self.lines[line][i+1]].value:
+                    dj_table[self.lines[line][i+1]] = start_time
+            else:
+                break
+        
+        start_time = dj_table[src]
+
+        for i in range(len(self.lines[line])-1, 0, -1):
+            if self.lines[line][i-1] not in visited:
+
+                if i == src_index:
+                    if len(start_time.line) == 0:
+                        start_time.value += m1.get_in_time(t1 + start_time.value)
+                    elif start_time.line[len(start_time.line) - 1] != line:
+                        start_time.value += m1.get_in_time(t1 + start_time.value)
+                    elif start_time.vehicle[len(start_time.vehicle) - 1] != vehicle:
+                        start_time.value += m1.get_in_time(t1 + start_time.value)
+                
+                start_time.value += self.city_graph[self.lines[line][i]][self.lines[line][i - 1]].get_vehicle(vehicle).value * m1.get_path_time(t1 + start_time.distance)
+                start_time.stations.append(self.lines[line][i - 1])
+                start_time.line.append(line)
+                start_time.vehicle.append(vehicle)
+
+                if start_time.value < dj_table[self.lines[line][i - 1]].value:
+                    dj_table[self.lines[line][i - 1]] = start_time
+            else:
+                break
