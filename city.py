@@ -108,31 +108,33 @@ class Tehran:
         return min_name
     
     def find_shortest_path(self, src:str, dest:str):
-        visited_node : set[str] = set()
-        node_data = dd(lambda : save_direction([] , [] , []))
-        node_data[src].value = 0;
-        node_data[src].stations.append(src)
+        if src in self.city_graph.keys() and dest in self.city_graph.keys():
+            visited_node : set[str] = set()
+            node_data = dd(lambda : save_direction([] , [] , []))
+            node_data[src].value = 0;
+            node_data[src].stations.append(src)
 
-        for i in range(len(self.city_graph)):
-            min_station = self.get_min(node_data, visited_node)
-            visited_node.add(min_station)
+            for i in range(len(self.city_graph)):
+                min_station = self.get_min(node_data, visited_node)
+                visited_node.add(min_station)
 
-            if min_station == dest:
-                break;
-            for key,value in self.city_graph[min_station].items():
-                if (key not in visited_node and value.get_min_dist().value != float("inf") and
-                    node_data[min_station].value != float("inf") and value.get_min_dist().value + node_data[min_station].value < node_data[key].value):
+                if min_station == dest:
+                    break;
+                for key,value in self.city_graph[min_station].items():
+                    if (key not in visited_node and value.get_min_dist().value != float("inf") and
+                        node_data[min_station].value != float("inf") and value.get_min_dist().value + node_data[min_station].value < node_data[key].value):
 
-                    node_data[key].value = value.get_min_dist().value + node_data[min_station].value
-                    
-                    node_data[key].line = node_data[min_station].line.copy()
-                    node_data[key].line.append(value.get_min_dist().line)
+                        node_data[key].value = value.get_min_dist().value + node_data[min_station].value
+                        
+                        node_data[key].line = node_data[min_station].line.copy()
+                        node_data[key].line.append(value.get_min_dist().line)
 
-                    node_data[key].stations = node_data[min_station].stations.copy()
-                    node_data[key].stations.append(key)
-            
-        
-        return node_data[dest]
+                        node_data[key].stations = node_data[min_station].stations.copy()
+                        node_data[key].stations.append(key)
+                
+            return node_data[dest]
+        else:
+            raise ValueError("Station does not exist!")
 
     def print_sp(self, path:save_direction): # print shortest path function
         print(f"{path.value} Km")

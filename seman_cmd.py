@@ -12,5 +12,8 @@ try:
 except:
     print("oops some file does not exist")
 
-path = t1.find_shortest_path(src, dest)
-t1.print_sp(path)
+try:
+    path = t1.find_shortest_path(src, dest)
+    t1.print_sp(path)
+except ValueError as error:
+    print(error)
