@@ -1,6 +1,8 @@
 from dataclasses import dataclass
 from collections import defaultdict as dd
 
+from Time import Time
+from Vehicle import machine
 @dataclass
 class edge:
     line : str
@@ -39,6 +41,8 @@ class save_direction:
 class Tehran:
     def __init__(self):
         self.city_graph = dd(lambda : dd(paths))
+        self.nodes = dd(list[tuple])
+        self.lines = dd(list[str])
     
     def read_from_file(self, *names):
         for name in names:
@@ -69,11 +73,26 @@ class Tehran:
                         self.city_graph[stat2][stat1].add_edge(e1)
                         self.city_graph[stat2][stat1].add_edge(e2)
 
+                        self.nodes[stat1].append((line, "Subway"))
+                        self.nodes[stat1].append((line, "Taxi"))
+
+                        self.nodes[stat2].append((line, "Subway"))
+                        self.nodes[stat2].append((line, "Taxi"))
+
                     elif line[0] == 'b':
                         e1 = edge(line, "Bus", dist)
 
                         self.city_graph[stat1][stat2].add_edge(e1)
                         self.city_graph[stat2][stat1].add_edge(e1)
+
+                        self.nodes[stat1].append((line, "Bus"))
+                        self.nodes[stat2].append((line, "Bus"))
+
+                    if(stat1 not in self.lines[line]):
+                        self.lines[line].append(stat1)
+                    if(stat2 not in self.lines[line]):
+                        self.lines[line].append(stat2)
+
             except:
                 raise ValueError(f"There is no file with name {name}")
     
