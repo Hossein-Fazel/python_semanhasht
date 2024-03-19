@@ -11,3 +11,6 @@ try:
 
 except:
     print("oops some file does not exist")
+
+path = t1.find_shortest_path(src, dest)
+t1.print_sp(path)

@@ -78,8 +78,6 @@ class Tehran:
                 raise ValueError(f"There is no file with name {name}")
     
     def get_min(self, nodes: dd, visited: set):
-        print("visited = ",end="")
-        print(*visited)
         min_num = float("inf")
         min_name = ""
         for key, value in nodes.items():
@@ -107,11 +105,25 @@ class Tehran:
 
                     node_data[key].value = value.get_min_dist().value + node_data[min_station].value
                     
-                    node_data[key].line = node_data[min_station].line
+                    node_data[key].line = node_data[min_station].line.copy()
                     node_data[key].line.append(value.get_min_dist().line)
 
-                    node_data[key].stations = node_data[min_station].stations
+                    node_data[key].stations = node_data[min_station].stations.copy()
                     node_data[key].stations.append(key)
             
         
         return node_data[dest]
+
+    def print_sp(self, path:save_direction): # print shortest path function
+        print(f"{path.value} Km")
+        for i in range(len(path.stations) - 1):
+            print(f"{path.stations[i]} -- ", end="")
+
+            if path.line[i][0] == 'b':
+                print("Bus", end="")
+            elif path.line[i][0] == 'l':
+                print("Subway or Taxi", end="")
+            
+            print(" --> ", end="")
+        
+        print(path.stations[len(path.stations) - 1])
