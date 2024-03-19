@@ -1,8 +1,7 @@
 from dataclasses import dataclass
 from collections import defaultdict as dd
-from typing import Any
 
-@dataclass()
+@dataclass
 class edge:
     line : str
     vehicle : str
@@ -17,7 +16,7 @@ class paths:
             self.edges.append(path)
 
     def get_min_dist(self):
-        medge = edge()
+        medge = edge("", "", float("inf"))
 
         for item in self.edges:
             if medge.value > item.value :
@@ -30,6 +29,12 @@ class paths:
             if item.line == line and item.vehicle == name:
                 return item
 
+@dataclass
+class save_direction:
+    line : list[str]
+    vehicle :list[str]
+    stations: list[str]
+    value : float = float("inf")
 
 class Tehran:
     def __init__(self):
@@ -55,8 +60,8 @@ class Tehran:
                     dist = int(file.readline().replace("\n", ""))
 
                     if line[0] == 'l':
-                        e1 = edge(dist, line, "Subway")
-                        e2 = edge(dist, line, "Taxi")
+                        e1 = edge(line, "Subway", dist)
+                        e2 = edge(line, "Taxi", dist)
 
                         self.city_graph[stat1][stat2].add_edge(e1)
                         self.city_graph[stat1][stat2].add_edge(e2)
@@ -65,9 +70,48 @@ class Tehran:
                         self.city_graph[stat2][stat1].add_edge(e2)
 
                     elif line[0] == 'b':
-                        e1 = edge(dist, line, "Bus")
+                        e1 = edge(line, "Bus", dist)
 
                         self.city_graph[stat1][stat2].add_edge(e1)
                         self.city_graph[stat2][stat1].add_edge(e1)
             except:
                 raise ValueError(f"There is no file with name {name}")
+    
+    def get_min(self, nodes: dd, visited: set):
+        print("visited = ",end="")
+        print(*visited)
+        min_num = float("inf")
+        min_name = ""
+        for key, value in nodes.items():
+            if value.value < min_num and (key not in visited):
+                min_num = value.value
+                min_name = key
+
+        return min_name
+    
+    def find_shortest_path(self, src:str, dest:str):
+        visited_node : set[str] = set()
+        node_data = dd(lambda : save_direction([] , [] , []))
+        node_data[src].value = 0;
+        node_data[src].stations.append(src)
+
+        for i in range(len(self.city_graph)):
+            min_station = self.get_min(node_data, visited_node)
+            visited_node.add(min_station)
+
+            if min_station == dest:
+                break;
+            for key,value in self.city_graph[min_station].items():
+                if (key not in visited_node and value.get_min_dist().value != float("inf") and
+                    node_data[min_station].value != float("inf") and value.get_min_dist().value + node_data[min_station].value < node_data[key].value):
+
+                    node_data[key].value = value.get_min_dist().value + node_data[min_station].value
+                    
+                    node_data[key].line = node_data[min_station].line
+                    node_data[key].line.append(value.get_min_dist().line)
+
+                    node_data[key].stations = node_data[min_station].stations
+                    node_data[key].stations.append(key)
+            
+        
+        return node_data[dest]

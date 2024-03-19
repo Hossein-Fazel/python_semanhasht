@@ -1,4 +1,4 @@
-from city import Tehran
+from city import *
 from Time import Time
 
 src = input()
