@@ -77,6 +77,15 @@ class Time(metaclass=MultipleMeta):
                 self.hour %= 12
         
         return self
+    
+    def __add__(self, min:int):
+        t1 = Time()
+        t1.set_hour(self.get_hour())
+        t1.set_minute(self.get_minute())
+        t1.set_type(self.get_type())
+
+        t1 += min
+        return t1
 
     def __str__(self):
         time = f"{self.hour}"
@@ -89,8 +98,8 @@ class Time(metaclass=MultipleMeta):
     def get_hour(self) :
         return self.hour
     
-    def get_hour(self) :
-        return self.hour
+    def get_minute(self) :
+        return self.minute
     
     def get_type(self):
         return self.type
