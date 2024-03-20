@@ -63,7 +63,7 @@ class Tehran:
                     if stat1 == "" or line == "":
                         break
                     elif stat1 == "end" :
-                        line = file.readline()
+                        line = file.readline().replace(":\n" , "")
                         continue
                     stat2 = file.readline().replace("\n", "")
                     dist = int(file.readline().replace("\n", ""))
@@ -142,6 +142,7 @@ class Tehran:
             raise ValueError("Station does not exist!")
 
     def print_sp(self, path:save_direction): # print shortest path function
+        print(f"\n{" Shortest Path ":-^30}")
         print(f"{path.value} Km")
         for i in range(len(path.stations) - 1):
             print(f"{path.stations[i]} -- ", end="")
@@ -229,3 +230,12 @@ class Tehran:
             return node_data[dest]
         else:
             raise ValueError("Station does not exist!")
+    
+    def print_bt(self, path: save_direction, t1: Time):
+        print(f"\n{" Best Time ":-^30}")
+
+        print(t1 + path.value)
+
+        for i in range(len(path.vehicle)):
+            print(f"{path.stations[i]} -- {path.vehicle[i]} --> ", end="")
+        print(path.stations[len(path.stations) - 1])
