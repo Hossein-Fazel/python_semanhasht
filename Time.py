@@ -60,7 +60,10 @@ class Time(metaclass=MultipleMeta):
 
     def __iadd__(self, number : int):
         if(not isinstance(number, int)):
-            raise ValueError("not an int")
+            try:
+                number = int(number)
+            except:
+                raise ValueError("not an int")
         self.minute += number
         if self.minute >= 60 :
             count = int(self.minute / 60)
