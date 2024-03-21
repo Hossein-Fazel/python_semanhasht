@@ -63,6 +63,7 @@ class Time(metaclass=MultipleMeta):
             try:
                 number = int(number)
             except:
+                print(number)
                 raise ValueError("not an int")
         self.minute += number
         if self.minute >= 60 :
