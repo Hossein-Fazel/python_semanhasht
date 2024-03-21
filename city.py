@@ -136,6 +136,9 @@ class Tehran:
 
                         node_data[key].stations = node_data[min_station].stations.copy()
                         node_data[key].stations.append(key)
+
+                        node_data[key].vehicle = node_data[min_station].vehicle.copy()
+                        node_data[key].vehicle.append("Subway or Taxi" if value.get_min_dist().line[0] == 'l' else "Bus")
                 
             return node_data[dest]
         else:
@@ -144,15 +147,8 @@ class Tehran:
     def print_sp(self, path:save_direction): # print shortest path function
         print(f"\n{" Shortest Path ":-^30}")
         print(f"{path.value} Km")
-        for i in range(len(path.stations) - 1):
-            print(f"{path.stations[i]} -- ", end="")
-
-            if path.line[i][0] == 'b':
-                print("Bus", end="")
-            elif path.line[i][0] == 'l':
-                print("Subway or Taxi", end="")
-            
-            print(" --> ", end="")
+        for i in range(len(path.vehicle)):
+            print(f"{path.stations[i]} -- {path.vehicle[i]} --> ", end="")
         
         print(path.stations[len(path.stations) - 1])
     
