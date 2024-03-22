@@ -22,5 +22,6 @@ try:
 
     path = ct1.find_best_cost(src, dest, t1)
     ct1.print_bc(path, t1)
+    print(t1 + ct1.get_arrive_time_bc(path, t1))
 except ValueError as error:
     print(error)

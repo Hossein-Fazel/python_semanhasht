@@ -365,3 +365,20 @@ class Tehran:
         for i in range(len(path.vehicle)):
             print(f"{path.stations[i]} -- {path.vehicle[i]} --> ", end="")
         print(path.stations[len(path.stations) - 1])
+    
+    def get_arrive_time_bc(self, path: save_direction, t1: Time):
+        minutes = 0
+        for i in range(len(path.vehicle)):
+            m1 = machine(path.vehicle[i])
+
+            if i == 0:
+                minutes += m1.get_in_time(t1 + minutes)
+            elif path.line[i] != path.line[i-1]:
+                minutes += m1.get_in_time(t1 + minutes)
+            elif path.vehicle[i] != path.vehicle[i-1]:
+                minutes += m1.get_in_time(t1 + minutes)
+
+            minutes += (self.city_graph[path.stations[i]][path.stations[i+1]].get_vehicle(path.line[i], path.vehicle[i]).value 
+                            * m1.get_pass_time(t1 + minutes))
+            
+        return minutes
