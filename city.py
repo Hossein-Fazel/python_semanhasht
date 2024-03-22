@@ -39,9 +39,10 @@ class save_direction:
     vehicle :list[str]
     stations: list[str]
     value : float = float("inf")
+    minutes : int = 0
 
     def __copy__(self):
-        return save_direction(copy(self.line), copy(self.vehicle), copy(self.stations), self.value)
+        return save_direction(copy(self.line), copy(self.vehicle), copy(self.stations), self.value, self.minutes)
 
 class Tehran:
     def __init__(self):
@@ -152,7 +153,7 @@ class Tehran:
         
         print(path.stations[len(path.stations) - 1])
     
-    def travel_line(self, line : str, vehicle:str, src:str, t1: Time, dj_table: dd[str, save_direction], visited: set[str]):
+    def travel_line_time(self, line : str, vehicle:str, src:str, t1: Time, dj_table: dd[str, save_direction], visited: set[str]):
         src_index = self.lines[line].index(src)
         m1 = machine(vehicle)
         start_time = copy(dj_table[src])
@@ -214,12 +215,11 @@ class Tehran:
 
             for i in range(len(self.city_graph)):
                 min_station = self.get_min(node_data, visited_node)
-                visited_node.add(min_station)
 
                 if min_station == dest:
                     break;
                 for pair in self.nodes[min_station]:
-                    self.travel_line(pair[0], pair[1], min_station, t1, node_data, visited_node)
+                    self.travel_line_time(pair[0], pair[1], min_station, t1, node_data, visited_node)
                 
                 visited_node.add(min_station)
                 
@@ -253,3 +253,107 @@ class Tehran:
                             * m1.get_pass_time(t1 + minutes))
             
         return minutes
+    
+    def travel_line_cost(self, line: str, vehicle: str, src: str, t1: Time, dj_table: dd[str, save_direction], visited: set[str]):
+        src_index = self.lines[line].index(src)
+        m1 = machine(vehicle)
+        start_cost = copy(dj_table[src])
+        cost = 0
+
+        if vehicle == "Taxi":
+            get_in = 0 
+            if len(start_cost.line) == 0:
+                get_in += m1.get_in_time(t1 + start_cost.minutes)
+            elif start_cost.line[len(start_cost.line) - 1] != line:
+                get_in += m1.get_in_time(t1 + start_cost.minutes)
+            elif start_cost.vehicle[len(start_cost.vehicle) - 1] != vehicle:
+                get_in += m1.get_in_time(t1 + start_cost.minutes)
+            
+            start_cost.minutes += get_in
+            for i in range(src_index, len(self.lines[line]) - 1):
+                
+                start_cost.value += (self.city_graph[self.lines[line][i]][self.lines[line][i + 1]].get_vehicle(line, vehicle).value
+                                     * m1.get_price(t1 + start_cost.minutes))
+                
+                start_cost.minutes +=(self.city_graph[self.lines[line][i]][self.lines[line][i + 1]].get_vehicle(line, vehicle).value
+                                       * m1.get_pass_time(t1 + start_cost.minutes))
+                start_cost.line.append(line)
+                start_cost.vehicle.append(vehicle)
+                start_cost.stations.append(self.lines[line][i + 1])
+                
+                if dj_table[self.lines[line][i + 1]].value > start_cost.value:
+                    dj_table[self.lines[line][i + 1]] = copy(start_cost)
+            
+            start_cost = copy(dj_table[src])
+            start_cost.minutes += get_in
+
+            for i in range(src_index, 0, -1):
+                
+                start_cost.value += (self.city_graph[self.lines[line][i]][self.lines[line][i - 1]].get_vehicle(line, vehicle).value
+                                     * m1.get_price(t1 + start_cost.minutes))
+                
+                start_cost.minutes +=(self.city_graph[self.lines[line][i]][self.lines[line][i - 1]].get_vehicle(line, vehicle).value
+                                       * m1.get_pass_time(t1 + start_cost.minutes))
+                start_cost.line.append(line)
+                start_cost.vehicle.append(vehicle)
+                start_cost.stations.append(self.lines[line][i - 1])
+                
+                if dj_table[self.lines[line][i - 1]].value > start_cost.value:
+                    dj_table[self.lines[line][i - 1]] = copy(start_cost)
+
+        
+
+        else:
+            start_cost = copy(dj_table[src])
+            cost = 0
+            if len(start_cost.line) == 0:
+                cost += m1.get_price(t1 + start_cost.minutes)
+            elif start_cost.line[len(start_cost.line) - 1] != line:
+                cost += m1.get_price(t1 + start_cost.minutes)
+            elif start_cost.vehicle[len(start_cost.vehicle) - 1] != vehicle:
+                cost += m1.get_price(t1 + start_cost.minutes)
+
+            start_cost.value += cost
+
+            for i in range(src_index + 1, len(self.lines[line])):
+                start_cost.line.append(line)
+                start_cost.vehicle.append(vehicle)
+                start_cost.stations.append(self.lines[line][i])
+                
+                if dj_table[self.lines[line][i]].value > start_cost.value:
+                    dj_table[self.lines[line][i]] = copy(start_cost)
+            
+            start_cost = copy(dj_table[src])
+            start_cost.value += cost
+
+            for i in range(src_index, 0, -1):
+                start_cost.line.append(line)
+                start_cost.vehicle.append(vehicle)
+                start_cost.stations.append(self.lines[line][i - 1])
+                
+                if dj_table[self.lines[line][i - 1]].value > start_cost.value:
+                    dj_table[self.lines[line][i - 1]] = copy(start_cost)
+        
+    def find_best_cost(self, src: str, dest: str, t1: Time):
+        if src in self.city_graph.keys() and dest in self.city_graph.keys():
+            visited_node : set[str] = set()
+            node_data = dd(lambda : save_direction([] , [] , []))
+            
+            node_data[src].value = 0;
+            node_data[src].stations.append(src)
+
+            for i in range(len(self.city_graph)):
+                min_station = self.get_min(node_data, visited_node)
+
+                if min_station == dest:
+                    break;
+                for pair in self.nodes[min_station]:
+                    self.travel_line_cost(pair[0], pair[1], min_station, t1, node_data, visited_node)
+                
+                visited_node.add(min_station)
+            
+            return node_data[dest]
+
+            
+        else:
+            raise ValueError("Station does not exist!")
