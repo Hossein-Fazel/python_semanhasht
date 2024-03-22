@@ -357,3 +357,11 @@ class Tehran:
             
         else:
             raise ValueError("Station does not exist!")
+    
+    def print_bc(self, path: save_direction, t1: Time):
+        print(f"\n{" Best Cost ":-^30}")
+        print(f"{path.value} Toman")
+
+        for i in range(len(path.vehicle)):
+            print(f"{path.stations[i]} -- {path.vehicle[i]} --> ", end="")
+        print(path.stations[len(path.stations) - 1])
