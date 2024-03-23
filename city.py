@@ -145,14 +145,6 @@ class Tehran:
         else:
             raise ValueError("Station does not exist!")
 
-    def print_sp(self, path:save_direction): # print shortest path function
-        print(f"\n{" Shortest Path ":-^30}")
-        print(f"{path.value} Km")
-        for i in range(len(path.vehicle)):
-            print(f"{path.stations[i]} -- {path.vehicle[i]} --> ", end="")
-        
-        print(path.stations[len(path.stations) - 1])
-    
     def travel_line_time(self, line : str, vehicle:str, src:str, t1: Time, dj_table: dd[str, save_direction], visited: set[str]):
         src_index = self.lines[line].index(src)
         m1 = machine(vehicle)
@@ -226,16 +218,7 @@ class Tehran:
             return node_data[dest]
         else:
             raise ValueError("Station does not exist!")
-    
-    def print_bt(self, path: save_direction, t1: Time):
-        print(f"\n{" Best Time ":-^30}")
 
-        print(t1 + path.value)
-
-        for i in range(len(path.vehicle)):
-            print(f"{path.stations[i]} -- {path.vehicle[i]} --> ", end="")
-        print(path.stations[len(path.stations) - 1])
-    
     def get_arrive_time_sp(self, path: save_direction, t1: Time):
         minutes = 0
         for i in range(len(path.vehicle)):
@@ -357,15 +340,7 @@ class Tehran:
             
         else:
             raise ValueError("Station does not exist!")
-    
-    def print_bc(self, path: save_direction, t1: Time):
-        print(f"\n{" Best Cost ":-^30}")
-        print(f"{path.value} Toman")
 
-        for i in range(len(path.vehicle)):
-            print(f"{path.stations[i]} -- {path.vehicle[i]} --> ", end="")
-        print(path.stations[len(path.stations) - 1])
-    
     def get_arrive_time_bc(self, path: save_direction, t1: Time):
         minutes = 0
         for i in range(len(path.vehicle)):
