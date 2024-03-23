@@ -15,6 +15,11 @@ class Map_UI(QtWidgets.QWidget):
         self.ui.setupUi(self)
 
         self.buttons: dict[str, QtWidgets.QPushButton] = dict()
+        self.ct1 = Tehran()
+        try:
+            self.ct1.read_from_file("line", "bus")
+        except ValueError as error:
+            self.show_error(error.__str__())
 
         self.setWindowTitle("SEMANHASHT")
         icon = QtGui.QIcon()
@@ -202,6 +207,8 @@ class Map_UI(QtWidgets.QWidget):
         self.ui.Aghdasiyeh.clicked.connect(self.on_Aghdasiyeh_click)
 
         self.ui.reset_btn.clicked.connect(self.on_reset_btn_click)
+
+        self.ui.Dis_btn.clicked.connect(self.cal_sp)
 
     def reset_style(self):
         for key, value in self.buttons.items():
@@ -879,3 +886,22 @@ class Map_UI(QtWidgets.QWidget):
                 hour = t1.get_hour();
 
         self.ui.T1.setTime(QtCore.QTime(hour, t1.get_minute()))
+
+    def show_error(self, ewhat:str ):
+        mbox = QtWidgets.QMessageBox();
+        mbox.setIconPixmap(QtGui.QPixmap("./../img/error.png"));
+        mbox.setWindowTitle("ERROR");
+        mbox.setText(ewhat);
+        mbox.exec();
+
+    def cal_sp(self):
+        path = self.ct1.find_shortest_path(self.ui.OR.text(), self.ui.DS.text())
+        self.show_sp(path, Time(self.ui.T1.text()))
+    
+    def show_sp(self,path: save_direction, t1: Time):
+        self.ui.value.setText(str(path.value) + " km")
+
+        for station in path.stations:
+            self.buttons[station].setStyleSheet(style)
+        
+        self.show_clock(t1 + self.ct1.get_arrive_time_sp(path, t1))
