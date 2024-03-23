@@ -211,6 +211,8 @@ class Map_UI(QtWidgets.QWidget):
 
         self.ui.Dis_btn.clicked.connect(self.cal_sp)
 
+        self.ui.Cost_btn.clicked.connect(self.cal_bc)
+
     def reset_style(self):
         for key, value in self.buttons.items():
             value.setStyleSheet(def_style)
@@ -899,14 +901,28 @@ class Map_UI(QtWidgets.QWidget):
         mbox.exec()
         sys.exit()
 
-    def cal_sp(self):
+    def cal_sp(self): # Calculate shortest path
         path = self.ct1.find_shortest_path(self.ui.OR.text(), self.ui.DS.text())
         self.show_sp(path, Time(self.ui.T1.text()))
     
-    def show_sp(self,path: save_direction, t1: Time):
+    def show_sp(self,path: save_direction, t1: Time): # Show shortest path
         self.ui.value.setText(str(path.value) + " km")
 
         for station in path.stations:
             self.buttons[station].setStyleSheet(style)
         
+        self.show_clock(t1 + self.ct1.get_arrive_time_sp(path, t1))
+
+    def cal_bc(self): # Calculate best cost
+        t1 = Time(self.ui.T1.text())
+        path = self.ct1.find_best_cost(self.ui.OR.text(), self.ui.DS.text(), t1)
+        
+        self.show_bc(path, t1)
+
+    def show_bc(self, path: save_direction, t1: Time): # Show best cost
+        self.ui.value.setText(str(path.value) + " Toman")
+
+        for station in path.stations:
+            self.buttons[station].setStyleSheet(style)
+
         self.show_clock(t1 + self.ct1.get_arrive_time_sp(path, t1))
