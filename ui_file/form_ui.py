@@ -15,25 +15,21 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(1967, 1084)
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("./img/icon1.png"),
-                       QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        Form.setWindowIcon(icon)
         font = QtGui.QFont()
         font.setPointSize(7)
         Form.setFont(font)
         Form.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         Form.setStyleSheet("QWidget{\n"
-                           "background-color : #e3d8fff;\n"
-                           "}\n"
-                           "")
+"background-color : #e3d8fff;\n"
+"}\n"
+"")
         self.line_32 = QtWidgets.QFrame(Form)
         self.line_32.setWindowModality(QtCore.Qt.ApplicationModal)
         self.line_32.setGeometry(QtCore.QRect(1010, 530, 16, 21))
         self.line_32.setAutoFillBackground(False)
         self.line_32.setStyleSheet("\n"
-                                   "color : #aa0000 ;\n"
-                                   "")
+"color : #aa0000 ;\n"
+"")
         self.line_32.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_32.setLineWidth(5)
         self.line_32.setFrameShape(QtWidgets.QFrame.VLine)
@@ -61,8 +57,8 @@ class Ui_Form(object):
         self.line_45.setGeometry(QtCore.QRect(740, 890, 20, 31))
         self.line_45.setAutoFillBackground(False)
         self.line_45.setStyleSheet("\n"
-                                   "color : #00aaff ;\n"
-                                   "")
+"color : #00aaff ;\n"
+"")
         self.line_45.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_45.setLineWidth(5)
         self.line_45.setFrameShape(QtWidgets.QFrame.VLine)
@@ -73,36 +69,35 @@ class Ui_Form(object):
         self.line_135 = QtWidgets.QFrame(Form)
         self.line_135.setGeometry(QtCore.QRect(1360, 800, 431, 20))
         self.line_135.setStyleSheet("\n"
-                                    "color : #005500 ;\n"
-                                    "")
+"color : #005500 ;\n"
+"")
         self.line_135.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_135.setLineWidth(2)
         self.line_135.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_135.setObjectName("line_135")
         self.Payaneh_Javanmard = QtWidgets.QPushButton(Form)
         self.Payaneh_Javanmard.setGeometry(QtCore.QRect(1100, 920, 41, 41))
-        self.Payaneh_Javanmard.setCursor(
-            QtGui.QCursor(QtCore.Qt.OpenHandCursor))
+        self.Payaneh_Javanmard.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Payaneh_Javanmard.setStyleSheet("QPushButton {\n"
-                                             "    font: 11pt ;\n"
-                                             "color: #333;\n"
-                                             "border: 2px solid #555;\n"
-                                             "border-radius: 20px;\n"
-                                             "border-style: outset;\n"
-                                             "background: qradialgradient(\n"
-                                             "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                             "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                             ");\n"
-                                             "padding: 5px;\n"
-                                             "}\n"
-                                             "\n"
-                                             "QPushButton:hover {\n"
-                                             "background:  qradialgradient(\n"
-                                             "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                             "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                             ");\n"
-                                             "}\n"
-                                             "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Payaneh_Javanmard.setText("")
         self.Payaneh_Javanmard.setObjectName("Payaneh_Javanmard")
         self.label_12 = QtWidgets.QLabel(Form)
@@ -111,8 +106,8 @@ class Ui_Form(object):
         self.line_9 = QtWidgets.QFrame(Form)
         self.line_9.setGeometry(QtCore.QRect(1410, 240, 121, 21))
         self.line_9.setStyleSheet("\n"
-                                  "color : #00aaff ;\n"
-                                  "")
+"color : #00aaff ;\n"
+"")
         self.line_9.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_9.setLineWidth(5)
         self.line_9.setFrameShape(QtWidgets.QFrame.HLine)
@@ -126,36 +121,35 @@ class Ui_Form(object):
         self.line_137 = QtWidgets.QFrame(Form)
         self.line_137.setGeometry(QtCore.QRect(500, 590, 31, 16))
         self.line_137.setStyleSheet("\n"
-                                    "color : #005500 ;\n"
-                                    "")
+"color : #005500 ;\n"
+"")
         self.line_137.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_137.setLineWidth(2)
         self.line_137.setFrameShape(QtWidgets.QFrame.VLine)
         self.line_137.setObjectName("line_137")
         self.Darvazeh_Shemiran = QtWidgets.QPushButton(Form)
         self.Darvazeh_Shemiran.setGeometry(QtCore.QRect(1100, 610, 41, 41))
-        self.Darvazeh_Shemiran.setCursor(
-            QtGui.QCursor(QtCore.Qt.OpenHandCursor))
+        self.Darvazeh_Shemiran.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Darvazeh_Shemiran.setStyleSheet("QPushButton {\n"
-                                             "    font: 11pt ;\n"
-                                             "color: #333;\n"
-                                             "border: 2px solid #555;\n"
-                                             "border-radius: 20px;\n"
-                                             "border-style: outset;\n"
-                                             "background: qradialgradient(\n"
-                                             "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                             "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                             ");\n"
-                                             "padding: 5px;\n"
-                                             "}\n"
-                                             "\n"
-                                             "QPushButton:hover {\n"
-                                             "background:  qradialgradient(\n"
-                                             "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                             "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                             ");\n"
-                                             "}\n"
-                                             "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Darvazeh_Shemiran.setText("")
         self.Darvazeh_Shemiran.setObjectName("Darvazeh_Shemiran")
         self.line_88 = QtWidgets.QFrame(Form)
@@ -167,8 +161,8 @@ class Ui_Form(object):
         self.line_11 = QtWidgets.QFrame(Form)
         self.line_11.setGeometry(QtCore.QRect(1350, 240, 21, 21))
         self.line_11.setStyleSheet("\n"
-                                   "color : #00aaff ;\n"
-                                   "")
+"color : #00aaff ;\n"
+"")
         self.line_11.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_11.setLineWidth(5)
         self.line_11.setFrameShape(QtWidgets.QFrame.HLine)
@@ -177,32 +171,32 @@ class Ui_Form(object):
         self.Mirdamad.setGeometry(QtCore.QRect(1000, 220, 41, 41))
         self.Mirdamad.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Mirdamad.setStyleSheet("QPushButton {\n"
-                                    "    font: 11pt ;\n"
-                                    "color: #333;\n"
-                                    "border: 2px solid #555;\n"
-                                    "border-radius: 20px;\n"
-                                    "border-style: outset;\n"
-                                    "background: qradialgradient(\n"
-                                    "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                    "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                    ");\n"
-                                    "padding: 5px;\n"
-                                    "}\n"
-                                    "\n"
-                                    "QPushButton:hover {\n"
-                                    "background:  qradialgradient(\n"
-                                    "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                    "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                    ");\n"
-                                    "}\n"
-                                    "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Mirdamad.setText("")
         self.Mirdamad.setObjectName("Mirdamad")
         self.line_18 = QtWidgets.QFrame(Form)
         self.line_18.setGeometry(QtCore.QRect(370, 560, 31, 21))
         self.line_18.setStyleSheet("\n"
-                                   "color : #ffff00 ;\n"
-                                   "")
+"color : #ffff00 ;\n"
+"")
         self.line_18.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_18.setLineWidth(5)
         self.line_18.setFrameShape(QtWidgets.QFrame.HLine)
@@ -215,8 +209,8 @@ class Ui_Form(object):
         self.line_50.setGeometry(QtCore.QRect(200, 380, 20, 51))
         self.line_50.setAutoFillBackground(False)
         self.line_50.setStyleSheet("\n"
-                                   "color : #ffff00 ;\n"
-                                   "")
+"color : #ffff00 ;\n"
+"")
         self.line_50.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_50.setLineWidth(5)
         self.line_50.setFrameShape(QtWidgets.QFrame.VLine)
@@ -226,8 +220,8 @@ class Ui_Form(object):
         self.line_37.setGeometry(QtCore.QRect(1340, 250, 16, 141))
         self.line_37.setAutoFillBackground(False)
         self.line_37.setStyleSheet("\n"
-                                   "color : #00aaff ;\n"
-                                   "")
+"color : #00aaff ;\n"
+"")
         self.line_37.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_37.setLineWidth(5)
         self.line_37.setFrameShape(QtWidgets.QFrame.VLine)
@@ -236,50 +230,50 @@ class Ui_Form(object):
         self.Shahid_Rezaei.setGeometry(QtCore.QRect(1250, 820, 41, 41))
         self.Shahid_Rezaei.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Shahid_Rezaei.setStyleSheet("QPushButton {\n"
-                                         "    font: 11pt ;\n"
-                                         "color: #333;\n"
-                                         "border: 2px solid #555;\n"
-                                         "border-radius: 20px;\n"
-                                         "border-style: outset;\n"
-                                         "background: qradialgradient(\n"
-                                         "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                         "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                         ");\n"
-                                         "padding: 5px;\n"
-                                         "}\n"
-                                         "\n"
-                                         "QPushButton:hover {\n"
-                                         "background:  qradialgradient(\n"
-                                         "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                         "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                         ");\n"
-                                         "}\n"
-                                         "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Shahid_Rezaei.setText("")
         self.Shahid_Rezaei.setObjectName("Shahid_Rezaei")
         self.Shoush = QtWidgets.QPushButton(Form)
         self.Shoush.setGeometry(QtCore.QRect(1000, 730, 41, 41))
         self.Shoush.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Shoush.setStyleSheet("QPushButton {\n"
-                                  "    font: 11pt ;\n"
-                                  "color: #333;\n"
-                                  "border: 2px solid #555;\n"
-                                  "border-radius: 20px;\n"
-                                  "border-style: outset;\n"
-                                  "background: qradialgradient(\n"
-                                  "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                  "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                  ");\n"
-                                  "padding: 5px;\n"
-                                  "}\n"
-                                  "\n"
-                                  "QPushButton:hover {\n"
-                                  "background:  qradialgradient(\n"
-                                  "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                  "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                  ");\n"
-                                  "}\n"
-                                  "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Shoush.setText("")
         self.Shoush.setObjectName("Shoush")
         self.line_112 = QtWidgets.QFrame(Form)
@@ -290,35 +284,34 @@ class Ui_Form(object):
         self.line_112.setObjectName("line_112")
         self.Panzdahe_Khordad = QtWidgets.QPushButton(Form)
         self.Panzdahe_Khordad.setGeometry(QtCore.QRect(1000, 670, 41, 41))
-        self.Panzdahe_Khordad.setCursor(
-            QtGui.QCursor(QtCore.Qt.OpenHandCursor))
+        self.Panzdahe_Khordad.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Panzdahe_Khordad.setStyleSheet("QPushButton {\n"
-                                            "    font: 11pt ;\n"
-                                            "color: #333;\n"
-                                            "border: 2px solid #555;\n"
-                                            "border-radius: 20px;\n"
-                                            "border-style: outset;\n"
-                                            "background: qradialgradient(\n"
-                                            "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                            "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                            ");\n"
-                                            "padding: 5px;\n"
-                                            "}\n"
-                                            "\n"
-                                            "QPushButton:hover {\n"
-                                            "background:  qradialgradient(\n"
-                                            "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                            "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                            ");\n"
-                                            "}\n"
-                                            "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Panzdahe_Khordad.setText("")
         self.Panzdahe_Khordad.setObjectName("Panzdahe_Khordad")
         self.line_8 = QtWidgets.QFrame(Form)
         self.line_8.setGeometry(QtCore.QRect(1570, 242, 101, 21))
         self.line_8.setStyleSheet("\n"
-                                  "color : #00aaff ;\n"
-                                  "")
+"color : #00aaff ;\n"
+"")
         self.line_8.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_8.setLineWidth(5)
         self.line_8.setFrameShape(QtWidgets.QFrame.HLine)
@@ -328,8 +321,8 @@ class Ui_Form(object):
         self.line_39.setGeometry(QtCore.QRect(740, 460, 21, 31))
         self.line_39.setAutoFillBackground(False)
         self.line_39.setStyleSheet("\n"
-                                   "color : #00aaff ;\n"
-                                   "")
+"color : #00aaff ;\n"
+"")
         self.line_39.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_39.setLineWidth(5)
         self.line_39.setFrameShape(QtWidgets.QFrame.VLine)
@@ -338,32 +331,32 @@ class Ui_Form(object):
         self.Yadegare_Emam.setGeometry(QtCore.QRect(330, 250, 41, 41))
         self.Yadegare_Emam.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Yadegare_Emam.setStyleSheet("QPushButton {\n"
-                                         "    font: 11pt ;\n"
-                                         "color: #333;\n"
-                                         "border: 2px solid #555;\n"
-                                         "border-radius: 20px;\n"
-                                         "border-style: outset;\n"
-                                         "background: qradialgradient(\n"
-                                         "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                         "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                         ");\n"
-                                         "padding: 5px;\n"
-                                         "}\n"
-                                         "\n"
-                                         "QPushButton:hover {\n"
-                                         "background:  qradialgradient(\n"
-                                         "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                         "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                         ");\n"
-                                         "}\n"
-                                         "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Yadegare_Emam.setText("")
         self.Yadegare_Emam.setObjectName("Yadegare_Emam")
         self.line_115 = QtWidgets.QFrame(Form)
         self.line_115.setGeometry(QtCore.QRect(194, 590, 31, 16))
         self.line_115.setStyleSheet("\n"
-                                    "color : #005500 ;\n"
-                                    "")
+"color : #005500 ;\n"
+"")
         self.line_115.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_115.setLineWidth(2)
         self.line_115.setFrameShape(QtWidgets.QFrame.VLine)
@@ -371,9 +364,9 @@ class Ui_Form(object):
         self.line_83 = QtWidgets.QFrame(Form)
         self.line_83.setGeometry(QtCore.QRect(1120, 830, 131, 31))
         self.line_83.setStyleSheet("\n"
-                                   "color : #ffcd6a;\n"
-                                   "\n"
-                                   "")
+"color : #ffcd6a;\n"
+"\n"
+"")
         self.line_83.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_83.setLineWidth(2)
         self.line_83.setFrameShape(QtWidgets.QFrame.HLine)
@@ -381,8 +374,8 @@ class Ui_Form(object):
         self.line_62 = QtWidgets.QFrame(Form)
         self.line_62.setGeometry(QtCore.QRect(1380, 730, 51, 21))
         self.line_62.setStyleSheet("\n"
-                                   "color : #ffff00 ;\n"
-                                   "")
+"color : #ffff00 ;\n"
+"")
         self.line_62.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_62.setLineWidth(5)
         self.line_62.setFrameShape(QtWidgets.QFrame.HLine)
@@ -391,25 +384,25 @@ class Ui_Form(object):
         self.Azadegan.setGeometry(QtCore.QRect(730, 920, 41, 41))
         self.Azadegan.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Azadegan.setStyleSheet("QPushButton {\n"
-                                    "    font: 11pt ;\n"
-                                    "color: #333;\n"
-                                    "border: 2px solid #555;\n"
-                                    "border-radius: 20px;\n"
-                                    "border-style: outset;\n"
-                                    "background: qradialgradient(\n"
-                                    "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                    "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                    ");\n"
-                                    "padding: 5px;\n"
-                                    "}\n"
-                                    "\n"
-                                    "QPushButton:hover {\n"
-                                    "background:  qradialgradient(\n"
-                                    "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                    "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                    ");\n"
-                                    "}\n"
-                                    "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Azadegan.setText("")
         self.Azadegan.setObjectName("Azadegan")
         self.label_3 = QtWidgets.QLabel(Form)
@@ -430,8 +423,8 @@ class Ui_Form(object):
         self.line_124 = QtWidgets.QFrame(Form)
         self.line_124.setGeometry(QtCore.QRect(1040, 620, 41, 31))
         self.line_124.setStyleSheet("\n"
-                                    "color : #005500 ;\n"
-                                    "")
+"color : #005500 ;\n"
+"")
         self.line_124.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_124.setLineWidth(2)
         self.line_124.setFrameShape(QtWidgets.QFrame.HLine)
@@ -439,8 +432,8 @@ class Ui_Form(object):
         self.line = QtWidgets.QFrame(Form)
         self.line.setGeometry(QtCore.QRect(70, 260, 121, 21))
         self.line.setStyleSheet("\n"
-                                "color : #ff1aa3 ;\n"
-                                "")
+"color : #ff1aa3 ;\n"
+"")
         self.line.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line.setLineWidth(5)
         self.line.setFrameShape(QtWidgets.QFrame.HLine)
@@ -449,25 +442,25 @@ class Ui_Form(object):
         self.Zamzam.setGeometry(QtCore.QRect(730, 850, 41, 41))
         self.Zamzam.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Zamzam.setStyleSheet("QPushButton {\n"
-                                  "    font: 11pt ;\n"
-                                  "color: #333;\n"
-                                  "border: 2px solid #555;\n"
-                                  "border-radius: 20px;\n"
-                                  "border-style: outset;\n"
-                                  "background: qradialgradient(\n"
-                                  "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                  "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                  ");\n"
-                                  "padding: 5px;\n"
-                                  "}\n"
-                                  "\n"
-                                  "QPushButton:hover {\n"
-                                  "background:  qradialgradient(\n"
-                                  "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                  "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                  ");\n"
-                                  "}\n"
-                                  "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Zamzam.setText("")
         self.Zamzam.setObjectName("Zamzam")
         self.label_13 = QtWidgets.QLabel(Form)
@@ -476,8 +469,8 @@ class Ui_Form(object):
         self.line_118 = QtWidgets.QFrame(Form)
         self.line_118.setGeometry(QtCore.QRect(210, 590, 651, 20))
         self.line_118.setStyleSheet("\n"
-                                    "color : #005500 ;\n"
-                                    "")
+"color : #005500 ;\n"
+"")
         self.line_118.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_118.setLineWidth(2)
         self.line_118.setFrameShape(QtWidgets.QFrame.HLine)
@@ -487,93 +480,92 @@ class Ui_Form(object):
         self.line_29.setGeometry(QtCore.QRect(1010, 410, 16, 21))
         self.line_29.setAutoFillBackground(False)
         self.line_29.setStyleSheet("\n"
-                                   "color : #aa0000 ;\n"
-                                   "")
+"color : #aa0000 ;\n"
+"")
         self.line_29.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_29.setLineWidth(5)
         self.line_29.setFrameShape(QtWidgets.QFrame.VLine)
         self.line_29.setObjectName("line_29")
         self.Shahid_Kolahdouz = QtWidgets.QPushButton(Form)
         self.Shahid_Kolahdouz.setGeometry(QtCore.QRect(1790, 720, 41, 41))
-        self.Shahid_Kolahdouz.setCursor(
-            QtGui.QCursor(QtCore.Qt.OpenHandCursor))
+        self.Shahid_Kolahdouz.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Shahid_Kolahdouz.setStyleSheet("QPushButton {\n"
-                                            "    font: 11pt ;\n"
-                                            "color: #333;\n"
-                                            "border: 2px solid #555;\n"
-                                            "border-radius: 20px;\n"
-                                            "border-style: outset;\n"
-                                            "background: qradialgradient(\n"
-                                            "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                            "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                            ");\n"
-                                            "padding: 5px;\n"
-                                            "}\n"
-                                            "\n"
-                                            "QPushButton:hover {\n"
-                                            "background:  qradialgradient(\n"
-                                            "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                            "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                            ");\n"
-                                            "}\n"
-                                            "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Shahid_Kolahdouz.setText("")
         self.Shahid_Kolahdouz.setObjectName("Shahid_Kolahdouz")
         self.Moniriyeh = QtWidgets.QPushButton(Form)
         self.Moniriyeh.setGeometry(QtCore.QRect(730, 610, 41, 41))
         self.Moniriyeh.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Moniriyeh.setStyleSheet("QPushButton {\n"
-                                     "    font: 11pt ;\n"
-                                     "color: #333;\n"
-                                     "border: 2px solid #555;\n"
-                                     "border-radius: 20px;\n"
-                                     "border-style: outset;\n"
-                                     "background: qradialgradient(\n"
-                                     "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                     "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                     ");\n"
-                                     "padding: 5px;\n"
-                                     "}\n"
-                                     "\n"
-                                     "QPushButton:hover {\n"
-                                     "background:  qradialgradient(\n"
-                                     "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                     "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                     ");\n"
-                                     "}\n"
-                                     "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Moniriyeh.setText("")
         self.Moniriyeh.setObjectName("Moniriyeh")
         self.Shahid_Mofatteh = QtWidgets.QPushButton(Form)
         self.Shahid_Mofatteh.setGeometry(QtCore.QRect(1000, 430, 41, 41))
         self.Shahid_Mofatteh.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Shahid_Mofatteh.setStyleSheet("QPushButton {\n"
-                                           "    font: 11pt ;\n"
-                                           "color: #333;\n"
-                                           "border: 2px solid #555;\n"
-                                           "border-radius: 20px;\n"
-                                           "border-style: outset;\n"
-                                           "background: qradialgradient(\n"
-                                           "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                           "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                           ");\n"
-                                           "padding: 5px;\n"
-                                           "}\n"
-                                           "\n"
-                                           "QPushButton:hover {\n"
-                                           "background:  qradialgradient(\n"
-                                           "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                           "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                           ");\n"
-                                           "}\n"
-                                           "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Shahid_Mofatteh.setText("")
         self.Shahid_Mofatteh.setObjectName("Shahid_Mofatteh")
         self.line_54 = QtWidgets.QFrame(Form)
         self.line_54.setGeometry(QtCore.QRect(770, 560, 71, 21))
         self.line_54.setStyleSheet("\n"
-                                   "color : #ffff00 ;\n"
-                                   "")
+"color : #ffff00 ;\n"
+"")
         self.line_54.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_54.setLineWidth(5)
         self.line_54.setFrameShape(QtWidgets.QFrame.HLine)
@@ -583,8 +575,8 @@ class Ui_Form(object):
         self.line_35.setGeometry(QtCore.QRect(1260, 510, 16, 21))
         self.line_35.setAutoFillBackground(False)
         self.line_35.setStyleSheet("\n"
-                                   "color : #ff1aa3;\n"
-                                   "")
+"color : #ff1aa3;\n"
+"")
         self.line_35.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_35.setLineWidth(5)
         self.line_35.setFrameShape(QtWidgets.QFrame.VLine)
@@ -597,8 +589,8 @@ class Ui_Form(object):
         self.line_20.setGeometry(QtCore.QRect(1010, 330, 21, 41))
         self.line_20.setAutoFillBackground(False)
         self.line_20.setStyleSheet("\n"
-                                   "color : #aa0000 ;\n"
-                                   "")
+"color : #aa0000 ;\n"
+"")
         self.line_20.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_20.setLineWidth(5)
         self.line_20.setFrameShape(QtWidgets.QFrame.VLine)
@@ -611,8 +603,8 @@ class Ui_Form(object):
         self.line_47.setGeometry(QtCore.QRect(740, 650, 16, 21))
         self.line_47.setAutoFillBackground(False)
         self.line_47.setStyleSheet("\n"
-                                   "color : #00aaff ;\n"
-                                   "")
+"color : #00aaff ;\n"
+"")
         self.line_47.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_47.setLineWidth(5)
         self.line_47.setFrameShape(QtWidgets.QFrame.VLine)
@@ -622,36 +614,34 @@ class Ui_Form(object):
         self.line_33.setGeometry(QtCore.QRect(440, 270, 20, 221))
         self.line_33.setAutoFillBackground(False)
         self.line_33.setStyleSheet("color : #ff1aa3 ;\n"
-                                   "")
+"")
         self.line_33.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_33.setLineWidth(5)
         self.line_33.setFrameShape(QtWidgets.QFrame.VLine)
         self.line_33.setObjectName("line_33")
         self.Meydane_Enghelabe_Eslami = QtWidgets.QPushButton(Form)
-        self.Meydane_Enghelabe_Eslami.setGeometry(
-            QtCore.QRect(500, 550, 41, 41))
-        self.Meydane_Enghelabe_Eslami.setCursor(
-            QtGui.QCursor(QtCore.Qt.OpenHandCursor))
+        self.Meydane_Enghelabe_Eslami.setGeometry(QtCore.QRect(500, 550, 41, 41))
+        self.Meydane_Enghelabe_Eslami.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Meydane_Enghelabe_Eslami.setStyleSheet("QPushButton {\n"
-                                                    "    font: 11pt ;\n"
-                                                    "color: #333;\n"
-                                                    "border: 2px solid #555;\n"
-                                                    "border-radius: 20px;\n"
-                                                    "border-style: outset;\n"
-                                                    "background: qradialgradient(\n"
-                                                    "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                                    "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                                    ");\n"
-                                                    "padding: 5px;\n"
-                                                    "}\n"
-                                                    "\n"
-                                                    "QPushButton:hover {\n"
-                                                    "background:  qradialgradient(\n"
-                                                    "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                                    "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                                    ");\n"
-                                                    "}\n"
-                                                    "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Meydane_Enghelabe_Eslami.setText("")
         self.Meydane_Enghelabe_Eslami.setObjectName("Meydane_Enghelabe_Eslami")
         self.line_110 = QtWidgets.QFrame(Form)
@@ -664,25 +654,25 @@ class Ui_Form(object):
         self.Kouhsar.setGeometry(QtCore.QRect(30, 248, 41, 41))
         self.Kouhsar.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Kouhsar.setStyleSheet("QPushButton {\n"
-                                   "    font: 11pt ;\n"
-                                   "color: #333;\n"
-                                   "border: 2px solid #555;\n"
-                                   "border-radius: 20px;\n"
-                                   "border-style: outset;\n"
-                                   "background: qradialgradient(\n"
-                                   "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                   "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                   ");\n"
-                                   "padding: 5px;\n"
-                                   "}\n"
-                                   "\n"
-                                   "QPushButton:hover {\n"
-                                   "background:  qradialgradient(\n"
-                                   "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                   "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                   ");\n"
-                                   "}\n"
-                                   "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Kouhsar.setText("")
         self.Kouhsar.setObjectName("Kouhsar")
         self.label_7 = QtWidgets.QLabel(Form)
@@ -692,25 +682,25 @@ class Ui_Form(object):
         self.Gheytariyeh.setGeometry(QtCore.QRect(1000, 80, 41, 41))
         self.Gheytariyeh.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
         self.Gheytariyeh.setStyleSheet("QPushButton {\n"
-                                       "    font: 11pt ;\n"
-                                       "color: #333;\n"
-                                       "border: 2px solid #555;\n"
-                                       "border-radius: 20px;\n"
-                                       "border-style: outset;\n"
-                                       "background: qradialgradient(\n"
-                                       "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                       "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                       ");\n"
-                                       "padding: 5px;\n"
-                                       "}\n"
-                                       "\n"
-                                       "QPushButton:hover {\n"
-                                       "background:  qradialgradient(\n"
-                                       "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                       "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                       ");\n"
-                                       "}\n"
-                                       "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Gheytariyeh.setText("")
         self.Gheytariyeh.setObjectName("Gheytariyeh")
         self.line_107 = QtWidgets.QFrame(Form)
@@ -724,28 +714,27 @@ class Ui_Form(object):
         self.label_39.setObjectName("label_39")
         self.Shahid_Zeynoddin = QtWidgets.QPushButton(Form)
         self.Shahid_Zeynoddin.setGeometry(QtCore.QRect(1530, 230, 41, 41))
-        self.Shahid_Zeynoddin.setCursor(
-            QtGui.QCursor(QtCore.Qt.OpenHandCursor))
+        self.Shahid_Zeynoddin.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Shahid_Zeynoddin.setStyleSheet("QPushButton {\n"
-                                            "    font: 11pt ;\n"
-                                            "color: #333;\n"
-                                            "border: 2px solid #555;\n"
-                                            "border-radius: 20px;\n"
-                                            "border-style: outset;\n"
-                                            "background: qradialgradient(\n"
-                                            "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                            "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                            ");\n"
-                                            "padding: 5px;\n"
-                                            "}\n"
-                                            "\n"
-                                            "QPushButton:hover {\n"
-                                            "background:  qradialgradient(\n"
-                                            "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                            "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                            ");\n"
-                                            "}\n"
-                                            "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Shahid_Zeynoddin.setText("")
         self.Shahid_Zeynoddin.setObjectName("Shahid_Zeynoddin")
         self.label_32 = QtWidgets.QLabel(Form)
@@ -754,8 +743,8 @@ class Ui_Form(object):
         self.line_126 = QtWidgets.QFrame(Form)
         self.line_126.setGeometry(QtCore.QRect(1060, 550, 31, 81))
         self.line_126.setStyleSheet("\n"
-                                    "color : #005500 ;\n"
-                                    "")
+"color : #005500 ;\n"
+"")
         self.line_126.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_126.setLineWidth(2)
         self.line_126.setFrameShape(QtWidgets.QFrame.VLine)
@@ -763,8 +752,8 @@ class Ui_Form(object):
         self.line_17 = QtWidgets.QFrame(Form)
         self.line_17.setGeometry(QtCore.QRect(300, 560, 31, 21))
         self.line_17.setStyleSheet("\n"
-                                   "color : #ffff00 ;\n"
-                                   "")
+"color : #ffff00 ;\n"
+"")
         self.line_17.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_17.setLineWidth(5)
         self.line_17.setFrameShape(QtWidgets.QFrame.HLine)
@@ -772,8 +761,8 @@ class Ui_Form(object):
         self.line_119 = QtWidgets.QFrame(Form)
         self.line_119.setGeometry(QtCore.QRect(846, 591, 31, 41))
         self.line_119.setStyleSheet("\n"
-                                    "color : #005500 ;\n"
-                                    "")
+"color : #005500 ;\n"
+"")
         self.line_119.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_119.setLineWidth(2)
         self.line_119.setFrameShape(QtWidgets.QFrame.VLine)
@@ -784,8 +773,8 @@ class Ui_Form(object):
         self.line_6 = QtWidgets.QFrame(Form)
         self.line_6.setGeometry(QtCore.QRect(1040, 500, 231, 21))
         self.line_6.setStyleSheet("\n"
-                                  "color : #ff1aa3 ;\n"
-                                  "")
+"color : #ff1aa3 ;\n"
+"")
         self.line_6.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_6.setLineWidth(5)
         self.line_6.setFrameShape(QtWidgets.QFrame.HLine)
@@ -797,57 +786,57 @@ class Ui_Form(object):
         self.Nabard.setGeometry(QtCore.QRect(1500, 720, 41, 41))
         self.Nabard.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Nabard.setStyleSheet("QPushButton {\n"
-                                  "    font: 11pt ;\n"
-                                  "color: #333;\n"
-                                  "border: 2px solid #555;\n"
-                                  "border-radius: 20px;\n"
-                                  "border-style: outset;\n"
-                                  "background: qradialgradient(\n"
-                                  "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                  "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                  ");\n"
-                                  "padding: 5px;\n"
-                                  "}\n"
-                                  "\n"
-                                  "QPushButton:hover {\n"
-                                  "background:  qradialgradient(\n"
-                                  "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                  "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                  ");\n"
-                                  "}\n"
-                                  "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Nabard.setText("")
         self.Nabard.setObjectName("Nabard")
         self.Meydane_Azadi = QtWidgets.QPushButton(Form)
         self.Meydane_Azadi.setGeometry(QtCore.QRect(190, 550, 41, 41))
         self.Meydane_Azadi.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Meydane_Azadi.setStyleSheet("QPushButton {\n"
-                                         "    font: 11pt ;\n"
-                                         "color: #333;\n"
-                                         "border: 2px solid #555;\n"
-                                         "border-radius: 20px;\n"
-                                         "border-style: outset;\n"
-                                         "background: qradialgradient(\n"
-                                         "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                         "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                         ");\n"
-                                         "padding: 5px;\n"
-                                         "}\n"
-                                         "\n"
-                                         "QPushButton:hover {\n"
-                                         "background:  qradialgradient(\n"
-                                         "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                         "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                         ");\n"
-                                         "}\n"
-                                         "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Meydane_Azadi.setText("")
         self.Meydane_Azadi.setObjectName("Meydane_Azadi")
         self.line_52 = QtWidgets.QFrame(Form)
         self.line_52.setGeometry(QtCore.QRect(440, 560, 61, 21))
         self.line_52.setStyleSheet("\n"
-                                   "color : #ffff00 ;\n"
-                                   "")
+"color : #ffff00 ;\n"
+"")
         self.line_52.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_52.setLineWidth(5)
         self.line_52.setFrameShape(QtWidgets.QFrame.HLine)
@@ -855,8 +844,8 @@ class Ui_Form(object):
         self.line_120 = QtWidgets.QFrame(Form)
         self.line_120.setGeometry(QtCore.QRect(840, 590, 31, 41))
         self.line_120.setStyleSheet("\n"
-                                    "color : #005500 ;\n"
-                                    "")
+"color : #005500 ;\n"
+"")
         self.line_120.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_120.setLineWidth(2)
         self.line_120.setFrameShape(QtWidgets.QFrame.VLine)
@@ -876,8 +865,8 @@ class Ui_Form(object):
         self.line_60 = QtWidgets.QFrame(Form)
         self.line_60.setGeometry(QtCore.QRect(1140, 620, 31, 21))
         self.line_60.setStyleSheet("\n"
-                                   "color : #ffff00 ;\n"
-                                   "")
+"color : #ffff00 ;\n"
+"")
         self.line_60.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_60.setLineWidth(5)
         self.line_60.setFrameShape(QtWidgets.QFrame.HLine)
@@ -887,8 +876,8 @@ class Ui_Form(object):
         self.line_46.setGeometry(QtCore.QRect(740, 770, 16, 21))
         self.line_46.setAutoFillBackground(False)
         self.line_46.setStyleSheet("\n"
-                                   "color : #00aaff ;\n"
-                                   "")
+"color : #00aaff ;\n"
+"")
         self.line_46.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_46.setLineWidth(5)
         self.line_46.setFrameShape(QtWidgets.QFrame.VLine)
@@ -896,8 +885,8 @@ class Ui_Form(object):
         self.line_82 = QtWidgets.QFrame(Form)
         self.line_82.setGeometry(QtCore.QRect(1290, 830, 161, 31))
         self.line_82.setStyleSheet("\n"
-                                   "color : #ffcd6a;\n"
-                                   "")
+"color : #ffcd6a;\n"
+"")
         self.line_82.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_82.setLineWidth(2)
         self.line_82.setFrameShape(QtWidgets.QFrame.HLine)
@@ -909,84 +898,82 @@ class Ui_Form(object):
         self.Pirouzi.setGeometry(QtCore.QRect(1430, 720, 41, 41))
         self.Pirouzi.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Pirouzi.setStyleSheet("QPushButton {\n"
-                                   "    font: 11pt ;\n"
-                                   "color: #333;\n"
-                                   "border: 2px solid #555;\n"
-                                   "border-radius: 20px;\n"
-                                   "border-style: outset;\n"
-                                   "background: qradialgradient(\n"
-                                   "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                   "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                   ");\n"
-                                   "padding: 5px;\n"
-                                   "}\n"
-                                   "\n"
-                                   "QPushButton:hover {\n"
-                                   "background:  qradialgradient(\n"
-                                   "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                   "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                   ");\n"
-                                   "}\n"
-                                   "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Pirouzi.setText("")
         self.Pirouzi.setObjectName("Pirouzi")
         self.Meydane_Hazrate_Valiasr = QtWidgets.QPushButton(Form)
-        self.Meydane_Hazrate_Valiasr.setGeometry(
-            QtCore.QRect(730, 488, 41, 41))
-        self.Meydane_Hazrate_Valiasr.setCursor(
-            QtGui.QCursor(QtCore.Qt.OpenHandCursor))
+        self.Meydane_Hazrate_Valiasr.setGeometry(QtCore.QRect(730, 488, 41, 41))
+        self.Meydane_Hazrate_Valiasr.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Meydane_Hazrate_Valiasr.setStyleSheet("QPushButton {\n"
-                                                   "    font: 11pt ;\n"
-                                                   "color: #333;\n"
-                                                   "border: 2px solid #555;\n"
-                                                   "border-radius: 20px;\n"
-                                                   "border-style: outset;\n"
-                                                   "background: qradialgradient(\n"
-                                                   "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                                   "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                                   ");\n"
-                                                   "padding: 5px;\n"
-                                                   "}\n"
-                                                   "\n"
-                                                   "QPushButton:hover {\n"
-                                                   "background:  qradialgradient(\n"
-                                                   "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                                   "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                                   ");\n"
-                                                   "}\n"
-                                                   "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Meydane_Hazrate_Valiasr.setText("")
         self.Meydane_Hazrate_Valiasr.setObjectName("Meydane_Hazrate_Valiasr")
         self.Bosstane_Laleh = QtWidgets.QPushButton(Form)
         self.Bosstane_Laleh.setGeometry(QtCore.QRect(430, 488, 41, 41))
         self.Bosstane_Laleh.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Bosstane_Laleh.setStyleSheet("QPushButton {\n"
-                                          "    font: 11pt ;\n"
-                                          "color: #333;\n"
-                                          "border: 2px solid #555;\n"
-                                          "border-radius: 20px;\n"
-                                          "border-style: outset;\n"
-                                          "background: qradialgradient(\n"
-                                          "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                          "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                          ");\n"
-                                          "padding: 5px;\n"
-                                          "}\n"
-                                          "\n"
-                                          "QPushButton:hover {\n"
-                                          "background:  qradialgradient(\n"
-                                          "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                          "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                          ");\n"
-                                          "}\n"
-                                          "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Bosstane_Laleh.setText("")
         self.Bosstane_Laleh.setObjectName("Bosstane_Laleh")
         self.line_130 = QtWidgets.QFrame(Form)
         self.line_130.setGeometry(QtCore.QRect(1290, 540, 71, 20))
         self.line_130.setStyleSheet("\n"
-                                    "color : #005500 ;\n"
-                                    "")
+"color : #005500 ;\n"
+"")
         self.line_130.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_130.setLineWidth(2)
         self.line_130.setFrameShape(QtWidgets.QFrame.HLine)
@@ -1000,8 +987,8 @@ class Ui_Form(object):
         self.line_117 = QtWidgets.QFrame(Form)
         self.line_117.setGeometry(QtCore.QRect(210, 590, 651, 31))
         self.line_117.setStyleSheet("\n"
-                                    "color : #005500 ;\n"
-                                    "")
+"color : #005500 ;\n"
+"")
         self.line_117.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_117.setLineWidth(2)
         self.line_117.setFrameShape(QtWidgets.QFrame.HLine)
@@ -1009,9 +996,9 @@ class Ui_Form(object):
         self.line_84 = QtWidgets.QFrame(Form)
         self.line_84.setGeometry(QtCore.QRect(1120, 830, 131, 16))
         self.line_84.setStyleSheet("\n"
-                                   "color : #ffcd6a;\n"
-                                   "\n"
-                                   "")
+"color : #ffcd6a;\n"
+"\n"
+"")
         self.line_84.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_84.setLineWidth(2)
         self.line_84.setFrameShape(QtWidgets.QFrame.HLine)
@@ -1019,8 +1006,8 @@ class Ui_Form(object):
         self.line_63 = QtWidgets.QFrame(Form)
         self.line_63.setGeometry(QtCore.QRect(1650, 730, 141, 21))
         self.line_63.setStyleSheet("\n"
-                                   "color : #ffff00 ;\n"
-                                   "")
+"color : #ffff00 ;\n"
+"")
         self.line_63.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_63.setLineWidth(5)
         self.line_63.setFrameShape(QtWidgets.QFrame.HLine)
@@ -1037,9 +1024,9 @@ class Ui_Form(object):
         self.line_85 = QtWidgets.QFrame(Form)
         self.line_85.setGeometry(QtCore.QRect(1110, 840, 31, 81))
         self.line_85.setStyleSheet("\n"
-                                   "color : #ffcd6a;\n"
-                                   "\n"
-                                   "")
+"color : #ffcd6a;\n"
+"\n"
+"")
         self.line_85.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_85.setLineWidth(2)
         self.line_85.setFrameShape(QtWidgets.QFrame.VLine)
@@ -1053,8 +1040,8 @@ class Ui_Form(object):
         self.line_136 = QtWidgets.QFrame(Form)
         self.line_136.setGeometry(QtCore.QRect(1360, 800, 431, 31))
         self.line_136.setStyleSheet("\n"
-                                    "color : #005500 ;\n"
-                                    "")
+"color : #005500 ;\n"
+"")
         self.line_136.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_136.setLineWidth(2)
         self.line_136.setFrameShape(QtWidgets.QFrame.HLine)
@@ -1062,8 +1049,8 @@ class Ui_Form(object):
         self.line_123 = QtWidgets.QFrame(Form)
         self.line_123.setGeometry(QtCore.QRect(1040, 610, 41, 31))
         self.line_123.setStyleSheet("\n"
-                                    "color : #005500 ;\n"
-                                    "")
+"color : #005500 ;\n"
+"")
         self.line_123.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_123.setLineWidth(2)
         self.line_123.setFrameShape(QtWidgets.QFrame.HLine)
@@ -1071,8 +1058,8 @@ class Ui_Form(object):
         self.line_55 = QtWidgets.QFrame(Form)
         self.line_55.setGeometry(QtCore.QRect(880, 560, 31, 21))
         self.line_55.setStyleSheet("\n"
-                                   "color : #ffff00 ;\n"
-                                   "")
+"color : #ffff00 ;\n"
+"")
         self.line_55.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_55.setLineWidth(5)
         self.line_55.setFrameShape(QtWidgets.QFrame.HLine)
@@ -1092,9 +1079,9 @@ class Ui_Form(object):
         self.line_81 = QtWidgets.QFrame(Form)
         self.line_81.setGeometry(QtCore.QRect(1290, 830, 161, 16))
         self.line_81.setStyleSheet("\n"
-                                   "color : #ffcd6a;\n"
-                                   "\n"
-                                   "")
+"color : #ffcd6a;\n"
+"\n"
+"")
         self.line_81.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_81.setLineWidth(2)
         self.line_81.setFrameShape(QtWidgets.QFrame.HLine)
@@ -1108,9 +1095,9 @@ class Ui_Form(object):
         self.line_69 = QtWidgets.QFrame(Form)
         self.line_69.setGeometry(QtCore.QRect(1470, 180, 341, 16))
         self.line_69.setStyleSheet("\n"
-                                   "color : #ffcd6a;\n"
-                                   "\n"
-                                   "")
+"color : #ffcd6a;\n"
+"\n"
+"")
         self.line_69.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_69.setLineWidth(2)
         self.line_69.setFrameShape(QtWidgets.QFrame.HLine)
@@ -1126,8 +1113,8 @@ class Ui_Form(object):
         self.line_21.setGeometry(QtCore.QRect(1010, 590, 16, 21))
         self.line_21.setAutoFillBackground(False)
         self.line_21.setStyleSheet("\n"
-                                   "color : #aa0000 ;\n"
-                                   "")
+"color : #aa0000 ;\n"
+"")
         self.line_21.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_21.setLineWidth(5)
         self.line_21.setFrameShape(QtWidgets.QFrame.VLine)
@@ -1136,25 +1123,25 @@ class Ui_Form(object):
         self.Teatre_shahr.setGeometry(QtCore.QRect(730, 550, 41, 41))
         self.Teatre_shahr.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Teatre_shahr.setStyleSheet("QPushButton {\n"
-                                        "    font: 11pt ;\n"
-                                        "color: #333;\n"
-                                        "border: 2px solid #555;\n"
-                                        "border-radius: 20px;\n"
-                                        "border-style: outset;\n"
-                                        "background: qradialgradient(\n"
-                                        "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                        "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                        ");\n"
-                                        "padding: 5px;\n"
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:hover {\n"
-                                        "background:  qradialgradient(\n"
-                                        "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                        "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                        ");\n"
-                                        "}\n"
-                                        "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Teatre_shahr.setText("")
         self.Teatre_shahr.setObjectName("Teatre_shahr")
         self.label_48 = QtWidgets.QLabel(Form)
@@ -1169,8 +1156,8 @@ class Ui_Form(object):
         self.line_4 = QtWidgets.QFrame(Form)
         self.line_4.setGeometry(QtCore.QRect(770, 500, 231, 21))
         self.line_4.setStyleSheet("\n"
-                                  "color :#ff1aa3 ;\n"
-                                  "")
+"color :#ff1aa3 ;\n"
+"")
         self.line_4.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_4.setLineWidth(5)
         self.line_4.setFrameShape(QtWidgets.QFrame.HLine)
@@ -1182,57 +1169,57 @@ class Ui_Form(object):
         self.Ghaem.setGeometry(QtCore.QRect(1790, 230, 41, 41))
         self.Ghaem.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Ghaem.setStyleSheet("QPushButton {\n"
-                                 "    font: 11pt ;\n"
-                                 "color: #333;\n"
-                                 "border: 2px solid #555;\n"
-                                 "border-radius: 20px;\n"
-                                 "border-style: outset;\n"
-                                 "background: qradialgradient(\n"
-                                 "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                 "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                 ");\n"
-                                 "padding: 5px;\n"
-                                 "}\n"
-                                 "\n"
-                                 "QPushButton:hover {\n"
-                                 "background:  qradialgradient(\n"
-                                 "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                 "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                 ");\n"
-                                 "}\n"
-                                 "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Ghaem.setText("")
         self.Ghaem.setObjectName("Ghaem")
         self.Towhid = QtWidgets.QPushButton(Form)
         self.Towhid.setGeometry(QtCore.QRect(400, 550, 41, 41))
         self.Towhid.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Towhid.setStyleSheet("QPushButton {\n"
-                                  "    font: 11pt ;\n"
-                                  "color: #333;\n"
-                                  "border: 2px solid #555;\n"
-                                  "border-radius: 20px;\n"
-                                  "border-style: outset;\n"
-                                  "background: qradialgradient(\n"
-                                  "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                  "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                  ");\n"
-                                  "padding: 5px;\n"
-                                  "}\n"
-                                  "\n"
-                                  "QPushButton:hover {\n"
-                                  "background:  qradialgradient(\n"
-                                  "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                  "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                  ");\n"
-                                  "}\n"
-                                  "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Towhid.setText("")
         self.Towhid.setObjectName("Towhid")
         self.line_12 = QtWidgets.QFrame(Form)
         self.line_12.setGeometry(QtCore.QRect(1040, 378, 171, 21))
         self.line_12.setStyleSheet("\n"
-                                   "color : #00aaff ;\n"
-                                   "")
+"color : #00aaff ;\n"
+"")
         self.line_12.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_12.setLineWidth(5)
         self.line_12.setFrameShape(QtWidgets.QFrame.HLine)
@@ -1242,8 +1229,8 @@ class Ui_Form(object):
         self.line_51.setGeometry(QtCore.QRect(200, 470, 20, 81))
         self.line_51.setAutoFillBackground(False)
         self.line_51.setStyleSheet("\n"
-                                   "color : #ffff00 ;\n"
-                                   "")
+"color : #ffff00 ;\n"
+"")
         self.line_51.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_51.setLineWidth(5)
         self.line_51.setFrameShape(QtWidgets.QFrame.VLine)
@@ -1251,8 +1238,8 @@ class Ui_Form(object):
         self.line_64 = QtWidgets.QFrame(Form)
         self.line_64.setGeometry(QtCore.QRect(1470, 730, 31, 21))
         self.line_64.setStyleSheet("\n"
-                                   "color : #ffff00 ;\n"
-                                   "")
+"color : #ffff00 ;\n"
+"")
         self.line_64.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_64.setLineWidth(5)
         self.line_64.setFrameShape(QtWidgets.QFrame.HLine)
@@ -1260,61 +1247,60 @@ class Ui_Form(object):
         self.line_7 = QtWidgets.QFrame(Form)
         self.line_7.setGeometry(QtCore.QRect(1270, 940, 521, 21))
         self.line_7.setStyleSheet("\n"
-                                  "color : #ff1aa3 ;\n"
-                                  "")
+"color : #ff1aa3 ;\n"
+"")
         self.line_7.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_7.setLineWidth(5)
         self.line_7.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_7.setObjectName("line_7")
         self.Shahrake_Shariati = QtWidgets.QPushButton(Form)
         self.Shahrake_Shariati.setGeometry(QtCore.QRect(580, 920, 41, 41))
-        self.Shahrake_Shariati.setCursor(
-            QtGui.QCursor(QtCore.Qt.OpenHandCursor))
+        self.Shahrake_Shariati.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Shahrake_Shariati.setStyleSheet("QPushButton {\n"
-                                             "    font: 11pt ;\n"
-                                             "color: #333;\n"
-                                             "border: 2px solid #555;\n"
-                                             "border-radius: 20px;\n"
-                                             "border-style: outset;\n"
-                                             "background: qradialgradient(\n"
-                                             "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                             "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                             ");\n"
-                                             "padding: 5px;\n"
-                                             "}\n"
-                                             "\n"
-                                             "QPushButton:hover {\n"
-                                             "background:  qradialgradient(\n"
-                                             "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                             "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                             ");\n"
-                                             "}\n"
-                                             "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Shahrake_Shariati.setText("")
         self.Shahrake_Shariati.setObjectName("Shahrake_Shariati")
         self.Ostad_Moin = QtWidgets.QPushButton(Form)
         self.Ostad_Moin.setGeometry(QtCore.QRect(260, 550, 41, 41))
         self.Ostad_Moin.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Ostad_Moin.setStyleSheet("QPushButton {\n"
-                                      "    font: 11pt ;\n"
-                                      "color: #333;\n"
-                                      "border: 2px solid #555;\n"
-                                      "border-radius: 20px;\n"
-                                      "border-style: outset;\n"
-                                      "background: qradialgradient(\n"
-                                      "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                      "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                      ");\n"
-                                      "padding: 5px;\n"
-                                      "}\n"
-                                      "\n"
-                                      "QPushButton:hover {\n"
-                                      "background:  qradialgradient(\n"
-                                      "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                      "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                      ");\n"
-                                      "}\n"
-                                      "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Ostad_Moin.setText("")
         self.Ostad_Moin.setObjectName("Ostad_Moin")
         self.label_19 = QtWidgets.QLabel(Form)
@@ -1323,8 +1309,8 @@ class Ui_Form(object):
         self.line_129 = QtWidgets.QFrame(Form)
         self.line_129.setGeometry(QtCore.QRect(1290, 540, 71, 31))
         self.line_129.setStyleSheet("\n"
-                                    "color : #005500 ;\n"
-                                    "")
+"color : #005500 ;\n"
+"")
         self.line_129.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_129.setLineWidth(2)
         self.line_129.setFrameShape(QtWidgets.QFrame.HLine)
@@ -1332,8 +1318,8 @@ class Ui_Form(object):
         self.line_65 = QtWidgets.QFrame(Form)
         self.line_65.setGeometry(QtCore.QRect(1540, 730, 71, 21))
         self.line_65.setStyleSheet("\n"
-                                   "color : #ffff00 ;\n"
-                                   "")
+"color : #ffff00 ;\n"
+"")
         self.line_65.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_65.setLineWidth(5)
         self.line_65.setFrameShape(QtWidgets.QFrame.HLine)
@@ -1342,32 +1328,32 @@ class Ui_Form(object):
         self.Emam_Hossein.setGeometry(QtCore.QRect(1250, 530, 41, 41))
         self.Emam_Hossein.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Emam_Hossein.setStyleSheet("QPushButton {\n"
-                                        "    font: 11pt ;\n"
-                                        "color: #333;\n"
-                                        "border: 2px solid #555;\n"
-                                        "border-radius: 20px;\n"
-                                        "border-style: outset;\n"
-                                        "background: qradialgradient(\n"
-                                        "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                        "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                        ");\n"
-                                        "padding: 5px;\n"
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:hover {\n"
-                                        "background:  qradialgradient(\n"
-                                        "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                        "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                        ");\n"
-                                        "}\n"
-                                        "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Emam_Hossein.setText("")
         self.Emam_Hossein.setObjectName("Emam_Hossein")
         self.line_116 = QtWidgets.QFrame(Form)
         self.line_116.setGeometry(QtCore.QRect(200, 590, 31, 16))
         self.line_116.setStyleSheet("\n"
-                                    "color : #005500 ;\n"
-                                    "")
+"color : #005500 ;\n"
+"")
         self.line_116.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_116.setLineWidth(2)
         self.line_116.setFrameShape(QtWidgets.QFrame.VLine)
@@ -1376,50 +1362,50 @@ class Ui_Form(object):
         self.Meydane_Shohada.setGeometry(QtCore.QRect(1250, 720, 41, 41))
         self.Meydane_Shohada.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Meydane_Shohada.setStyleSheet("QPushButton {\n"
-                                           "    font: 11pt ;\n"
-                                           "color: #333;\n"
-                                           "border: 2px solid #555;\n"
-                                           "border-radius: 20px;\n"
-                                           "border-style: outset;\n"
-                                           "background: qradialgradient(\n"
-                                           "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                           "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                           ");\n"
-                                           "padding: 5px;\n"
-                                           "}\n"
-                                           "\n"
-                                           "QPushButton:hover {\n"
-                                           "background:  qradialgradient(\n"
-                                           "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                           "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                           ");\n"
-                                           "}\n"
-                                           "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Meydane_Shohada.setText("")
         self.Meydane_Shohada.setObjectName("Meydane_Shohada")
         self.Shahid_Beheshti = QtWidgets.QPushButton(Form)
         self.Shahid_Beheshti.setGeometry(QtCore.QRect(1000, 370, 41, 41))
         self.Shahid_Beheshti.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Shahid_Beheshti.setStyleSheet("QPushButton {\n"
-                                           "    font: 11pt ;\n"
-                                           "color: #333;\n"
-                                           "border: 2px solid #555;\n"
-                                           "border-radius: 20px;\n"
-                                           "border-style: outset;\n"
-                                           "background: qradialgradient(\n"
-                                           "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                           "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                           ");\n"
-                                           "padding: 5px;\n"
-                                           "}\n"
-                                           "\n"
-                                           "QPushButton:hover {\n"
-                                           "background:  qradialgradient(\n"
-                                           "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                           "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                           ");\n"
-                                           "}\n"
-                                           "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Shahid_Beheshti.setText("")
         self.Shahid_Beheshti.setObjectName("Shahid_Beheshti")
         self.line_19 = QtWidgets.QFrame(Form)
@@ -1427,8 +1413,8 @@ class Ui_Form(object):
         self.line_19.setGeometry(QtCore.QRect(1010, 120, 21, 31))
         self.line_19.setAutoFillBackground(False)
         self.line_19.setStyleSheet("\n"
-                                   "color : #aa0000 ;\n"
-                                   "")
+"color : #aa0000 ;\n"
+"")
         self.line_19.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_19.setLineWidth(5)
         self.line_19.setFrameShape(QtWidgets.QFrame.VLine)
@@ -1448,8 +1434,8 @@ class Ui_Form(object):
         self.line_122 = QtWidgets.QFrame(Form)
         self.line_122.setGeometry(QtCore.QRect(860, 620, 141, 31))
         self.line_122.setStyleSheet("\n"
-                                    "color : #005500 ;\n"
-                                    "")
+"color : #005500 ;\n"
+"")
         self.line_122.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_122.setLineWidth(2)
         self.line_122.setFrameShape(QtWidgets.QFrame.HLine)
@@ -1464,32 +1450,32 @@ class Ui_Form(object):
         self.Javadie.setGeometry(QtCore.QRect(730, 790, 41, 41))
         self.Javadie.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Javadie.setStyleSheet("QPushButton {\n"
-                                   "    font: 11pt ;\n"
-                                   "color: #333;\n"
-                                   "border: 2px solid #555;\n"
-                                   "border-radius: 20px;\n"
-                                   "border-style: outset;\n"
-                                   "background: qradialgradient(\n"
-                                   "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                   "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                   ");\n"
-                                   "padding: 5px;\n"
-                                   "}\n"
-                                   "\n"
-                                   "QPushButton:hover {\n"
-                                   "background:  qradialgradient(\n"
-                                   "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                   "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                   ");\n"
-                                   "}\n"
-                                   "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Javadie.setText("")
         self.Javadie.setObjectName("Javadie")
         self.line_127 = QtWidgets.QFrame(Form)
         self.line_127.setGeometry(QtCore.QRect(1080, 540, 171, 20))
         self.line_127.setStyleSheet("\n"
-                                    "color : #005500 ;\n"
-                                    "")
+"color : #005500 ;\n"
+"")
         self.line_127.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_127.setLineWidth(2)
         self.line_127.setFrameShape(QtWidgets.QFrame.HLine)
@@ -1498,80 +1484,78 @@ class Ui_Form(object):
         self.Taleghani.setGeometry(QtCore.QRect(1000, 550, 41, 41))
         self.Taleghani.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Taleghani.setStyleSheet("QPushButton {\n"
-                                     "    font: 11pt ;\n"
-                                     "color: #333;\n"
-                                     "border: 2px solid #555;\n"
-                                     "border-radius: 20px;\n"
-                                     "border-style: outset;\n"
-                                     "background: qradialgradient(\n"
-                                     "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                     "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                     ");\n"
-                                     "padding: 5px;\n"
-                                     "}\n"
-                                     "\n"
-                                     "QPushButton:hover {\n"
-                                     "background:  qradialgradient(\n"
-                                     "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                     "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                     ");\n"
-                                     "}\n"
-                                     "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Taleghani.setText("")
         self.Taleghani.setObjectName("Taleghani")
         self.Nirou_Havaei = QtWidgets.QPushButton(Form)
         self.Nirou_Havaei.setGeometry(QtCore.QRect(1610, 720, 41, 41))
         self.Nirou_Havaei.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Nirou_Havaei.setStyleSheet("QPushButton {\n"
-                                        "    font: 11pt ;\n"
-                                        "color: #333;\n"
-                                        "border: 2px solid #555;\n"
-                                        "border-radius: 20px;\n"
-                                        "border-style: outset;\n"
-                                        "background: qradialgradient(\n"
-                                        "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                        "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                        ");\n"
-                                        "padding: 5px;\n"
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:hover {\n"
-                                        "background:  qradialgradient(\n"
-                                        "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                        "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                        ");\n"
-                                        "}\n"
-                                        "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Nirou_Havaei.setText("")
         self.Nirou_Havaei.setObjectName("Nirou_Havaei")
         self.label_25 = QtWidgets.QLabel(Form)
         self.label_25.setGeometry(QtCore.QRect(950, 540, 61, 16))
         self.label_25.setObjectName("label_25")
         self.Harame_Hazrate_Abdolazim = QtWidgets.QPushButton(Form)
-        self.Harame_Hazrate_Abdolazim.setGeometry(
-            QtCore.QRect(1790, 930, 41, 41))
-        self.Harame_Hazrate_Abdolazim.setCursor(
-            QtGui.QCursor(QtCore.Qt.OpenHandCursor))
+        self.Harame_Hazrate_Abdolazim.setGeometry(QtCore.QRect(1790, 930, 41, 41))
+        self.Harame_Hazrate_Abdolazim.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Harame_Hazrate_Abdolazim.setStyleSheet("QPushButton {\n"
-                                                    "    font: 11pt ;\n"
-                                                    "color: #333;\n"
-                                                    "border: 2px solid #555;\n"
-                                                    "border-radius: 20px;\n"
-                                                    "border-style: outset;\n"
-                                                    "background: qradialgradient(\n"
-                                                    "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                                    "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                                    ");\n"
-                                                    "padding: 5px;\n"
-                                                    "}\n"
-                                                    "\n"
-                                                    "QPushButton:hover {\n"
-                                                    "background:  qradialgradient(\n"
-                                                    "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                                    "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                                    ");\n"
-                                                    "}\n"
-                                                    "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Harame_Hazrate_Abdolazim.setText("")
         self.Harame_Hazrate_Abdolazim.setObjectName("Harame_Hazrate_Abdolazim")
         self.label_42 = QtWidgets.QLabel(Form)
@@ -1582,8 +1566,8 @@ class Ui_Form(object):
         self.line_42.setGeometry(QtCore.QRect(740, 710, 16, 21))
         self.line_42.setAutoFillBackground(False)
         self.line_42.setStyleSheet("\n"
-                                   "color : #00aaff ;\n"
-                                   "")
+"color : #00aaff ;\n"
+"")
         self.line_42.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_42.setLineWidth(5)
         self.line_42.setFrameShape(QtWidgets.QFrame.VLine)
@@ -1604,32 +1588,32 @@ class Ui_Form(object):
         self.Shademan.setGeometry(QtCore.QRect(330, 550, 41, 41))
         self.Shademan.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Shademan.setStyleSheet("QPushButton {\n"
-                                    "    font: 11pt ;\n"
-                                    "color: #333;\n"
-                                    "border: 2px solid #555;\n"
-                                    "border-radius: 20px;\n"
-                                    "border-style: outset;\n"
-                                    "background: qradialgradient(\n"
-                                    "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                    "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                    ");\n"
-                                    "padding: 5px;\n"
-                                    "}\n"
-                                    "\n"
-                                    "QPushButton:hover {\n"
-                                    "background:  qradialgradient(\n"
-                                    "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                    "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                    ");\n"
-                                    "}\n"
-                                    "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Shademan.setText("")
         self.Shademan.setObjectName("Shademan")
         self.line_114 = QtWidgets.QFrame(Form)
         self.line_114.setGeometry(QtCore.QRect(70, 560, 121, 20))
         self.line_114.setStyleSheet("\n"
-                                    "color : #005500 ;\n"
-                                    "")
+"color : #005500 ;\n"
+"")
         self.line_114.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_114.setLineWidth(2)
         self.line_114.setFrameShape(QtWidgets.QFrame.HLine)
@@ -1637,8 +1621,8 @@ class Ui_Form(object):
         self.line_10 = QtWidgets.QFrame(Form)
         self.line_10.setGeometry(QtCore.QRect(1710, 220, 81, 61))
         self.line_10.setStyleSheet("\n"
-                                   "color : #00aaff ;\n"
-                                   "")
+"color : #00aaff ;\n"
+"")
         self.line_10.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_10.setLineWidth(5)
         self.line_10.setFrameShape(QtWidgets.QFrame.HLine)
@@ -1646,9 +1630,9 @@ class Ui_Form(object):
         self.line_75 = QtWidgets.QFrame(Form)
         self.line_75.setGeometry(QtCore.QRect(1440, 480, 371, 31))
         self.line_75.setStyleSheet("\n"
-                                   "color : #ffcd6a;\n"
-                                   "\n"
-                                   "")
+"color : #ffcd6a;\n"
+"\n"
+"")
         self.line_75.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_75.setLineWidth(2)
         self.line_75.setFrameShape(QtWidgets.QFrame.HLine)
@@ -1660,33 +1644,33 @@ class Ui_Form(object):
         self.Rahahan.setGeometry(QtCore.QRect(730, 730, 41, 41))
         self.Rahahan.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Rahahan.setStyleSheet("QPushButton {\n"
-                                   "    font: 11pt ;\n"
-                                   "color: #333;\n"
-                                   "border: 2px solid #555;\n"
-                                   "border-radius: 20px;\n"
-                                   "border-style: outset;\n"
-                                   "background: qradialgradient(\n"
-                                   "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                   "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                   ");\n"
-                                   "padding: 5px;\n"
-                                   "}\n"
-                                   "\n"
-                                   "QPushButton:hover {\n"
-                                   "background:  qradialgradient(\n"
-                                   "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                   "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                   ");\n"
-                                   "}\n"
-                                   "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Rahahan.setText("")
         self.Rahahan.setObjectName("Rahahan")
         self.line_74 = QtWidgets.QFrame(Form)
         self.line_74.setGeometry(QtCore.QRect(1790, 270, 31, 221))
         self.line_74.setStyleSheet("\n"
-                                   "color : #ffcd6a;\n"
-                                   "\n"
-                                   "")
+"color : #ffcd6a;\n"
+"\n"
+"")
         self.line_74.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_74.setLineWidth(2)
         self.line_74.setFrameShape(QtWidgets.QFrame.VLine)
@@ -1698,62 +1682,60 @@ class Ui_Form(object):
         self.Ebne_Sina.setGeometry(QtCore.QRect(1340, 720, 41, 41))
         self.Ebne_Sina.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Ebne_Sina.setStyleSheet("QPushButton {\n"
-                                     "    font: 11pt ;\n"
-                                     "color: #333;\n"
-                                     "border: 2px solid #555;\n"
-                                     "border-radius: 20px;\n"
-                                     "border-style: outset;\n"
-                                     "background: qradialgradient(\n"
-                                     "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                     "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                     ");\n"
-                                     "padding: 5px;\n"
-                                     "}\n"
-                                     "\n"
-                                     "QPushButton:hover {\n"
-                                     "background:  qradialgradient(\n"
-                                     "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                     "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                     ");\n"
-                                     "}\n"
-                                     "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Ebne_Sina.setText("")
         self.Ebne_Sina.setObjectName("Ebne_Sina")
         self.label_40 = QtWidgets.QLabel(Form)
         self.label_40.setGeometry(QtCore.QRect(1030, 650, 91, 16))
         self.label_40.setObjectName("label_40")
         self.Khajeh_Abdollahe_Ansari = QtWidgets.QPushButton(Form)
-        self.Khajeh_Abdollahe_Ansari.setGeometry(
-            QtCore.QRect(1430, 160, 41, 41))
-        self.Khajeh_Abdollahe_Ansari.setCursor(
-            QtGui.QCursor(QtCore.Qt.OpenHandCursor))
+        self.Khajeh_Abdollahe_Ansari.setGeometry(QtCore.QRect(1430, 160, 41, 41))
+        self.Khajeh_Abdollahe_Ansari.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Khajeh_Abdollahe_Ansari.setStyleSheet("QPushButton {\n"
-                                                   "    font: 11pt ;\n"
-                                                   "color: #333;\n"
-                                                   "border: 2px solid #555;\n"
-                                                   "border-radius: 20px;\n"
-                                                   "border-style: outset;\n"
-                                                   "background: qradialgradient(\n"
-                                                   "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                                   "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                                   ");\n"
-                                                   "padding: 5px;\n"
-                                                   "}\n"
-                                                   "\n"
-                                                   "QPushButton:hover {\n"
-                                                   "background:  qradialgradient(\n"
-                                                   "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                                   "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                                   ");\n"
-                                                   "}\n"
-                                                   "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Khajeh_Abdollahe_Ansari.setText("")
         self.Khajeh_Abdollahe_Ansari.setObjectName("Khajeh_Abdollahe_Ansari")
         self.line_57 = QtWidgets.QFrame(Form)
         self.line_57.setGeometry(QtCore.QRect(910, 580, 91, 101))
         self.line_57.setStyleSheet("\n"
-                                   "color : #ffff00 ;\n"
-                                   "")
+"color : #ffff00 ;\n"
+"")
         self.line_57.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_57.setLineWidth(5)
         self.line_57.setFrameShape(QtWidgets.QFrame.HLine)
@@ -1762,25 +1744,25 @@ class Ui_Form(object):
         self.Shahid_Haghani.setGeometry(QtCore.QRect(1000, 290, 41, 41))
         self.Shahid_Haghani.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Shahid_Haghani.setStyleSheet("QPushButton {\n"
-                                          "    font: 11pt ;\n"
-                                          "color: #333;\n"
-                                          "border: 2px solid #555;\n"
-                                          "border-radius: 20px;\n"
-                                          "border-style: outset;\n"
-                                          "background: qradialgradient(\n"
-                                          "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                          "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                          ");\n"
-                                          "padding: 5px;\n"
-                                          "}\n"
-                                          "\n"
-                                          "QPushButton:hover {\n"
-                                          "background:  qradialgradient(\n"
-                                          "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                          "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                          ");\n"
-                                          "}\n"
-                                          "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Shahid_Haghani.setText("")
         self.Shahid_Haghani.setObjectName("Shahid_Haghani")
         self.label_57 = QtWidgets.QLabel(Form)
@@ -1790,50 +1772,50 @@ class Ui_Form(object):
         self.Tajrish.setGeometry(QtCore.QRect(1000, 10, 41, 41))
         self.Tajrish.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Tajrish.setStyleSheet("QPushButton {\n"
-                                   "    font: 11pt ;\n"
-                                   "color: #333;\n"
-                                   "border: 2px solid #555;\n"
-                                   "border-radius: 20px;\n"
-                                   "border-style: outset;\n"
-                                   "background: qradialgradient(\n"
-                                   "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                   "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                   ");\n"
-                                   "padding: 5px;\n"
-                                   "}\n"
-                                   "\n"
-                                   "QPushButton:hover {\n"
-                                   "background:  qradialgradient(\n"
-                                   "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                   "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                   ");\n"
-                                   "}\n"
-                                   "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Tajrish.setText("")
         self.Tajrish.setObjectName("Tajrish")
         self.Shahid_Sadr = QtWidgets.QPushButton(Form)
         self.Shahid_Sadr.setGeometry(QtCore.QRect(870, 130, 41, 41))
         self.Shahid_Sadr.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Shahid_Sadr.setStyleSheet("QPushButton {\n"
-                                       "    font: 11pt ;\n"
-                                       "color: #333;\n"
-                                       "border: 2px solid #555;\n"
-                                       "border-radius: 20px;\n"
-                                       "border-style: outset;\n"
-                                       "background: qradialgradient(\n"
-                                       "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                       "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                       ");\n"
-                                       "padding: 5px;\n"
-                                       "}\n"
-                                       "\n"
-                                       "QPushButton:hover {\n"
-                                       "background:  qradialgradient(\n"
-                                       "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                       "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                       ");\n"
-                                       "}\n"
-                                       "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Shahid_Sadr.setText("")
         self.Shahid_Sadr.setObjectName("Shahid_Sadr")
         self.label_31 = QtWidgets.QLabel(Form)
@@ -1843,32 +1825,32 @@ class Ui_Form(object):
         self.Aghdasiyeh.setGeometry(QtCore.QRect(1670, 230, 41, 41))
         self.Aghdasiyeh.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Aghdasiyeh.setStyleSheet("QPushButton {\n"
-                                      "    font: 11pt ;\n"
-                                      "color: #333;\n"
-                                      "border: 2px solid #555;\n"
-                                      "border-radius: 20px;\n"
-                                      "border-style: outset;\n"
-                                      "background: qradialgradient(\n"
-                                      "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                      "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                      ");\n"
-                                      "padding: 5px;\n"
-                                      "}\n"
-                                      "\n"
-                                      "QPushButton:hover {\n"
-                                      "background:  qradialgradient(\n"
-                                      "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                      "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                      ");\n"
-                                      "}\n"
-                                      "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Aghdasiyeh.setText("")
         self.Aghdasiyeh.setObjectName("Aghdasiyeh")
         self.line_77 = QtWidgets.QFrame(Form)
         self.line_77.setGeometry(QtCore.QRect(1436, 490, 31, 231))
         self.line_77.setStyleSheet("\n"
-                                   "color : #ffcd6a;\n"
-                                   "")
+"color : #ffcd6a;\n"
+"")
         self.line_77.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_77.setLineWidth(2)
         self.line_77.setFrameShape(QtWidgets.QFrame.VLine)
@@ -1890,8 +1872,8 @@ class Ui_Form(object):
         self.line_26.setGeometry(QtCore.QRect(1010, 830, 16, 21))
         self.line_26.setAutoFillBackground(False)
         self.line_26.setStyleSheet("\n"
-                                   "color : #aa0000 ;\n"
-                                   "")
+"color : #aa0000 ;\n"
+"")
         self.line_26.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_26.setLineWidth(5)
         self.line_26.setFrameShape(QtWidgets.QFrame.VLine)
@@ -1899,8 +1881,8 @@ class Ui_Form(object):
         self.line_121 = QtWidgets.QFrame(Form)
         self.line_121.setGeometry(QtCore.QRect(860, 620, 141, 20))
         self.line_121.setStyleSheet("\n"
-                                    "color : #005500 ;\n"
-                                    "")
+"color : #005500 ;\n"
+"")
         self.line_121.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_121.setLineWidth(2)
         self.line_121.setFrameShape(QtWidgets.QFrame.HLine)
@@ -1910,8 +1892,8 @@ class Ui_Form(object):
         self.line_23.setGeometry(QtCore.QRect(1010, 260, 20, 31))
         self.line_23.setAutoFillBackground(False)
         self.line_23.setStyleSheet("\n"
-                                   "color : #aa0000 ;\n"
-                                   "")
+"color : #aa0000 ;\n"
+"")
         self.line_23.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_23.setLineWidth(5)
         self.line_23.setFrameShape(QtWidgets.QFrame.VLine)
@@ -1919,9 +1901,9 @@ class Ui_Form(object):
         self.line_58 = QtWidgets.QFrame(Form)
         self.line_58.setGeometry(QtCore.QRect(1040, 610, 61, 41))
         self.line_58.setStyleSheet("\n"
-                                   "color : #ffff00 ;\n"
-                                   "\n"
-                                   "")
+"color : #ffff00 ;\n"
+"\n"
+"")
         self.line_58.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_58.setLineWidth(5)
         self.line_58.setFrameShape(QtWidgets.QFrame.HLine)
@@ -1932,9 +1914,9 @@ class Ui_Form(object):
         self.line_79 = QtWidgets.QFrame(Form)
         self.line_79.setGeometry(QtCore.QRect(1436, 760, 31, 81))
         self.line_79.setStyleSheet("\n"
-                                   "color : #ffcd6a;\n"
-                                   "\n"
-                                   "")
+"color : #ffcd6a;\n"
+"\n"
+"")
         self.line_79.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_79.setLineWidth(2)
         self.line_79.setFrameShape(QtWidgets.QFrame.VLine)
@@ -1957,8 +1939,8 @@ class Ui_Form(object):
         self.line_41.setGeometry(QtCore.QRect(740, 590, 16, 21))
         self.line_41.setAutoFillBackground(False)
         self.line_41.setStyleSheet("\n"
-                                   "color : #00aaff ;\n"
-                                   "")
+"color : #00aaff ;\n"
+"")
         self.line_41.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_41.setLineWidth(5)
         self.line_41.setFrameShape(QtWidgets.QFrame.VLine)
@@ -1966,9 +1948,9 @@ class Ui_Form(object):
         self.line_76 = QtWidgets.QFrame(Form)
         self.line_76.setGeometry(QtCore.QRect(1440, 480, 371, 20))
         self.line_76.setStyleSheet("\n"
-                                   "color : #ffcd6a;\n"
-                                   "\n"
-                                   "")
+"color : #ffcd6a;\n"
+"\n"
+"")
         self.line_76.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_76.setLineWidth(2)
         self.line_76.setFrameShape(QtWidgets.QFrame.HLine)
@@ -1978,8 +1960,8 @@ class Ui_Form(object):
         self.line_27.setGeometry(QtCore.QRect(1010, 190, 21, 31))
         self.line_27.setAutoFillBackground(False)
         self.line_27.setStyleSheet("\n"
-                                   "color : #aa0000 ;\n"
-                                   "")
+"color : #aa0000 ;\n"
+"")
         self.line_27.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_27.setLineWidth(5)
         self.line_27.setFrameShape(QtWidgets.QFrame.VLine)
@@ -1991,25 +1973,25 @@ class Ui_Form(object):
         self.Jonoub_Terminal.setGeometry(QtCore.QRect(1000, 790, 41, 41))
         self.Jonoub_Terminal.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Jonoub_Terminal.setStyleSheet("QPushButton {\n"
-                                           "    font: 11pt ;\n"
-                                           "color: #333;\n"
-                                           "border: 2px solid #555;\n"
-                                           "border-radius: 20px;\n"
-                                           "border-style: outset;\n"
-                                           "background: qradialgradient(\n"
-                                           "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                           "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                           ");\n"
-                                           "padding: 5px;\n"
-                                           "}\n"
-                                           "\n"
-                                           "QPushButton:hover {\n"
-                                           "background:  qradialgradient(\n"
-                                           "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                           "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                           ");\n"
-                                           "}\n"
-                                           "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Jonoub_Terminal.setText("")
         self.Jonoub_Terminal.setObjectName("Jonoub_Terminal")
         self.line_44 = QtWidgets.QFrame(Form)
@@ -2017,8 +1999,8 @@ class Ui_Form(object):
         self.line_44.setGeometry(QtCore.QRect(740, 530, 16, 21))
         self.line_44.setAutoFillBackground(False)
         self.line_44.setStyleSheet("\n"
-                                   "color : #00aaff ;\n"
-                                   "")
+"color : #00aaff ;\n"
+"")
         self.line_44.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_44.setLineWidth(5)
         self.line_44.setFrameShape(QtWidgets.QFrame.VLine)
@@ -2033,50 +2015,50 @@ class Ui_Form(object):
         self.Shahid_Ghodousi.setGeometry(QtCore.QRect(1370, 228, 41, 41))
         self.Shahid_Ghodousi.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Shahid_Ghodousi.setStyleSheet("QPushButton {\n"
-                                           "    font: 11pt ;\n"
-                                           "color: #333;\n"
-                                           "border: 2px solid #555;\n"
-                                           "border-radius: 20px;\n"
-                                           "border-style: outset;\n"
-                                           "background: qradialgradient(\n"
-                                           "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                           "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                           ");\n"
-                                           "padding: 5px;\n"
-                                           "}\n"
-                                           "\n"
-                                           "QPushButton:hover {\n"
-                                           "background:  qradialgradient(\n"
-                                           "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                           "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                           ");\n"
-                                           "}\n"
-                                           "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Shahid_Ghodousi.setText("")
         self.Shahid_Ghodousi.setObjectName("Shahid_Ghodousi")
         self.Allameh_Jafari = QtWidgets.QPushButton(Form)
         self.Allameh_Jafari.setGeometry(QtCore.QRect(190, 340, 41, 41))
         self.Allameh_Jafari.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Allameh_Jafari.setStyleSheet("QPushButton {\n"
-                                          "    font: 11pt ;\n"
-                                          "color: #333;\n"
-                                          "border: 2px solid #555;\n"
-                                          "border-radius: 20px;\n"
-                                          "border-style: outset;\n"
-                                          "background: qradialgradient(\n"
-                                          "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                          "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                          ");\n"
-                                          "padding: 5px;\n"
-                                          "}\n"
-                                          "\n"
-                                          "QPushButton:hover {\n"
-                                          "background:  qradialgradient(\n"
-                                          "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                          "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                          ");\n"
-                                          "}\n"
-                                          "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Allameh_Jafari.setText("")
         self.Allameh_Jafari.setObjectName("Allameh_Jafari")
         self.line_91 = QtWidgets.QFrame(Form)
@@ -2090,8 +2072,8 @@ class Ui_Form(object):
         self.line_30.setGeometry(QtCore.QRect(1010, 710, 16, 21))
         self.line_30.setAutoFillBackground(False)
         self.line_30.setStyleSheet("\n"
-                                   "color : #aa0000 ;\n"
-                                   "")
+"color : #aa0000 ;\n"
+"")
         self.line_30.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_30.setLineWidth(5)
         self.line_30.setFrameShape(QtWidgets.QFrame.VLine)
@@ -2100,100 +2082,100 @@ class Ui_Form(object):
         self.Sohrevardi.setGeometry(QtCore.QRect(1210, 368, 41, 41))
         self.Sohrevardi.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Sohrevardi.setStyleSheet("QPushButton {\n"
-                                      "    font: 11pt ;\n"
-                                      "color: #333;\n"
-                                      "border: 2px solid #555;\n"
-                                      "border-radius: 20px;\n"
-                                      "border-style: outset;\n"
-                                      "background: qradialgradient(\n"
-                                      "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                      "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                      ");\n"
-                                      "padding: 5px;\n"
-                                      "}\n"
-                                      "\n"
-                                      "QPushButton:hover {\n"
-                                      "background:  qradialgradient(\n"
-                                      "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                      "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                      ");\n"
-                                      "}\n"
-                                      "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Sohrevardi.setText("")
         self.Sohrevardi.setObjectName("Sohrevardi")
         self.Haftome_Tir = QtWidgets.QPushButton(Form)
         self.Haftome_Tir.setGeometry(QtCore.QRect(1000, 490, 41, 41))
         self.Haftome_Tir.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Haftome_Tir.setStyleSheet("QPushButton {\n"
-                                       "    font: 11pt ;\n"
-                                       "color: #333;\n"
-                                       "border: 2px solid #555;\n"
-                                       "border-radius: 20px;\n"
-                                       "border-style: outset;\n"
-                                       "background: qradialgradient(\n"
-                                       "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                       "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                       ");\n"
-                                       "padding: 5px;\n"
-                                       "}\n"
-                                       "\n"
-                                       "QPushButton:hover {\n"
-                                       "background:  qradialgradient(\n"
-                                       "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                       "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                       ");\n"
-                                       "}\n"
-                                       "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Haftome_Tir.setText("")
         self.Haftome_Tir.setObjectName("Haftome_Tir")
         self.Kashani = QtWidgets.QPushButton(Form)
         self.Kashani.setGeometry(QtCore.QRect(190, 250, 41, 41))
         self.Kashani.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Kashani.setStyleSheet("QPushButton {\n"
-                                   "    font: 11pt ;\n"
-                                   "color: #333;\n"
-                                   "border: 2px solid #555;\n"
-                                   "border-radius: 20px;\n"
-                                   "border-style: outset;\n"
-                                   "background: qradialgradient(\n"
-                                   "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                   "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                   ");\n"
-                                   "padding: 5px;\n"
-                                   "}\n"
-                                   "\n"
-                                   "QPushButton:hover {\n"
-                                   "background:  qradialgradient(\n"
-                                   "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                   "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                   ");\n"
-                                   "}\n"
-                                   "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Kashani.setText("")
         self.Kashani.setObjectName("Kashani")
         self.Bimeh = QtWidgets.QPushButton(Form)
         self.Bimeh.setGeometry(QtCore.QRect(30, 550, 41, 41))
         self.Bimeh.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Bimeh.setStyleSheet("QPushButton {\n"
-                                 "    font: 11pt ;\n"
-                                 "color: #333;\n"
-                                 "border: 2px solid #555;\n"
-                                 "border-radius: 20px;\n"
-                                 "border-style: outset;\n"
-                                 "background: qradialgradient(\n"
-                                 "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                 "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                 ");\n"
-                                 "padding: 5px;\n"
-                                 "}\n"
-                                 "\n"
-                                 "QPushButton:hover {\n"
-                                 "background:  qradialgradient(\n"
-                                 "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                 "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                 ");\n"
-                                 "}\n"
-                                 "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Bimeh.setText("")
         self.Bimeh.setObjectName("Bimeh")
         self.line_95 = QtWidgets.QFrame(Form)
@@ -2207,8 +2189,8 @@ class Ui_Form(object):
         self.line_56.setGeometry(QtCore.QRect(900, 570, 20, 61))
         self.line_56.setAutoFillBackground(False)
         self.line_56.setStyleSheet("\n"
-                                   "color : #ffff00 ;\n"
-                                   "")
+"color : #ffff00 ;\n"
+"")
         self.line_56.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_56.setLineWidth(5)
         self.line_56.setFrameShape(QtWidgets.QFrame.VLine)
@@ -2217,32 +2199,32 @@ class Ui_Form(object):
         self.Shahre_Rey.setGeometry(QtCore.QRect(1000, 850, 41, 41))
         self.Shahre_Rey.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Shahre_Rey.setStyleSheet("QPushButton {\n"
-                                      "    font: 11pt ;\n"
-                                      "color: #333;\n"
-                                      "border: 2px solid #555;\n"
-                                      "border-radius: 20px;\n"
-                                      "border-style: outset;\n"
-                                      "background: qradialgradient(\n"
-                                      "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                      "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                      ");\n"
-                                      "padding: 5px;\n"
-                                      "}\n"
-                                      "\n"
-                                      "QPushButton:hover {\n"
-                                      "background:  qradialgradient(\n"
-                                      "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                      "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                      ");\n"
-                                      "}\n"
-                                      "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Shahre_Rey.setText("")
         self.Shahre_Rey.setObjectName("Shahre_Rey")
         self.line_125 = QtWidgets.QFrame(Form)
         self.line_125.setGeometry(QtCore.QRect(1066, 551, 31, 81))
         self.line_125.setStyleSheet("\n"
-                                    "color : #005500 ;\n"
-                                    "")
+"color : #005500 ;\n"
+"")
         self.line_125.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_125.setLineWidth(2)
         self.line_125.setFrameShape(QtWidgets.QFrame.VLine)
@@ -2250,8 +2232,8 @@ class Ui_Form(object):
         self.line_132 = QtWidgets.QFrame(Form)
         self.line_132.setGeometry(QtCore.QRect(1340, 550, 31, 171))
         self.line_132.setStyleSheet("\n"
-                                    "color : #005500 ;\n"
-                                    "")
+"color : #005500 ;\n"
+"")
         self.line_132.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_132.setLineWidth(2)
         self.line_132.setFrameShape(QtWidgets.QFrame.VLine)
@@ -2259,8 +2241,8 @@ class Ui_Form(object):
         self.line_66 = QtWidgets.QFrame(Form)
         self.line_66.setGeometry(QtCore.QRect(1290, 730, 51, 21))
         self.line_66.setStyleSheet("\n"
-                                   "color : #ffff00 ;\n"
-                                   "")
+"color : #ffff00 ;\n"
+"")
         self.line_66.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_66.setLineWidth(5)
         self.line_66.setFrameShape(QtWidgets.QFrame.HLine)
@@ -2276,7 +2258,7 @@ class Ui_Form(object):
         self.line_22.setGeometry(QtCore.QRect(1010, 770, 16, 21))
         self.line_22.setAutoFillBackground(False)
         self.line_22.setStyleSheet("\n"
-                                   "color : #aa0000 ;")
+"color : #aa0000 ;")
         self.line_22.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_22.setLineWidth(5)
         self.line_22.setFrameShape(QtWidgets.QFrame.VLine)
@@ -2298,8 +2280,8 @@ class Ui_Form(object):
         self.line_48.setGeometry(QtCore.QRect(200, 290, 20, 51))
         self.line_48.setAutoFillBackground(False)
         self.line_48.setStyleSheet("\n"
-                                   "color : #ffff00 ;\n"
-                                   "")
+"color : #ffff00 ;\n"
+"")
         self.line_48.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_48.setLineWidth(5)
         self.line_48.setFrameShape(QtWidgets.QFrame.VLine)
@@ -2307,33 +2289,33 @@ class Ui_Form(object):
         self.Ferdowsi = QtWidgets.QPushButton(Form)
         self.Ferdowsi.setGeometry(QtCore.QRect(840, 550, 41, 41))
         self.Ferdowsi.setStyleSheet("QPushButton {\n"
-                                    "    font: 11pt ;\n"
-                                    "color: #333;\n"
-                                    "border: 2px solid #555;\n"
-                                    "border-radius: 20px;\n"
-                                    "border-style: outset;\n"
-                                    "background: qradialgradient(\n"
-                                    "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                    "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                    ");\n"
-                                    "padding: 5px;\n"
-                                    "}\n"
-                                    "\n"
-                                    "QPushButton:hover {\n"
-                                    "background:  qradialgradient(\n"
-                                    "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                    "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                    ");\n"
-                                    "}\n"
-                                    "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Ferdowsi.setText("")
         self.Ferdowsi.setObjectName("Ferdowsi")
         self.line_72 = QtWidgets.QFrame(Form)
         self.line_72.setGeometry(QtCore.QRect(1797, 180, 31, 51))
         self.line_72.setStyleSheet("\n"
-                                   "color : #ffcd6a;\n"
-                                   "\n"
-                                   "")
+"color : #ffcd6a;\n"
+"\n"
+"")
         self.line_72.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_72.setLineWidth(2)
         self.line_72.setFrameShape(QtWidgets.QFrame.VLine)
@@ -2351,25 +2333,25 @@ class Ui_Form(object):
         self.Kahrizak.setGeometry(QtCore.QRect(1000, 920, 41, 41))
         self.Kahrizak.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Kahrizak.setStyleSheet("QPushButton {\n"
-                                    "    font: 11pt ;\n"
-                                    "color: #333;\n"
-                                    "border: 2px solid #555;\n"
-                                    "border-radius: 20px;\n"
-                                    "border-style: outset;\n"
-                                    "background: qradialgradient(\n"
-                                    "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                    "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                    ");\n"
-                                    "padding: 5px;\n"
-                                    "}\n"
-                                    "\n"
-                                    "QPushButton:hover {\n"
-                                    "background:  qradialgradient(\n"
-                                    "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                    "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                    ");\n"
-                                    "}\n"
-                                    "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Kahrizak.setText("")
         self.Kahrizak.setObjectName("Kahrizak")
         self.line_38 = QtWidgets.QFrame(Form)
@@ -2378,8 +2360,8 @@ class Ui_Form(object):
         self.line_38.setBaseSize(QtCore.QSize(0, 0))
         self.line_38.setAutoFillBackground(False)
         self.line_38.setStyleSheet("\n"
-                                   "color : #ff1aa3 ;\n"
-                                   "")
+"color : #ff1aa3 ;\n"
+"")
         self.line_38.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_38.setLineWidth(5)
         self.line_38.setFrameShape(QtWidgets.QFrame.VLine)
@@ -2392,8 +2374,8 @@ class Ui_Form(object):
         self.line_28.setGeometry(QtCore.QRect(1010, 890, 20, 31))
         self.line_28.setAutoFillBackground(False)
         self.line_28.setStyleSheet("\n"
-                                   "color : #aa0000 ;\n"
-                                   "")
+"color : #aa0000 ;\n"
+"")
         self.line_28.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_28.setLineWidth(5)
         self.line_28.setFrameShape(QtWidgets.QFrame.VLine)
@@ -2401,8 +2383,8 @@ class Ui_Form(object):
         self.line_16 = QtWidgets.QFrame(Form)
         self.line_16.setGeometry(QtCore.QRect(230, 560, 31, 21))
         self.line_16.setStyleSheet("\n"
-                                   "color : #ffff00 ;\n"
-                                   "")
+"color : #ffff00 ;\n"
+"")
         self.line_16.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_16.setLineWidth(5)
         self.line_16.setFrameShape(QtWidgets.QFrame.HLine)
@@ -2417,25 +2399,25 @@ class Ui_Form(object):
         self.Merzaye_Shirazi.setGeometry(QtCore.QRect(820, 370, 41, 41))
         self.Merzaye_Shirazi.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Merzaye_Shirazi.setStyleSheet("QPushButton {\n"
-                                           "    font: 11pt ;\n"
-                                           "color: #333;\n"
-                                           "border: 2px solid #555;\n"
-                                           "border-radius: 20px;\n"
-                                           "border-style: outset;\n"
-                                           "background: qradialgradient(\n"
-                                           "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                           "radius: 1.35, stop: 0 #fff, stop: 1  #a9fefe\n"
-                                           ");\n"
-                                           "padding: 5px;\n"
-                                           "}\n"
-                                           "\n"
-                                           "QPushButton:hover {\n"
-                                           "background:  qradialgradient(\n"
-                                           "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                           "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                           ");\n"
-                                           "}\n"
-                                           "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1  #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Merzaye_Shirazi.setText("")
         self.Merzaye_Shirazi.setObjectName("Merzaye_Shirazi")
         self.label_43 = QtWidgets.QLabel(Form)
@@ -2450,8 +2432,8 @@ class Ui_Form(object):
         self.line_5 = QtWidgets.QFrame(Form)
         self.line_5.setGeometry(QtCore.QRect(470, 500, 261, 21))
         self.line_5.setStyleSheet("\n"
-                                  "color : #ff1aa3 ;\n"
-                                  "")
+"color : #ff1aa3 ;\n"
+"")
         self.line_5.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_5.setLineWidth(5)
         self.line_5.setFrameShape(QtWidgets.QFrame.HLine)
@@ -2461,8 +2443,8 @@ class Ui_Form(object):
         self.line_31.setGeometry(QtCore.QRect(1010, 470, 16, 21))
         self.line_31.setAutoFillBackground(False)
         self.line_31.setStyleSheet("\n"
-                                   "color : #aa0000 ;\n"
-                                   "")
+"color : #aa0000 ;\n"
+"")
         self.line_31.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_31.setLineWidth(5)
         self.line_31.setFrameShape(QtWidgets.QFrame.VLine)
@@ -2472,8 +2454,8 @@ class Ui_Form(object):
         self.line_36.setGeometry(QtCore.QRect(1260, 760, 20, 61))
         self.line_36.setAutoFillBackground(False)
         self.line_36.setStyleSheet("\n"
-                                   "color :#ff1aa3 ;\n"
-                                   "")
+"color :#ff1aa3 ;\n"
+"")
         self.line_36.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_36.setLineWidth(5)
         self.line_36.setFrameShape(QtWidgets.QFrame.VLine)
@@ -2482,32 +2464,32 @@ class Ui_Form(object):
         self.Meydane_Jahad.setGeometry(QtCore.QRect(730, 420, 41, 41))
         self.Meydane_Jahad.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Meydane_Jahad.setStyleSheet("QPushButton {\n"
-                                         "    font: 11pt ;\n"
-                                         "color: #333;\n"
-                                         "border: 2px solid #555;\n"
-                                         "border-radius: 20px;\n"
-                                         "border-style: outset;\n"
-                                         "background: qradialgradient(\n"
-                                         "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                         "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                         ");\n"
-                                         "padding: 5px;\n"
-                                         "}\n"
-                                         "\n"
-                                         "QPushButton:hover {\n"
-                                         "background:  qradialgradient(\n"
-                                         "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                         "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                         ");\n"
-                                         "}\n"
-                                         "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Meydane_Jahad.setText("")
         self.Meydane_Jahad.setObjectName("Meydane_Jahad")
         self.line_133 = QtWidgets.QFrame(Form)
         self.line_133.setGeometry(QtCore.QRect(1346, 761, 31, 51))
         self.line_133.setStyleSheet("\n"
-                                    "color : #005500 ;\n"
-                                    "")
+"color : #005500 ;\n"
+"")
         self.line_133.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_133.setLineWidth(2)
         self.line_133.setFrameShape(QtWidgets.QFrame.VLine)
@@ -2518,8 +2500,8 @@ class Ui_Form(object):
         self.line_53 = QtWidgets.QFrame(Form)
         self.line_53.setGeometry(QtCore.QRect(540, 560, 191, 21))
         self.line_53.setStyleSheet("\n"
-                                   "color : #ffff00 ;\n"
-                                   "")
+"color : #ffff00 ;\n"
+"")
         self.line_53.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_53.setLineWidth(5)
         self.line_53.setFrameShape(QtWidgets.QFrame.HLine)
@@ -2527,8 +2509,8 @@ class Ui_Form(object):
         self.line_138 = QtWidgets.QFrame(Form)
         self.line_138.setGeometry(QtCore.QRect(500, 590, 41, 16))
         self.line_138.setStyleSheet("\n"
-                                    "color : #005500 ;\n"
-                                    "")
+"color : #005500 ;\n"
+"")
         self.line_138.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_138.setLineWidth(2)
         self.line_138.setFrameShape(QtWidgets.QFrame.VLine)
@@ -2536,8 +2518,8 @@ class Ui_Form(object):
         self.line_131 = QtWidgets.QFrame(Form)
         self.line_131.setGeometry(QtCore.QRect(1346, 550, 31, 171))
         self.line_131.setStyleSheet("\n"
-                                    "color : #005500 ;\n"
-                                    "")
+"color : #005500 ;\n"
+"")
         self.line_131.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_131.setLineWidth(2)
         self.line_131.setFrameShape(QtWidgets.QFrame.VLine)
@@ -2545,9 +2527,9 @@ class Ui_Form(object):
         self.line_86 = QtWidgets.QFrame(Form)
         self.line_86.setGeometry(QtCore.QRect(1104, 840, 31, 81))
         self.line_86.setStyleSheet("\n"
-                                   "color : #ffcd6a;\n"
-                                   "\n"
-                                   "")
+"color : #ffcd6a;\n"
+"\n"
+"")
         self.line_86.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_86.setLineWidth(2)
         self.line_86.setFrameShape(QtWidgets.QFrame.VLine)
@@ -2559,25 +2541,25 @@ class Ui_Form(object):
         self.Darvazeh_Dowlat.setGeometry(QtCore.QRect(1000, 610, 41, 41))
         self.Darvazeh_Dowlat.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Darvazeh_Dowlat.setStyleSheet("QPushButton {\n"
-                                           "    font: 11pt ;\n"
-                                           "color: #333;\n"
-                                           "border: 2px solid #555;\n"
-                                           "border-radius: 20px;\n"
-                                           "border-style: outset;\n"
-                                           "background: qradialgradient(\n"
-                                           "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                           "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                           ");\n"
-                                           "padding: 5px;\n"
-                                           "}\n"
-                                           "\n"
-                                           "QPushButton:hover {\n"
-                                           "background:  qradialgradient(\n"
-                                           "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                           "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                           ");\n"
-                                           "}\n"
-                                           "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Darvazeh_Dowlat.setText("")
         self.Darvazeh_Dowlat.setObjectName("Darvazeh_Dowlat")
         self.line_25 = QtWidgets.QFrame(Form)
@@ -2585,8 +2567,8 @@ class Ui_Form(object):
         self.line_25.setGeometry(QtCore.QRect(1010, 650, 16, 21))
         self.line_25.setAutoFillBackground(False)
         self.line_25.setStyleSheet("\n"
-                                   "color : #aa0000 ;\n"
-                                   "")
+"color : #aa0000 ;\n"
+"")
         self.line_25.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_25.setLineWidth(5)
         self.line_25.setFrameShape(QtWidgets.QFrame.VLine)
@@ -2596,8 +2578,8 @@ class Ui_Form(object):
         self.line_34.setGeometry(QtCore.QRect(1260, 570, 16, 151))
         self.line_34.setAutoFillBackground(False)
         self.line_34.setStyleSheet("\n"
-                                   "color : #ff1aa3 ;\n"
-                                   "")
+"color : #ff1aa3 ;\n"
+"")
         self.line_34.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_34.setLineWidth(5)
         self.line_34.setFrameShape(QtWidgets.QFrame.VLine)
@@ -2608,8 +2590,8 @@ class Ui_Form(object):
         self.line_134 = QtWidgets.QFrame(Form)
         self.line_134.setGeometry(QtCore.QRect(1340, 760, 31, 51))
         self.line_134.setStyleSheet("\n"
-                                    "color : #005500 ;\n"
-                                    "")
+"color : #005500 ;\n"
+"")
         self.line_134.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_134.setLineWidth(2)
         self.line_134.setFrameShape(QtWidgets.QFrame.VLine)
@@ -2617,8 +2599,8 @@ class Ui_Form(object):
         self.line_113 = QtWidgets.QFrame(Form)
         self.line_113.setGeometry(QtCore.QRect(70, 565, 121, 21))
         self.line_113.setStyleSheet("\n"
-                                    "color : #005500 ;\n"
-                                    "")
+"color : #005500 ;\n"
+"")
         self.line_113.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_113.setLineWidth(2)
         self.line_113.setFrameShape(QtWidgets.QFrame.HLine)
@@ -2626,8 +2608,8 @@ class Ui_Form(object):
         self.line_13 = QtWidgets.QFrame(Form)
         self.line_13.setGeometry(QtCore.QRect(1250, 380, 101, 21))
         self.line_13.setStyleSheet("\n"
-                                   "color : #00aaff ;\n"
-                                   "")
+"color : #00aaff ;\n"
+"")
         self.line_13.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_13.setLineWidth(5)
         self.line_13.setFrameShape(QtWidgets.QFrame.HLine)
@@ -2637,8 +2619,8 @@ class Ui_Form(object):
         self.line_43.setGeometry(QtCore.QRect(740, 830, 16, 21))
         self.line_43.setAutoFillBackground(False)
         self.line_43.setStyleSheet("\n"
-                                   "color : #00aaff ;\n"
-                                   "")
+"color : #00aaff ;\n"
+"")
         self.line_43.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_43.setLineWidth(5)
         self.line_43.setFrameShape(QtWidgets.QFrame.VLine)
@@ -2646,8 +2628,8 @@ class Ui_Form(object):
         self.line_61 = QtWidgets.QFrame(Form)
         self.line_61.setGeometry(QtCore.QRect(1170, 730, 81, 20))
         self.line_61.setStyleSheet("\n"
-                                   "color : #ffff00 ;\n"
-                                   "")
+"color : #ffff00 ;\n"
+"")
         self.line_61.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_61.setLineWidth(5)
         self.line_61.setFrameShape(QtWidgets.QFrame.HLine)
@@ -2662,32 +2644,32 @@ class Ui_Form(object):
         self.Chaharbagh.setGeometry(QtCore.QRect(190, 10, 41, 41))
         self.Chaharbagh.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Chaharbagh.setStyleSheet("QPushButton {\n"
-                                      "    font: 11pt ;\n"
-                                      "color: #333;\n"
-                                      "border: 2px solid #555;\n"
-                                      "border-radius: 20px;\n"
-                                      "border-style: outset;\n"
-                                      "background: qradialgradient(\n"
-                                      "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                      "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                      ");\n"
-                                      "padding: 5px;\n"
-                                      "}\n"
-                                      "\n"
-                                      "QPushButton:hover {\n"
-                                      "background:  qradialgradient(\n"
-                                      "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                      "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                      ");\n"
-                                      "}\n"
-                                      "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Chaharbagh.setText("")
         self.Chaharbagh.setObjectName("Chaharbagh")
         self.line_71 = QtWidgets.QFrame(Form)
         self.line_71.setGeometry(QtCore.QRect(1790, 180, 31, 51))
         self.line_71.setStyleSheet("\n"
-                                   "color : #ffcd6a;\n"
-                                   "")
+"color : #ffcd6a;\n"
+"")
         self.line_71.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_71.setLineWidth(2)
         self.line_71.setFrameShape(QtWidgets.QFrame.VLine)
@@ -2695,8 +2677,8 @@ class Ui_Form(object):
         self.line_128 = QtWidgets.QFrame(Form)
         self.line_128.setGeometry(QtCore.QRect(1080, 540, 171, 31))
         self.line_128.setStyleSheet("\n"
-                                    "color : #005500 ;\n"
-                                    "")
+"color : #005500 ;\n"
+"")
         self.line_128.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_128.setLineWidth(2)
         self.line_128.setFrameShape(QtWidgets.QFrame.HLine)
@@ -2704,9 +2686,9 @@ class Ui_Form(object):
         self.line_78 = QtWidgets.QFrame(Form)
         self.line_78.setGeometry(QtCore.QRect(1430, 490, 31, 231))
         self.line_78.setStyleSheet("\n"
-                                   "color : #ffcd6a;\n"
-                                   "\n"
-                                   "")
+"color : #ffcd6a;\n"
+"\n"
+"")
         self.line_78.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_78.setLineWidth(2)
         self.line_78.setFrameShape(QtWidgets.QFrame.VLine)
@@ -2715,25 +2697,25 @@ class Ui_Form(object):
         self.Erame_Sabz.setGeometry(QtCore.QRect(190, 430, 41, 41))
         self.Erame_Sabz.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Erame_Sabz.setStyleSheet("QPushButton {\n"
-                                      "    font: 11pt ;\n"
-                                      "color: #333;\n"
-                                      "border: 2px solid #555;\n"
-                                      "border-radius: 20px;\n"
-                                      "border-style: outset;\n"
-                                      "background: qradialgradient(\n"
-                                      "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                      "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                      ");\n"
-                                      "padding: 5px;\n"
-                                      "}\n"
-                                      "\n"
-                                      "QPushButton:hover {\n"
-                                      "background:  qradialgradient(\n"
-                                      "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                      "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                      ");\n"
-                                      "}\n"
-                                      "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Erame_Sabz.setText("")
         self.Erame_Sabz.setObjectName("Erame_Sabz")
         self.label_23 = QtWidgets.QLabel(Form)
@@ -2743,33 +2725,33 @@ class Ui_Form(object):
         self.Gholhak.setGeometry(QtCore.QRect(1000, 150, 41, 41))
         self.Gholhak.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Gholhak.setStyleSheet("QPushButton {\n"
-                                   "    font: 11pt ;\n"
-                                   "color: #333;\n"
-                                   "border: 2px solid #555;\n"
-                                   "border-radius: 20px;\n"
-                                   "border-style: outset;\n"
-                                   "background: qradialgradient(\n"
-                                   "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                   "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                   ");\n"
-                                   "padding: 5px;\n"
-                                   "}\n"
-                                   "\n"
-                                   "QPushButton:hover {\n"
-                                   "background:  qradialgradient(\n"
-                                   "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                   "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                   ");\n"
-                                   "}\n"
-                                   "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Gholhak.setText("")
         self.Gholhak.setObjectName("Gholhak")
         self.line_80 = QtWidgets.QFrame(Form)
         self.line_80.setGeometry(QtCore.QRect(1420, 760, 51, 81))
         self.line_80.setStyleSheet("\n"
-                                   "color : #ffcd6a;\n"
-                                   "\n"
-                                   "")
+"color : #ffcd6a;\n"
+"\n"
+"")
         self.line_80.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_80.setLineWidth(2)
         self.line_80.setFrameShape(QtWidgets.QFrame.VLine)
@@ -2777,8 +2759,8 @@ class Ui_Form(object):
         self.line_15 = QtWidgets.QFrame(Form)
         self.line_15.setGeometry(QtCore.QRect(860, 380, 141, 21))
         self.line_15.setStyleSheet("\n"
-                                   "color : #00aaff ;\n"
-                                   "")
+"color : #00aaff ;\n"
+"")
         self.line_15.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_15.setLineWidth(5)
         self.line_15.setFrameShape(QtWidgets.QFrame.HLine)
@@ -2787,25 +2769,25 @@ class Ui_Form(object):
         self.Tehran_Pars.setGeometry(QtCore.QRect(1790, 790, 41, 41))
         self.Tehran_Pars.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Tehran_Pars.setStyleSheet("QPushButton {\n"
-                                       "    font: 11pt ;\n"
-                                       "color: #333;\n"
-                                       "border: 2px solid #555;\n"
-                                       "border-radius: 20px;\n"
-                                       "border-style: outset;\n"
-                                       "background: qradialgradient(\n"
-                                       "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                       "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                       ");\n"
-                                       "padding: 5px;\n"
-                                       "}\n"
-                                       "\n"
-                                       "QPushButton:hover {\n"
-                                       "background:  qradialgradient(\n"
-                                       "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                       "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                       ");\n"
-                                       "}\n"
-                                       "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Tehran_Pars.setText("")
         self.Tehran_Pars.setObjectName("Tehran_Pars")
         self.label_49 = QtWidgets.QLabel(Form)
@@ -2814,8 +2796,8 @@ class Ui_Form(object):
         self.line_2 = QtWidgets.QFrame(Form)
         self.line_2.setGeometry(QtCore.QRect(230, 262, 101, 21))
         self.line_2.setStyleSheet("\n"
-                                  "color : #ff1aa3 ;\n"
-                                  "")
+"color : #ff1aa3 ;\n"
+"")
         self.line_2.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_2.setLineWidth(5)
         self.line_2.setFrameShape(QtWidgets.QFrame.HLine)
@@ -2826,9 +2808,9 @@ class Ui_Form(object):
         self.line_70 = QtWidgets.QFrame(Form)
         self.line_70.setGeometry(QtCore.QRect(1470, 166, 341, 31))
         self.line_70.setStyleSheet("\n"
-                                   "color : #ffcd6a;\n"
-                                   "\n"
-                                   "")
+"color : #ffcd6a;\n"
+"\n"
+"")
         self.line_70.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_70.setLineWidth(2)
         self.line_70.setFrameShape(QtWidgets.QFrame.HLine)
@@ -2837,25 +2819,25 @@ class Ui_Form(object):
         self.Mahdie.setGeometry(QtCore.QRect(730, 670, 41, 41))
         self.Mahdie.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.Mahdie.setStyleSheet("QPushButton {\n"
-                                  "    font: 11pt ;\n"
-                                  "color: #333;\n"
-                                  "border: 2px solid #555;\n"
-                                  "border-radius: 20px;\n"
-                                  "border-style: outset;\n"
-                                  "background: qradialgradient(\n"
-                                  "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                  "radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
-                                  ");\n"
-                                  "padding: 5px;\n"
-                                  "}\n"
-                                  "\n"
-                                  "QPushButton:hover {\n"
-                                  "background:  qradialgradient(\n"
-                                  "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                  "radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
-                                  ");\n"
-                                  "}\n"
-                                  "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 20px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #639595\n"
+");\n"
+"}\n"
+"")
         self.Mahdie.setText("")
         self.Mahdie.setObjectName("Mahdie")
         self.line_40 = QtWidgets.QFrame(Form)
@@ -2863,8 +2845,8 @@ class Ui_Form(object):
         self.line_40.setGeometry(QtCore.QRect(740, 390, 20, 31))
         self.line_40.setAutoFillBackground(False)
         self.line_40.setStyleSheet("\n"
-                                   "color : #00aaff ;\n"
-                                   "")
+"color : #00aaff ;\n"
+"")
         self.line_40.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_40.setLineWidth(5)
         self.line_40.setFrameShape(QtWidgets.QFrame.VLine)
@@ -2878,8 +2860,8 @@ class Ui_Form(object):
         self.line_14 = QtWidgets.QFrame(Form)
         self.line_14.setGeometry(QtCore.QRect(750, 380, 71, 21))
         self.line_14.setStyleSheet("\n"
-                                   "color : #00aaff ;\n"
-                                   "")
+"color : #00aaff ;\n"
+"")
         self.line_14.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_14.setLineWidth(5)
         self.line_14.setFrameShape(QtWidgets.QFrame.HLine)
@@ -2889,8 +2871,8 @@ class Ui_Form(object):
         self.line_59.setGeometry(QtCore.QRect(1160, 630, 20, 111))
         self.line_59.setAutoFillBackground(False)
         self.line_59.setStyleSheet("\n"
-                                   "color : #ffff00 ;\n"
-                                   "")
+"color : #ffff00 ;\n"
+"")
         self.line_59.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_59.setLineWidth(5)
         self.line_59.setFrameShape(QtWidgets.QFrame.VLine)
@@ -2900,8 +2882,8 @@ class Ui_Form(object):
         self.line_24.setGeometry(QtCore.QRect(1010, 50, 21, 31))
         self.line_24.setAutoFillBackground(False)
         self.line_24.setStyleSheet("\n"
-                                   "color : #aa0000 ;\n"
-                                   "")
+"color : #aa0000 ;\n"
+"")
         self.line_24.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_24.setLineWidth(5)
         self.line_24.setFrameShape(QtWidgets.QFrame.VLine)
@@ -2909,8 +2891,8 @@ class Ui_Form(object):
         self.line_3 = QtWidgets.QFrame(Form)
         self.line_3.setGeometry(QtCore.QRect(370, 240, 81, 61))
         self.line_3.setStyleSheet("\n"
-                                  "color :#ff1aa3 ;\n"
-                                  "")
+"color :#ff1aa3 ;\n"
+"")
         self.line_3.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_3.setLineWidth(5)
         self.line_3.setFrameShape(QtWidgets.QFrame.HLine)
@@ -2918,9 +2900,9 @@ class Ui_Form(object):
         self.line_73 = QtWidgets.QFrame(Form)
         self.line_73.setGeometry(QtCore.QRect(1797, 270, 31, 221))
         self.line_73.setStyleSheet("\n"
-                                   "color : #ffcd6a;\n"
-                                   "\n"
-                                   "")
+"color : #ffcd6a;\n"
+"\n"
+"")
         self.line_73.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_73.setLineWidth(2)
         self.line_73.setFrameShape(QtWidgets.QFrame.VLine)
@@ -2931,8 +2913,8 @@ class Ui_Form(object):
         self.line_139 = QtWidgets.QFrame(Form)
         self.line_139.setGeometry(QtCore.QRect(270, 590, 21, 16))
         self.line_139.setStyleSheet("\n"
-                                    "color : #005500 ;\n"
-                                    "")
+"color : #005500 ;\n"
+"")
         self.line_139.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_139.setLineWidth(2)
         self.line_139.setFrameShape(QtWidgets.QFrame.VLine)
@@ -2940,14 +2922,14 @@ class Ui_Form(object):
         self.line_140 = QtWidgets.QFrame(Form)
         self.line_140.setGeometry(QtCore.QRect(250, 590, 51, 16))
         self.line_140.setStyleSheet("\n"
-                                    "color : #005500 ;\n"
-                                    "")
+"color : #005500 ;\n"
+"")
         self.line_140.setFrameShadow(QtWidgets.QFrame.Plain)
         self.line_140.setLineWidth(2)
         self.line_140.setFrameShape(QtWidgets.QFrame.VLine)
         self.line_140.setObjectName("line_140")
         self.label_60 = QtWidgets.QLabel(Form)
-        self.label_60.setGeometry(QtCore.QRect(90, 720, 61, 31))
+        self.label_60.setGeometry(QtCore.QRect(80, 720, 71, 31))
         font = QtGui.QFont()
         font.setFamily("Rockwell Condensed")
         font.setPointSize(18)
@@ -2958,7 +2940,7 @@ class Ui_Form(object):
         self.label_60.setStyleSheet("font: 18pt \"Rockwell Condensed\";")
         self.label_60.setObjectName("label_60")
         self.label_61 = QtWidgets.QLabel(Form)
-        self.label_61.setGeometry(QtCore.QRect(90, 770, 101, 31))
+        self.label_61.setGeometry(QtCore.QRect(80, 770, 111, 31))
         font = QtGui.QFont()
         font.setFamily("Rockwell Condensed")
         font.setPointSize(18)
@@ -3015,102 +2997,98 @@ class Ui_Form(object):
         self.reset_btn = QtWidgets.QPushButton(Form)
         self.reset_btn.setGeometry(QtCore.QRect(350, 840, 31, 41))
         self.reset_btn.setStyleSheet("QPushButton{\n"
-                                     "background: #efe4ff ;\n"
-                                     "border-radius: 170px ;  \n"
-                                     "\n"
-                                     "}")
+"background: #efe4ff ;\n"
+"border-radius: 170px ;  \n"
+"\n"
+"}")
         self.reset_btn.setText("")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("./img/reset.png"),
-                       QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap(":/img/reset.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.reset_btn.setIcon(icon)
         self.reset_btn.setIconSize(QtCore.QSize(28, 28))
         self.reset_btn.setObjectName("reset_btn")
         self.Dis_btn = QtWidgets.QPushButton(Form)
         self.Dis_btn.setGeometry(QtCore.QRect(420, 750, 71, 71))
         self.Dis_btn.setStyleSheet("QPushButton {\n"
-                                   "    font: 11pt ;\n"
-                                   "color: #333;\n"
-                                   "border: 2px solid #555;\n"
-                                   "border-radius: 35px;\n"
-                                   "border-style: outset;\n"
-                                   "background: qradialgradient(\n"
-                                   "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                   "radius: 1.35, stop: 0 #fff, stop: 1#efe4ff\n"
-                                   ");\n"
-                                   "padding: 5px;\n"
-                                   "}\n"
-                                   "\n"
-                                   "QPushButton:hover {\n"
-                                   "background:  qradialgradient(\n"
-                                   "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                   "radius: 1.35, stop: 0 #fff, stop: 1 #b5adcc\n"
-                                   ");\n"
-                                   "}\n"
-                                   "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 35px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1#efe4ff\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #b5adcc\n"
+");\n"
+"}\n"
+"")
         self.Dis_btn.setText("")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("./img/road.png"),
-                        QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon1.addPixmap(QtGui.QPixmap(":/img/road.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.Dis_btn.setIcon(icon1)
         self.Dis_btn.setIconSize(QtCore.QSize(45, 45))
         self.Dis_btn.setObjectName("Dis_btn")
         self.Time_btn = QtWidgets.QPushButton(Form)
         self.Time_btn.setGeometry(QtCore.QRect(370, 930, 51, 51))
         self.Time_btn.setStyleSheet("QPushButton {\n"
-                                    "    font: 11pt ;\n"
-                                    "color: #333;\n"
-                                    "border: 2px solid #555;\n"
-                                    "border-radius: 25px;\n"
-                                    "border-style: outset;\n"
-                                    "background: qradialgradient(\n"
-                                    "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                    "radius: 1.35, stop: 0 #fff, stop: 1#efe4ff\n"
-                                    ");\n"
-                                    "padding: 5px;\n"
-                                    "}\n"
-                                    "\n"
-                                    "QPushButton:hover {\n"
-                                    "background:  qradialgradient(\n"
-                                    "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                    "radius: 1.35, stop: 0 #fff, stop: 1 #b5adcc\n"
-                                    ");\n"
-                                    "}\n"
-                                    "\n"
-                                    "")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 25px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1#efe4ff\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #b5adcc\n"
+");\n"
+"}\n"
+"\n"
+"")
         self.Time_btn.setText("")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("./img/clock.png"),
-                        QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon2.addPixmap(QtGui.QPixmap(":/img/clock.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.Time_btn.setIcon(icon2)
         self.Time_btn.setIconSize(QtCore.QSize(45, 45))
         self.Time_btn.setObjectName("Time_btn")
         self.Cost_btn = QtWidgets.QPushButton(Form)
         self.Cost_btn.setGeometry(QtCore.QRect(410, 850, 61, 61))
         self.Cost_btn.setStyleSheet("QPushButton {\n"
-                                    "font: 11pt ;\n"
-                                    "color: #333;\n"
-                                    "border: 2px solid #555;\n"
-                                    "border-radius: 30px;\n"
-                                    "border-style: outset;\n"
-                                    "background: qradialgradient(\n"
-                                    "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                    "radius: 1.35, stop: 0 #fff, stop: 1#efe4ff\n"
-                                    ");\n"
-                                    "padding: 5px;\n"
-                                    "}\n"
-                                    "\n"
-                                    "QPushButton:hover {\n"
-                                    "background:  qradialgradient(\n"
-                                    "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                    "radius: 1.35, stop: 0 #fff, stop: 1 #b5adcc\n"
-                                    ");\n"
-                                    "}\n"
-                                    "")
+"font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 30px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1#efe4ff\n"
+");\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background:  qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1 #b5adcc\n"
+");\n"
+"}\n"
+"")
         self.Cost_btn.setText("")
         icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("./img/money.png"),
-                        QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon3.addPixmap(QtGui.QPixmap(":/img/money.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.Cost_btn.setIcon(icon3)
         self.Cost_btn.setIconSize(QtCore.QSize(45, 45))
         self.Cost_btn.setObjectName("Cost_btn")
@@ -3129,51 +3107,49 @@ class Ui_Form(object):
         self.listView = QtWidgets.QListView(Form)
         self.listView.setGeometry(QtCore.QRect(50, 640, 361, 351))
         self.listView.setStyleSheet("QListView{\n"
-                                    "background: #efe4ff ;\n"
-                                    "border-radius: 170px ;\n"
-                                    "border: 2px solid #555;\n"
-                                    "\n"
-                                    "}")
+"background: #efe4ff ;\n"
+"border-radius: 170px ;\n"
+"border: 2px solid #555;\n"
+"\n"
+"}")
         self.listView.setObjectName("listView")
         self.pushButton = QtWidgets.QPushButton(Form)
         self.pushButton.setGeometry(QtCore.QRect(1760, 20, 71, 71))
         self.pushButton.setStyleSheet("QPushButton {\n"
-                                      "    font: 11pt ;\n"
-                                      "color: #333;\n"
-                                      "border: 2px solid #555;\n"
-                                      "border-radius: 35px;\n"
-                                      "border-style: outset;\n"
-                                      "background: qradialgradient(\n"
-                                      "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                      "radius: 1.35, stop: 0 #fff, stop: 1#efe4ff\n"
-                                      ");\n"
-                                      "padding: 5px;\n"
-                                      "}")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 35px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1#efe4ff\n"
+");\n"
+"padding: 5px;\n"
+"}")
         self.pushButton.setText("")
         icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap("./img/icons8-subway-48.png"),
-                        QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon4.addPixmap(QtGui.QPixmap(":/img/icons8-subway-48.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton.setIcon(icon4)
         self.pushButton.setIconSize(QtCore.QSize(90, 90))
         self.pushButton.setObjectName("pushButton")
         self.pushButton_2 = QtWidgets.QPushButton(Form)
         self.pushButton_2.setGeometry(QtCore.QRect(1610, 20, 71, 71))
         self.pushButton_2.setStyleSheet("QPushButton {\n"
-                                        "    font: 11pt ;\n"
-                                        "color: #333;\n"
-                                        "border: 2px solid #555;\n"
-                                        "border-radius: 35px;\n"
-                                        "border-style: outset;\n"
-                                        "background: qradialgradient(\n"
-                                        "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                        "radius: 1.35, stop: 0 #fff, stop: 1#efe4ff\n"
-                                        ");\n"
-                                        "padding: 5px;\n"
-                                        "}")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 35px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1#efe4ff\n"
+");\n"
+"padding: 5px;\n"
+"}")
         self.pushButton_2.setText("")
         icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap("./img/icons8-bus-94.png"),
-                        QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon5.addPixmap(QtGui.QPixmap(":/img/icons8-bus-94.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_2.setIcon(icon5)
         self.pushButton_2.setIconSize(QtCore.QSize(50, 50))
         self.pushButton_2.setObjectName("pushButton_2")
@@ -3188,21 +3164,20 @@ class Ui_Form(object):
         self.pushButton_3 = QtWidgets.QPushButton(Form)
         self.pushButton_3.setGeometry(QtCore.QRect(1450, 20, 71, 71))
         self.pushButton_3.setStyleSheet("QPushButton {\n"
-                                        "    font: 11pt ;\n"
-                                        "color: #333;\n"
-                                        "border: 2px solid #555;\n"
-                                        "border-radius: 35px;\n"
-                                        "border-style: outset;\n"
-                                        "background: qradialgradient(\n"
-                                        "cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-                                        "radius: 1.35, stop: 0 #fff, stop: 1#efe4ff\n"
-                                        ");\n"
-                                        "padding: 5px;\n"
-                                        "}")
+"    font: 11pt ;\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 35px;\n"
+"border-style: outset;\n"
+"background: qradialgradient(\n"
+"cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
+"radius: 1.35, stop: 0 #fff, stop: 1#efe4ff\n"
+");\n"
+"padding: 5px;\n"
+"}")
         self.pushButton_3.setText("")
         icon6 = QtGui.QIcon()
-        icon6.addPixmap(QtGui.QPixmap("./img/icons8-taxi-94.png"),
-                        QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon6.addPixmap(QtGui.QPixmap(":/img/icons8-taxi-94.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_3.setIcon(icon6)
         self.pushButton_3.setIconSize(QtCore.QSize(50, 50))
         self.pushButton_3.setObjectName("pushButton_3")
@@ -3559,8 +3534,6 @@ class Ui_Form(object):
         self.label_64.setText(_translate("Form", "green"))
         self.label_65.setText(_translate("Form", "green"))
 
-    # def run():
-        
 
 if __name__ == "__main__":
     import sys
@@ -3569,4 +3542,4 @@ if __name__ == "__main__":
     ui = Ui_Form()
     ui.setupUi(Form)
     Form.show()
-    sys.exit(app.exec())
+    sys.exit(app.exec_())
