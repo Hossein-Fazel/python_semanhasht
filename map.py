@@ -12,717 +12,849 @@ class Map_UI(QtWidgets.QWidget):
         self.ui = Ui_Form()
         self.ui.setupUi(self)
 
-        self.buttons = dict()
+        self.buttons: dict[str, QtWidgets.QPushButton] = dict()
 
         self.setWindowTitle("SEMANHASHT")
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap("./img/icon1.png"))
         self.setWindowIcon(icon)
-
+        self.check_enable();
         self.connect_buttons()
     
     def connect_buttons(self):
-        self.buttons["Chaharbagh"] = self.ui.Chaharbagh;
-        self.buttons["Kashani"] = self.ui.Kashani;
-        self.buttons["Allameh Jafari"] = self.ui.Allameh_Jafari;
-        self.buttons["Eram-e Sabz"] = self.ui.Erame_Sabz;
-        self.buttons["Meydan-e Azadi"] = self.ui.Meydane_Azadi;
-        self.buttons["Ostad Mo'in"] = self.ui.Ostad_Moin;
-        self.buttons["Shademan"] = self.ui.Shademan;
-        self.buttons["Towhid"] = self.ui.Towhid;
-        self.buttons["Meydan-e Enghelab-e Eslami"] = self.ui.Meydane_Enghelabe_Eslami;
-        self.buttons["Teatr-e Shahr"] = self.ui.Teatre_shahr;
-        self.buttons["Ferdowsi"] = self.ui.Ferdowsi;
-        self.buttons["Darvazeh Dowlat"] = self.ui.Darvazeh_Dowlat;
-        self.buttons["Darvazeh Shemiran"] = self.ui.Darvazeh_Shemiran;
-        self.buttons["Meydan-e Shohada"] = self.ui.Meydane_Shohada;
-        self.buttons["Ebn-e Sina"] = self.ui.Ebne_Sina;
-        self.buttons["Pirouzi"] = self.ui.Pirouzi;
-        self.buttons["Nabard"] = self.ui.Nabard;
-        self.buttons["Nirou Havaei"] = self.ui.Nirou_Havaei;
-        self.buttons["Shahid Kolahdouz"] = self.ui.Shahid_Kolahdouz;
-        self.buttons["Kouhsar"] = self.ui.Kouhsar;
-        self.buttons["Yadegar-e Emam"] = self.ui.Yadegare_Emam;
-        self.buttons["Boostan-e laleh"] = self.ui.Bosstane_Laleh;
-        self.buttons["Meydan-e Hazrat-e ValiAsr"] = self.ui.Meydane_Hazrate_Valiasr;
-        self.buttons["Haftom-e Tir"] = self.ui.Haftome_Tir;
-        self.buttons["Emam Hossein"] = self.ui.Emam_Hossein;
-        self.buttons["Shahid Rezaei"] = self.ui.Shahid_Rezaei;
-        self.buttons["Haram-e Hazrat-e Abdolazim"] = self.ui.Harame_Hazrate_Abdolazim;
-        self.buttons["Bimeh"] = self.ui.Bimeh;
-        self.buttons["Tehran Pars"] = self.ui.Tehran_Pars;
-        self.buttons["Shahrak-e Shari'ati"] = self.ui.Shahrake_Shariati;
-        self.buttons["Rahahan"] = self.ui.Rahahan;
-        self.buttons["Mirdamad"] = self.ui.Mirdamad;
-        self.buttons["Tajrish"] = self.ui.Tajrish;
-        self.buttons["Shahid Sadr"] = self.ui.Shahid_Sadr;
-        self.buttons["Khajeh Abdollah-e Ansari"] = self.ui.Khajeh_Abdollahe_Ansari;
-        self.buttons["Gha'em"] = self.ui.Ghaem;
-        self.buttons["Payaneh Javanmard"] = self.ui.Payaneh_Javanmard;
-        self.buttons["Gheytariyeh"] = self.ui.Gheytariyeh;
-        self.buttons["Gholhak"] = self.ui.Gholhak;
-        self.buttons["Shahid Haghani"] = self.ui.Shahid_Haghani;
-        self.buttons["Shahid Beheshti"] = self.ui.Shahid_Beheshti;
-        self.buttons["Shahid Mofatteh"] = self.ui.Shahid_Mofatteh;
-        self.buttons["Taleghani"] = self.ui.Taleghani;
-        self.buttons["Panzdah-e Khordad"] = self.ui.Panzdahe_Khordad;
-        self.buttons["Shoush"] = self.ui.Shoush;
-        self.buttons["Jonoub Terminal"] = self.ui.Jonoub_Terminal;
-        self.buttons["Shahr-e Rey"] = self.ui.Shahre_Rey;
-        self.buttons["Kahrizak"] = self.ui.Kahrizak;
-        self.buttons["Azadegan"] = self.ui.Azadegan;
-        self.buttons["Zamzam"] = self.ui.Zamzam;
-        self.buttons["Javadiyeh"] = self.ui.Javadie;
-        self.buttons["Mahdiyeh"] = self.ui.Mahdie;
-        self.buttons["Moniriyeh"] = self.ui.Moniriyeh;
-        self.buttons["Meydan-e Jahad"] = self.ui.Meydane_Jahad;
-        self.buttons["Merza-ye Shirazi"] = self.ui.Merzaye_Shirazi;
-        self.buttons["Sohrevardi"] = self.ui.Sohrevardi;
-        self.buttons["Shahid Ghodousi"] = self.ui.Shahid_Ghodousi;
-        self.buttons["Shahid Zeynoddin"] = self.ui.Shahid_Zeynoddin;
-        self.buttons["Aghdasiyeh"] = self.ui.Aghdasiyeh;
+        self.buttons["Chaharbagh"] = self.ui.Chaharbagh
+        self.ui.Chaharbagh.clicked.connect(self.on_Chaharbagh_click)
 
-    def on_Merzaye_Shirazi_clicked(self):
+        self.buttons["Kashani"] = self.ui.Kashani
+        self.ui.Kashani.clicked.connect(self.on_Kashani_click)
+
+        self.buttons["Allameh Jafari"] = self.ui.Allameh_Jafari
+        self.ui.Allameh_Jafari.clicked.connect(self.on_Allameh_Jafari_click)
+
+        self.buttons["Eram-e Sabz"] = self.ui.Erame_Sabz
+        self.ui.Erame_Sabz.clicked.connect(self.on_Erame_Sabz_click)
+
+        self.buttons["Meydan-e Azadi"] = self.ui.Meydane_Azadi
+        self.ui.Meydane_Azadi.clicked.connect(self.on_Meydane_Azadi_click)
+
+        self.buttons["Ostad Mo'in"] = self.ui.Ostad_Moin
+        self.ui.Ostad_Moin.clicked.connect(self.on_Ostad_Moin_click)
+
+        self.buttons["Shademan"] = self.ui.Shademan
+        self.ui.Shademan.clicked.connect(self.on_Shademan_click)
+        
+        self.buttons["Towhid"] = self.ui.Towhid
+        self.ui.Towhid.clicked.connect(self.on_Towhid_click)
+        
+        self.buttons["Meydan-e Enghelab-e Eslami"] = self.ui.Meydane_Enghelabe_Eslami
+        self.ui.Meydane_Enghelabe_Eslami.clicked.connect(self.on_Meydane_Enghelabe_Eslami_click)
+
+        self.buttons["Teatr-e Shahr"] = self.ui.Teatre_shahr
+        self.ui.Teatre_shahr.clicked.connect(self.on_Teatre_shahr_click)
+        
+        self.buttons["Ferdowsi"] = self.ui.Ferdowsi
+        self.ui.Ferdowsi.clicked.connect(self.on_Ferdowsi_click)
+
+        self.buttons["Darvazeh Dowlat"] = self.ui.Darvazeh_Dowlat
+        self.ui.Darvazeh_Dowlat.clicked.connect(self.on_Darvazeh_Dowlat_click)
+
+        self.buttons["Darvazeh Shemiran"] = self.ui.Darvazeh_Shemiran
+        self.ui.Darvazeh_Shemiran.clicked.connect(self.on_Darvazeh_Shemiran_click)
+
+        self.buttons["Meydan-e Shohada"] = self.ui.Meydane_Shohada
+        self.ui.Meydane_Shohada.clicked.connect(self.on_Meydane_Shohada_click)
+
+        self.buttons["Ebn-e Sina"] = self.ui.Ebne_Sina
+        self.ui.Ebne_Sina.clicked.connect(self.on_Ebne_Sina_click)
+
+        self.buttons["Pirouzi"] = self.ui.Pirouzi
+        self.ui.Pirouzi.clicked.connect(self.on_Pirouzi_click)
+
+        self.buttons["Nabard"] = self.ui.Nabard
+        self.ui.Nabard.clicked.connect(self.on_Nabard_click)
+
+        self.buttons["Nirou Havaei"] = self.ui.Nirou_Havaei
+        self.ui.Nirou_Havaei.clicked.connect(self.on_Nirou_Havaei_click)
+
+        self.buttons["Shahid Kolahdouz"] = self.ui.Shahid_Kolahdouz
+        self.ui.Shahid_Kolahdouz.clicked.connect(self.on_Shahid_Kolahdouz_click)
+        
+        self.buttons["Kouhsar"] = self.ui.Kouhsar
+        self.ui.Kouhsar.clicked.connect(self.on_Kouhsar_click)
+
+        self.buttons["Yadegar-e Emam"] = self.ui.Yadegare_Emam
+        self.ui.Yadegare_Emam.clicked.connect(self.on_Yadegare_Emam_click)
+
+        self.buttons["Boostan-e laleh"] = self.ui.Bosstane_Laleh
+        self.ui.Bosstane_Laleh.clicked.connect(self.on_Bosstane_Laleh_click)
+
+        self.buttons["Meydan-e Hazrat-e ValiAsr"] = self.ui.Meydane_Hazrate_Valiasr
+        self.ui.Meydane_Hazrate_Valiasr.clicked.connect(self.on_Meydane_Hazrate_Valiasr_click)
+
+        self.buttons["Haftom-e Tir"] = self.ui.Haftome_Tir
+        self.ui.Haftome_Tir.clicked.connect(self.on_Haftome_Tir_click)
+
+        self.buttons["Emam Hossein"] = self.ui.Emam_Hossein
+        self.ui.Emam_Hossein.clicked.connect(self.on_Emam_Hossein_click)
+
+        self.buttons["Shahid Rezaei"] = self.ui.Shahid_Rezaei
+        self.ui.Shahid_Rezaei.clicked.connect(self.on_Shahid_Rezaei_click)
+
+        self.buttons["Haram-e Hazrat-e Abdolazim"] = self.ui.Harame_Hazrate_Abdolazim
+        self.ui.Harame_Hazrate_Abdolazim.clicked.connect(self.on_Harame_Hazrate_Abdolazim_click)
+
+        self.buttons["Bimeh"] = self.ui.Bimeh
+        self.ui.Bimeh.clicked.connect(self.on_Bimeh_click)
+
+        self.buttons["Tehran Pars"] = self.ui.Tehran_Pars
+        self.ui.Tehran_Pars.clicked.connect(self.on_Tehran_Pars_click)
+
+        self.buttons["Shahrak-e Shari'ati"] = self.ui.Shahrake_Shariati
+        self.ui.Shahrake_Shariati.clicked.connect(self.on_Shahrake_Shariati_click)
+
+        self.buttons["Rahahan"] = self.ui.Rahahan
+        self.ui.Rahahan.clicked.connect(self.on_Rahahan_click)
+
+        self.buttons["Mirdamad"] = self.ui.Mirdamad
+        self.ui.Mirdamad.clicked.connect(self.on_Mirdamad_click)
+
+        self.buttons["Tajrish"] = self.ui.Tajrish
+        self.ui.Tajrish.clicked.connect(self.on_Tajrish_click)
+
+        self.buttons["Shahid Sadr"] = self.ui.Shahid_Sadr
+        self.ui.Shahid_Sadr.clicked.connect(self.on_Shahid_Sadr_click)
+
+        self.buttons["Khajeh Abdollah-e Ansari"] = self.ui.Khajeh_Abdollahe_Ansari
+        self.ui.Khajeh_Abdollahe_Ansari.clicked.connect(self.on_Khajeh_Abdollahe_Ansari_click)
+
+        self.buttons["Gha'em"] = self.ui.Ghaem
+        self.ui.Ghaem.clicked.connect(self.on_Ghaem_click)
+
+        self.buttons["Payaneh Javanmard"] = self.ui.Payaneh_Javanmard
+        self.ui.Payaneh_Javanmard.clicked.connect(self.on_Payaneh_Javanmard_click)
+
+        self.buttons["Gheytariyeh"] = self.ui.Gheytariyeh
+        self.ui.Gheytariyeh.clicked.connect(self.on_Gheytariyeh_click)
+
+        self.buttons["Gholhak"] = self.ui.Gholhak
+        self.ui.Gholhak.clicked.connect(self.on_Gholhak_click)
+
+        self.buttons["Shahid Haghani"] = self.ui.Shahid_Haghani
+        self.ui.Shahid_Haghani.clicked.connect(self.on_Shahid_Haghani_click)
+
+        self.buttons["Shahid Beheshti"] = self.ui.Shahid_Beheshti
+        self.ui.Shahid_Beheshti.clicked.connect(self.on_Shahid_Beheshti_click)
+
+        self.buttons["Shahid Mofatteh"] = self.ui.Shahid_Mofatteh
+        self.ui.Shahid_Mofatteh.clicked.connect(self.on_Shahid_Mofatteh_click)
+
+        self.buttons["Taleghani"] = self.ui.Taleghani
+        self.ui.Taleghani.clicked.connect(self.on_Taleghani_click)
+
+        self.buttons["Panzdah-e Khordad"] = self.ui.Panzdahe_Khordad
+        self.ui.Panzdahe_Khordad.clicked.connect(self.on_Panzdahe_Khordad_click)
+
+        self.buttons["Shoush"] = self.ui.Shoush
+        self.ui.Shoush.clicked.connect(self.on_Shoush_click)
+
+        self.buttons["Jonoub Terminal"] = self.ui.Jonoub_Terminal
+        self.ui.Jonoub_Terminal.clicked.connect(self.on_Jonoub_Terminal_click)
+
+        self.buttons["Shahr-e Rey"] = self.ui.Shahre_Rey
+        self.ui.Shahre_Rey.clicked.connect(self.on_Shahre_Rey_click)
+        
+        self.buttons["Kahrizak"] = self.ui.Kahrizak
+        self.ui.Kahrizak.clicked.connect(self.on_Kahrizak_click)
+
+        self.buttons["Azadegan"] = self.ui.Azadegan
+        self.ui.Azadegan.clicked.connect(self.on_Azadegan_click)
+
+        self.buttons["Zamzam"] = self.ui.Zamzam
+        self.ui.Zamzam.clicked.connect(self.on_Zamzam_click)
+
+        self.buttons["Javadiyeh"] = self.ui.Javadie
+        self.ui.Javadie.clicked.connect(self.on_Javadie_click)
+
+        self.buttons["Mahdiyeh"] = self.ui.Mahdie
+        self.ui.Mahdie.clicked.connect(self.on_Mahdie_click)
+
+        self.buttons["Moniriyeh"] = self.ui.Moniriyeh
+        self.ui.Moniriyeh.clicked.connect(self.on_Moniriyeh_click)
+
+        self.buttons["Meydan-e Jahad"] = self.ui.Meydane_Jahad
+        self.ui.Meydane_Jahad.clicked.connect(self.on_Meydane_Jahad_click)
+
+        self.buttons["Merza-ye Shirazi"] = self.ui.Merzaye_Shirazi
+        self.ui.Merzaye_Shirazi.clicked.connect(self.on_Merzaye_Shirazi_click)
+
+        self.buttons["Sohrevardi"] = self.ui.Sohrevardi
+        self.ui.Sohrevardi.clicked.connect(self.on_Sohrevardi_click)
+
+        self.buttons["Shahid Ghodousi"] = self.ui.Shahid_Ghodousi
+        self.ui.Shahid_Ghodousi.clicked.connect(self.on_Shahid_Ghodousi_click)
+
+        self.buttons["Shahid Zeynoddin"] = self.ui.Shahid_Zeynoddin
+        self.ui.Shahid_Zeynoddin.clicked.connect(self.on_Shahid_Zeynoddin_click)
+
+        self.buttons["Aghdasiyeh"] = self.ui.Aghdasiyeh
+        self.ui.Aghdasiyeh.clicked.connect(self.on_Aghdasiyeh_click)
+
+        self.ui.reset_btn.clicked.connect(self.on_reset_btn_click)
+
+    def reset_style(self):
+        for key, value in self.buttons.items():
+            value.setStyleSheet(def_style)
+        self.ui.value.setText("")
+
+    def on_reset_btn_click(self):
+        self.reset_style()
+        self.ui.OR.setText("Empty");
+        self.ui.DS.setText("Empty");
+        self.ui.T1.setTime(QtCore.QTime(0, 0));
+        self.check_enable()
+        self.ui.value.setText("")
+
+
+    def on_Merzaye_Shirazi_click(self):
         if self.ui.OR.text() == "Empty":
-            self.ui.Merzaye_Shirazi.setStyleSheet(style);
-            self.ui.OR.setText("Merza-ye Shirazi");
+            self.ui.Merzaye_Shirazi.setStyleSheet(style)
+            self.ui.OR.setText("Merza-ye Shirazi")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Merzaye_Shirazi.setStyleSheet(style);
-            self.ui.DS.setText("Merza-ye Shirazi");
-        self.check_enable();
+            self.ui.Merzaye_Shirazi.setStyleSheet(style)
+            self.ui.DS.setText("Merza-ye Shirazi")
+        self.check_enable()
 
-    def on_Shahrake_Shariati_clicked(self):
+    def on_Shahrake_Shariati_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Shahrake_Shariati.setStyleSheet(style);
-            self.ui.OR.setText("Shahrak-e Shari'ati");
-        elif (self.ui.DS.text() == "Empty"):
-            self.ui.Shahrake_Shariati.setStyleSheet(style);
+            self.ui.Shahrake_Shariati.setStyleSheet(style)
+            self.ui.OR.setText("Shahrak-e Shari'ati")
+        elif self.ui.DS.text() == "Empty":
+            self.ui.Shahrake_Shariati.setStyleSheet(style)
+            self.ui.DS.setText("Shahrak-e Shari'ati")
+        self.check_enable()
 
-            self.ui.DS.setText("Shahrak-e Shari'ati");
-        self.check_enable();
-
-    def on_Rahahan_clicked(self):
+    def on_Rahahan_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Rahahan.setStyleSheet(style);
+            self.ui.Rahahan.setStyleSheet(style)
 
-            self.ui.OR.setText("Rahahan");
+            self.ui.OR.setText("Rahahan")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Rahahan.setStyleSheet(style);
+            self.ui.Rahahan.setStyleSheet(style)
 
-            self.ui.DS.setText("Rahahan");
-        self.check_enable();
+            self.ui.DS.setText("Rahahan")
+        self.check_enable()
 
-    def on_Meydane_Hazrate_Valiasr_clicked(self):
+    def on_Meydane_Hazrate_Valiasr_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Meydane_Hazrate_Valiasr.setStyleSheet(style);
+            self.ui.Meydane_Hazrate_Valiasr.setStyleSheet(style)
 
-            self.ui.OR.setText("Meydan-e Hazrat-e ValiAsr");
+            self.ui.OR.setText("Meydan-e Hazrat-e ValiAsr")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Meydane_Hazrate_Valiasr.setStyleSheet(style);
+            self.ui.Meydane_Hazrate_Valiasr.setStyleSheet(style)
 
-            self.ui.DS.setText("Meydan-e Hazrat-e ValiAsr");
-        self.check_enable();
+            self.ui.DS.setText("Meydan-e Hazrat-e ValiAsr")
+        self.check_enable()
 
-    def on_Bosstane_Laleh_clicked(self):
+    def on_Bosstane_Laleh_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Bosstane_Laleh.setStyleSheet(style);
+            self.ui.Bosstane_Laleh.setStyleSheet(style)
 
-            self.ui.OR.setText("Boostan-e laleh");
+            self.ui.OR.setText("Boostan-e laleh")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Bosstane_Laleh.setStyleSheet(style);
+            self.ui.Bosstane_Laleh.setStyleSheet(style)
 
-            self.ui.DS.setText("Boostan-e laleh");
-        self.check_enable();
+            self.ui.DS.setText("Boostan-e laleh")
+        self.check_enable()
 
-    def on_Mirdamad_clicked(self):
+    def on_Mirdamad_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Mirdamad.setStyleSheet(style);
+            self.ui.Mirdamad.setStyleSheet(style)
 
-            self.ui.OR.setText("Mirdamad");
+            self.ui.OR.setText("Mirdamad")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Mirdamad.setStyleSheet(style);
+            self.ui.Mirdamad.setStyleSheet(style)
 
-            self.ui.DS.setText("Mirdamad");
-        self.check_enable();
+            self.ui.DS.setText("Mirdamad")
+        self.check_enable()
 
-    def on_Tajrish_clicked(self):
+    def on_Tajrish_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Tajrish.setStyleSheet(style);
+            self.ui.Tajrish.setStyleSheet(style)
 
-            self.ui.OR.setText("Tajrish");
+            self.ui.OR.setText("Tajrish")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Tajrish.setStyleSheet(style);
+            self.ui.Tajrish.setStyleSheet(style)
 
-            self.ui.DS.setText("Tajrish");
-        self.check_enable();
+            self.ui.DS.setText("Tajrish")
+        self.check_enable()
 
-    def on_Shahid_Sadr_clicked(self):
+    def on_Shahid_Sadr_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Shahid_Sadr.setStyleSheet(style);
+            self.ui.Shahid_Sadr.setStyleSheet(style)
 
-            self.ui.OR.setText("Shahid Sadr");
+            self.ui.OR.setText("Shahid Sadr")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Shahid_Sadr.setStyleSheet(style);
+            self.ui.Shahid_Sadr.setStyleSheet(style)
 
-            self.ui.DS.setText("Shahid Sadr");
-        self.check_enable();
+            self.ui.DS.setText("Shahid Sadr")
+        self.check_enable()
 
-    def on_Kouhsar_clicked(self):
+    def on_Kouhsar_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Kouhsar.setStyleSheet(style);
+            self.ui.Kouhsar.setStyleSheet(style)
 
-            self.ui.OR.setText("Kouhsar");
+            self.ui.OR.setText("Kouhsar")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Kouhsar.setStyleSheet(style);
+            self.ui.Kouhsar.setStyleSheet(style)
 
-            self.ui.DS.setText("Kouhsar");
-        self.check_enable();
+            self.ui.DS.setText("Kouhsar")
+        self.check_enable()
 
-    def on_Kashani_clicked(self):
+    def on_Kashani_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Kashani.setStyleSheet(style);
+            self.ui.Kashani.setStyleSheet(style)
 
-            self.ui.OR.setText("Kashani");
+            self.ui.OR.setText("Kashani")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Kashani.setStyleSheet(style);
+            self.ui.Kashani.setStyleSheet(style)
 
-            self.ui.DS.setText("Kashani");
-        self.check_enable();
+            self.ui.DS.setText("Kashani")
+        self.check_enable()
 
-    def on_Yadegare_Emam_clicked(self):
+    def on_Yadegare_Emam_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Yadegare_Emam.setStyleSheet(style);
+            self.ui.Yadegare_Emam.setStyleSheet(style)
 
-            self.ui.OR.setText("Yadegar-e Emam");
+            self.ui.OR.setText("Yadegar-e Emam")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Yadegare_Emam.setStyleSheet(style);
+            self.ui.Yadegare_Emam.setStyleSheet(style)
 
-            self.ui.DS.setText("Yadegar-e Emam");
-        self.check_enable();
+            self.ui.DS.setText("Yadegar-e Emam")
+        self.check_enable()
 
-    def on_Haftome_Tir_clicked(self):
+    def on_Haftome_Tir_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Haftome_Tir.setStyleSheet(style);
+            self.ui.Haftome_Tir.setStyleSheet(style)
 
-            self.ui.OR.setText("Haftom-e Tir");
+            self.ui.OR.setText("Haftom-e Tir")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Haftome_Tir.setStyleSheet(style);
+            self.ui.Haftome_Tir.setStyleSheet(style)
 
-            self.ui.DS.setText("Haftom-e Tir");
-        self.check_enable();
+            self.ui.DS.setText("Haftom-e Tir")
+        self.check_enable()
 
-    def on_Emam_Hossein_clicked(self):
+    def on_Emam_Hossein_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Emam_Hossein.setStyleSheet(style);
+            self.ui.Emam_Hossein.setStyleSheet(style)
 
-            self.ui.OR.setText("Emam Hossein");
+            self.ui.OR.setText("Emam Hossein")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Emam_Hossein.setStyleSheet(style);
+            self.ui.Emam_Hossein.setStyleSheet(style)
 
-            self.ui.DS.setText("Emam Hossein");
-        self.check_enable();
+            self.ui.DS.setText("Emam Hossein")
+        self.check_enable()
 
-    def on_Meydane_Shohada_clicked(self):
+    def on_Meydane_Shohada_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Meydane_Shohada.setStyleSheet(style);
+            self.ui.Meydane_Shohada.setStyleSheet(style)
 
-            self.ui.OR.setText("Meydan-e Shohada");
+            self.ui.OR.setText("Meydan-e Shohada")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Meydane_Shohada.setStyleSheet(style);
+            self.ui.Meydane_Shohada.setStyleSheet(style)
 
-            self.ui.DS.setText("Meydan-e Shohada");
-        self.check_enable();
+            self.ui.DS.setText("Meydan-e Shohada")
+        self.check_enable()
 
-    def on_Shahid_Rezaei_clicked(self):
+    def on_Shahid_Rezaei_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Shahid_Rezaei.setStyleSheet(style);
+            self.ui.Shahid_Rezaei.setStyleSheet(style)
 
-            self.ui.OR.setText("Shahid Rezaei");
+            self.ui.OR.setText("Shahid Rezaei")
 
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Shahid_Rezaei.setStyleSheet(style);
+            self.ui.Shahid_Rezaei.setStyleSheet(style)
 
-            self.ui.DS.setText("Shahid Rezaei");
-        self.check_enable();
+            self.ui.DS.setText("Shahid Rezaei")
+        self.check_enable()
 
-    def on_Harame_Hazrate_Abdolazim_clicked(self):
+    def on_Harame_Hazrate_Abdolazim_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Harame_Hazrate_Abdolazim.setStyleSheet(style);
+            self.ui.Harame_Hazrate_Abdolazim.setStyleSheet(style)
 
-            self.ui.OR.setText("Haram-e Hazrat-e Abdolazim");
+            self.ui.OR.setText("Haram-e Hazrat-e Abdolazim")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Harame_Hazrate_Abdolazim.setStyleSheet(style);
+            self.ui.Harame_Hazrate_Abdolazim.setStyleSheet(style)
 
-            self.ui.DS.setText("Haram-e Hazrat-e Abdolazim");
-        self.check_enable();
+            self.ui.DS.setText("Haram-e Hazrat-e Abdolazim")
+        self.check_enable()
 
-    def on_Chaharbagh_clicked(self):
+    def on_Chaharbagh_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Chaharbagh.setStyleSheet(style);
+            self.ui.Chaharbagh.setStyleSheet(style)
 
-            self.ui.OR.setText("Chaharbagh");
+            self.ui.OR.setText("Chaharbagh")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Chaharbagh.setStyleSheet(style);
+            self.ui.Chaharbagh.setStyleSheet(style)
 
-            self.ui.DS.setText("Chaharbagh");
-        self.check_enable();
+            self.ui.DS.setText("Chaharbagh")
+        self.check_enable()
 
-    def on_Allameh_Jafari_clicked(self):
+    def on_Allameh_Jafari_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Allameh_Jafari.setStyleSheet(style);
+            self.ui.Allameh_Jafari.setStyleSheet(style)
 
-            self.ui.OR.setText("Allameh Jafari");
+            self.ui.OR.setText("Allameh Jafari")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Allameh_Jafari.setStyleSheet(style);
+            self.ui.Allameh_Jafari.setStyleSheet(style)
 
-            self.ui.DS.setText("Allameh Jafari");
-        self.check_enable();
+            self.ui.DS.setText("Allameh Jafari")
+        self.check_enable()
 
-    def on_Erame_Sabz_clicked(self):
+    def on_Erame_Sabz_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Erame_Sabz.setStyleSheet(style);
+            self.ui.Erame_Sabz.setStyleSheet(style)
 
-            self.ui.OR.setText("Eram-e Sabz");
+            self.ui.OR.setText("Eram-e Sabz")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Erame_Sabz.setStyleSheet(style);
+            self.ui.Erame_Sabz.setStyleSheet(style)
 
-            self.ui.DS.setText("Eram-e Sabz");
-        self.check_enable();
+            self.ui.DS.setText("Eram-e Sabz")
+        self.check_enable()
 
-    def on_Meydane_Azadi_clicked(self):
+    def on_Meydane_Azadi_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Meydane_Azadi.setStyleSheet(style);
+            self.ui.Meydane_Azadi.setStyleSheet(style)
 
-            self.ui.OR.setText("Meydan-e Azadi");
+            self.ui.OR.setText("Meydan-e Azadi")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Meydane_Azadi.setStyleSheet(style);
+            self.ui.Meydane_Azadi.setStyleSheet(style)
 
-            self.ui.DS.setText("Meydan-e Azadi");
-        self.check_enable();
+            self.ui.DS.setText("Meydan-e Azadi")
+        self.check_enable()
 
-    def on_Ostad_Moin_clicked(self):
+    def on_Ostad_Moin_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Ostad_Moin.setStyleSheet(style);
+            self.ui.Ostad_Moin.setStyleSheet(style)
 
-            self.ui.OR.setText("Ostad Mo'in");
+            self.ui.OR.setText("Ostad Mo'in")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Ostad_Moin.setStyleSheet(style);
+            self.ui.Ostad_Moin.setStyleSheet(style)
 
-            self.ui.DS.setText("Ostad Mo'in");
-        self.check_enable();
+            self.ui.DS.setText("Ostad Mo'in")
+        self.check_enable()
 
-    def on_Shademan_clicked(self):
+    def on_Shademan_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Shademan.setStyleSheet(style);
+            self.ui.Shademan.setStyleSheet(style)
 
-            self.ui.OR.setText("Shademan");
+            self.ui.OR.setText("Shademan")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Shademan.setStyleSheet(style);
+            self.ui.Shademan.setStyleSheet(style)
 
-            self.ui.DS.setText("Shademan");
-        self.check_enable();
+            self.ui.DS.setText("Shademan")
+        self.check_enable()
 
-    def on_Towhid_clicked(self):
+    def on_Towhid_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Towhid.setStyleSheet(style);
+            self.ui.Towhid.setStyleSheet(style)
 
-            self.ui.OR.setText("Towhid");
+            self.ui.OR.setText("Towhid")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Towhid.setStyleSheet(style);
+            self.ui.Towhid.setStyleSheet(style)
 
-            self.ui.DS.setText("Towhid");
-        self.check_enable();
+            self.ui.DS.setText("Towhid")
+        self.check_enable()
 
-    def on_Meydane_Enghelabe_Eslami_clicked(self):
+    def on_Meydane_Enghelabe_Eslami_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Meydane_Enghelabe_Eslami.setStyleSheet(style);
+            self.ui.Meydane_Enghelabe_Eslami.setStyleSheet(style)
 
-            self.ui.OR.setText("Meydan-e Enghelab-e Eslami");
+            self.ui.OR.setText("Meydan-e Enghelab-e Eslami")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Meydane_Enghelabe_Eslami.setStyleSheet(style);
+            self.ui.Meydane_Enghelabe_Eslami.setStyleSheet(style)
 
-            self.ui.DS.setText("Meydan-e Enghelab-e Eslami");
-        self.check_enable();
+            self.ui.DS.setText("Meydan-e Enghelab-e Eslami")
+        self.check_enable()
 
-    def on_Teatre_shahr_clicked(self):
+    def on_Teatre_shahr_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Teatre_shahr.setStyleSheet(style);
+            self.ui.Teatre_shahr.setStyleSheet(style)
 
-            self.ui.OR.setText("Teatr-e Shahr");
+            self.ui.OR.setText("Teatr-e Shahr")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Teatre_shahr.setStyleSheet(style);
+            self.ui.Teatre_shahr.setStyleSheet(style)
 
-            self.ui.DS.setText("Teatr-e Shahr");
-        self.check_enable();
+            self.ui.DS.setText("Teatr-e Shahr")
+        self.check_enable()
 
-    def on_Ferdowsi_clicked(self):
+    def on_Ferdowsi_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Ferdowsi.setStyleSheet(style);
+            self.ui.Ferdowsi.setStyleSheet(style)
 
-            self.ui.OR.setText("Ferdowsi");
+            self.ui.OR.setText("Ferdowsi")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Ferdowsi.setStyleSheet(style);
+            self.ui.Ferdowsi.setStyleSheet(style)
 
-            self.ui.DS.setText("Ferdowsi");
+            self.ui.DS.setText("Ferdowsi")
 
-    def on_Darvazeh_Dowlat_clicked(self):
+    def on_Darvazeh_Dowlat_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Darvazeh_Dowlat.setStyleSheet(style);
+            self.ui.Darvazeh_Dowlat.setStyleSheet(style)
 
-            self.ui.OR.setText("Darvazeh Dowlat");
+            self.ui.OR.setText("Darvazeh Dowlat")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Darvazeh_Dowlat.setStyleSheet(style);
+            self.ui.Darvazeh_Dowlat.setStyleSheet(style)
 
-            self.ui.DS.setText("Darvazeh Dowlat");
-        self.check_enable();
+            self.ui.DS.setText("Darvazeh Dowlat")
+        self.check_enable()
 
-    def on_Darvazeh_Shemiran_clicked(self):
+    def on_Darvazeh_Shemiran_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Darvazeh_Shemiran.setStyleSheet(style);
+            self.ui.Darvazeh_Shemiran.setStyleSheet(style)
 
-            self.ui.OR.setText("Darvazeh Shemiran");
+            self.ui.OR.setText("Darvazeh Shemiran")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Darvazeh_Shemiran.setStyleSheet(style);
+            self.ui.Darvazeh_Shemiran.setStyleSheet(style)
 
-            self.ui.DS.setText("Darvazeh Shemiran");
-        self.check_enable();
+            self.ui.DS.setText("Darvazeh Shemiran")
+        self.check_enable()
 
-    def on_Ebne_Sina_clicked(self):
+    def on_Ebne_Sina_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Ebne_Sina.setStyleSheet(style);
+            self.ui.Ebne_Sina.setStyleSheet(style)
 
-            self.ui.OR.setText("Ebn-e Sina");
+            self.ui.OR.setText("Ebn-e Sina")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Ebne_Sina.setStyleSheet(style);
+            self.ui.Ebne_Sina.setStyleSheet(style)
 
-            self.ui.DS.setText("Ebn-e Sina");
-        self.check_enable();
+            self.ui.DS.setText("Ebn-e Sina")
+        self.check_enable()
 
-    def on_Pirouzi_clicked(self):
+    def on_Pirouzi_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Pirouzi.setStyleSheet(style);
+            self.ui.Pirouzi.setStyleSheet(style)
 
-            self.ui.OR.setText("Pirouzi");
+            self.ui.OR.setText("Pirouzi")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Pirouzi.setStyleSheet(style);
+            self.ui.Pirouzi.setStyleSheet(style)
 
-            self.ui.DS.setText("Pirouzi");
-        self.check_enable();
+            self.ui.DS.setText("Pirouzi")
+        self.check_enable()
 
-    def on_Nabard_clicked(self):
+    def on_Nabard_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Nabard.setStyleSheet(style);
+            self.ui.Nabard.setStyleSheet(style)
 
-            self.ui.OR.setText("Nabard");
+            self.ui.OR.setText("Nabard")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Nabard.setStyleSheet(style);
+            self.ui.Nabard.setStyleSheet(style)
 
-            self.ui.DS.setText("Nabard");
-        self.check_enable();
+            self.ui.DS.setText("Nabard")
+        self.check_enable()
 
-    def on_Nirou_Havaei_clicked(self):
+    def on_Nirou_Havaei_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Nirou_Havaei.setStyleSheet(style);
+            self.ui.Nirou_Havaei.setStyleSheet(style)
 
-            self.ui.OR.setText("Nirou Havaei");
+            self.ui.OR.setText("Nirou Havaei")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Nirou_Havaei.setStyleSheet(style);
+            self.ui.Nirou_Havaei.setStyleSheet(style)
 
-            self.ui.DS.setText("Nirou Havaei");
-        self.check_enable();
+            self.ui.DS.setText("Nirou Havaei")
+        self.check_enable()
 
-    def on_Shahid_Kolahdouz_clicked(self):
+    def on_Shahid_Kolahdouz_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Shahid_Kolahdouz.setStyleSheet(style);
+            self.ui.Shahid_Kolahdouz.setStyleSheet(style)
 
-            self.ui.OR.setText("Shahid Kolahdouz");
+            self.ui.OR.setText("Shahid Kolahdouz")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Shahid_Kolahdouz.setStyleSheet(style);
+            self.ui.Shahid_Kolahdouz.setStyleSheet(style)
 
-            self.ui.DS.setText("Shahid Kolahdouz");
-        self.check_enable();
+            self.ui.DS.setText("Shahid Kolahdouz")
+        self.check_enable()
 
-    def on_Kahrizak_clicked(self):
+    def on_Kahrizak_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Kahrizak.setStyleSheet(style);
+            self.ui.Kahrizak.setStyleSheet(style)
 
-            self.ui.OR.setText("Kahrizak");
+            self.ui.OR.setText("Kahrizak")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Kahrizak.setStyleSheet(style);
-            self.ui.DS.setText("Kahrizak");
-        self.check_enable();
+            self.ui.Kahrizak.setStyleSheet(style)
+            self.ui.DS.setText("Kahrizak")
+        self.check_enable()
 
-    def on_Shahre_Rey_clicked(self):
+    def on_Shahre_Rey_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Shahre_Rey.setStyleSheet(style);
+            self.ui.Shahre_Rey.setStyleSheet(style)
 
-            self.ui.OR.setText("Shahr-e Rey");
+            self.ui.OR.setText("Shahr-e Rey")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Shahre_Rey.setStyleSheet(style);
+            self.ui.Shahre_Rey.setStyleSheet(style)
 
-            self.ui.DS.setText("Shahr-e Rey");
-        self.check_enable();
+            self.ui.DS.setText("Shahr-e Rey")
+        self.check_enable()
 
-    def on_Jonoub_Terminal_clicked(self):
+    def on_Jonoub_Terminal_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Jonoub_Terminal.setStyleSheet(style);
+            self.ui.Jonoub_Terminal.setStyleSheet(style)
 
-            self.ui.OR.setText("Jonoub Terminal");
+            self.ui.OR.setText("Jonoub Terminal")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Jonoub_Terminal.setStyleSheet(style);
+            self.ui.Jonoub_Terminal.setStyleSheet(style)
 
-            self.ui.DS.setText("Jonoub Terminal");
-        self.check_enable();
+            self.ui.DS.setText("Jonoub Terminal")
+        self.check_enable()
 
-    def on_Shoush_clicked(self):
+    def on_Shoush_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Shoush.setStyleSheet(style);
+            self.ui.Shoush.setStyleSheet(style)
 
-            self.ui.OR.setText("Shoush");
+            self.ui.OR.setText("Shoush")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Shoush.setStyleSheet(style);
+            self.ui.Shoush.setStyleSheet(style)
 
-            self.ui.DS.setText("Shoush");
-        self.check_enable();
+            self.ui.DS.setText("Shoush")
+        self.check_enable()
 
-    def on_Panzdahe_Khordad_clicked(self):
+    def on_Panzdahe_Khordad_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Panzdahe_Khordad.setStyleSheet(style);
+            self.ui.Panzdahe_Khordad.setStyleSheet(style)
 
-            self.ui.OR.setText("Panzdah-e Khordad");
+            self.ui.OR.setText("Panzdah-e Khordad")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Panzdahe_Khordad.setStyleSheet(style);
+            self.ui.Panzdahe_Khordad.setStyleSheet(style)
 
-            self.ui.DS.setText("Panzdah-e Khordad");
-        self.check_enable();
+            self.ui.DS.setText("Panzdah-e Khordad")
+        self.check_enable()
 
-    def on_Taleghani_clicked(self):
+    def on_Taleghani_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Taleghani.setStyleSheet(style);
+            self.ui.Taleghani.setStyleSheet(style)
 
-            self.ui.OR.setText("Taleghani");
+            self.ui.OR.setText("Taleghani")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Taleghani.setStyleSheet(style);
+            self.ui.Taleghani.setStyleSheet(style)
 
-            self.ui.DS.setText("Taleghani");
-        self.check_enable();
+            self.ui.DS.setText("Taleghani")
+        self.check_enable()
 
-    def on_Shahid_Mofatteh_clicked(self):
+    def on_Shahid_Mofatteh_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Shahid_Mofatteh.setStyleSheet(style);
+            self.ui.Shahid_Mofatteh.setStyleSheet(style)
 
-            self.ui.OR.setText("Shahid Mofatteh");
+            self.ui.OR.setText("Shahid Mofatteh")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Shahid_Mofatteh.setStyleSheet(style);
+            self.ui.Shahid_Mofatteh.setStyleSheet(style)
 
-            self.ui.DS.setText("Shahid Mofatteh");
-        self.check_enable();
+            self.ui.DS.setText("Shahid Mofatteh")
+        self.check_enable()
 
-    def on_Shahid_Beheshti_clicked(self):
+    def on_Shahid_Beheshti_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Shahid_Beheshti.setStyleSheet(style);
+            self.ui.Shahid_Beheshti.setStyleSheet(style)
 
-            self.ui.OR.setText("Shahid Beheshti");
+            self.ui.OR.setText("Shahid Beheshti")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Shahid_Beheshti.setStyleSheet(style);
+            self.ui.Shahid_Beheshti.setStyleSheet(style)
 
-            self.ui.DS.setText("Shahid Beheshti");
-        self.check_enable();
+            self.ui.DS.setText("Shahid Beheshti")
+        self.check_enable()
 
-    def on_Shahid_Haghani_clicked(self):
+    def on_Shahid_Haghani_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Shahid_Haghani.setStyleSheet(style);
+            self.ui.Shahid_Haghani.setStyleSheet(style)
 
-            self.ui.OR.setText("Shahid Haghani");
+            self.ui.OR.setText("Shahid Haghani")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Shahid_Haghani.setStyleSheet(style);
+            self.ui.Shahid_Haghani.setStyleSheet(style)
 
-            self.ui.DS.setText("Shahid Haghani");
-        self.check_enable();
+            self.ui.DS.setText("Shahid Haghani")
+        self.check_enable()
 
-    def on_Gholhak_clicked(self):
+    def on_Gholhak_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Gholhak.setStyleSheet(style);
+            self.ui.Gholhak.setStyleSheet(style)
 
-            self.ui.OR.setText("Gholhak");
+            self.ui.OR.setText("Gholhak")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Gholhak.setStyleSheet(style);
+            self.ui.Gholhak.setStyleSheet(style)
 
-            self.ui.DS.setText("Gholhak");
-        self.check_enable();
+            self.ui.DS.setText("Gholhak")
+        self.check_enable()
 
-    def on_Gheytariyeh_clicked(self):
+    def on_Gheytariyeh_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Gheytariyeh.setStyleSheet(style);
+            self.ui.Gheytariyeh.setStyleSheet(style)
 
-            self.ui.OR.setText("Gheytariyeh");
+            self.ui.OR.setText("Gheytariyeh")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Gheytariyeh.setStyleSheet(style);
+            self.ui.Gheytariyeh.setStyleSheet(style)
 
-            self.ui.DS.setText("Gheytariyeh");
-        self.check_enable();
+            self.ui.DS.setText("Gheytariyeh")
+        self.check_enable()
 
-    def on_Meydane_Jahad_clicked(self):
+    def on_Meydane_Jahad_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Meydane_Jahad.setStyleSheet(style);
+            self.ui.Meydane_Jahad.setStyleSheet(style)
 
-            self.ui.OR.setText("Meydan-e Jahad");
+            self.ui.OR.setText("Meydan-e Jahad")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Meydane_Jahad.setStyleSheet(style);
+            self.ui.Meydane_Jahad.setStyleSheet(style)
 
-            self.ui.DS.setText("Meydan-e Jahad");
-        self.check_enable();
+            self.ui.DS.setText("Meydan-e Jahad")
+        self.check_enable()
 
-    def on_Sohrevardi_clicked(self):
+    def on_Sohrevardi_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Sohrevardi.setStyleSheet(style);
+            self.ui.Sohrevardi.setStyleSheet(style)
 
-            self.ui.OR.setText("Sohrevardi");
+            self.ui.OR.setText("Sohrevardi")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Sohrevardi.setStyleSheet(style);
+            self.ui.Sohrevardi.setStyleSheet(style)
 
-            self.ui.DS.setText("Sohrevardi");
-        self.check_enable();
+            self.ui.DS.setText("Sohrevardi")
+        self.check_enable()
 
-    def on_Shahid_Ghodousi_clicked(self):
+    def on_Shahid_Ghodousi_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Shahid_Ghodousi.setStyleSheet(style);
+            self.ui.Shahid_Ghodousi.setStyleSheet(style)
 
-            self.ui.OR.setText("Shahid Ghodousi");
+            self.ui.OR.setText("Shahid Ghodousi")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Shahid_Ghodousi.setStyleSheet(style);
+            self.ui.Shahid_Ghodousi.setStyleSheet(style)
 
-            self.ui.DS.setText("Shahid Ghodousi");
-        self.check_enable();
+            self.ui.DS.setText("Shahid Ghodousi")
+        self.check_enable()
 
-    def on_Shahid_Zeynoddin_clicked(self):
+    def on_Shahid_Zeynoddin_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Shahid_Zeynoddin.setStyleSheet(style);
+            self.ui.Shahid_Zeynoddin.setStyleSheet(style)
 
-            self.ui.OR.setText("Shahid Zeynoddin");
+            self.ui.OR.setText("Shahid Zeynoddin")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Shahid_Zeynoddin.setStyleSheet(style);
+            self.ui.Shahid_Zeynoddin.setStyleSheet(style)
 
-            self.ui.DS.setText("Shahid Zeynoddin");
-        self.check_enable();
+            self.ui.DS.setText("Shahid Zeynoddin")
+        self.check_enable()
 
-    def on_Aghdasiyeh_clicked(self):
+    def on_Aghdasiyeh_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Aghdasiyeh.setStyleSheet(style);
+            self.ui.Aghdasiyeh.setStyleSheet(style)
 
-            self.ui.OR.setText("Aghdasiyeh");
+            self.ui.OR.setText("Aghdasiyeh")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Aghdasiyeh.setStyleSheet(style);
+            self.ui.Aghdasiyeh.setStyleSheet(style)
 
-            self.ui.DS.setText("Aghdasiyeh");
-        self.check_enable();
+            self.ui.DS.setText("Aghdasiyeh")
+        self.check_enable()
 
-    def on_Ghaem_clicked(self):
+    def on_Ghaem_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Ghaem.setStyleSheet(style);
+            self.ui.Ghaem.setStyleSheet(style)
 
-            self.ui.OR.setText("Gha'em");
+            self.ui.OR.setText("Gha'em")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Ghaem.setStyleSheet(style);
+            self.ui.Ghaem.setStyleSheet(style)
 
-            self.ui.DS.setText("Gha'em");
-        self.check_enable();
+            self.ui.DS.setText("Gha'em")
+        self.check_enable()
 
-    def on_Khajeh_Abdollahe_Ansari_clicked(self):
+    def on_Khajeh_Abdollahe_Ansari_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Khajeh_Abdollahe_Ansari.setStyleSheet(style);
+            self.ui.Khajeh_Abdollahe_Ansari.setStyleSheet(style)
 
-            self.ui.OR.setText("Khajeh Abdollah-e Ansari");
+            self.ui.OR.setText("Khajeh Abdollah-e Ansari")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Khajeh_Abdollahe_Ansari.setStyleSheet(style);
+            self.ui.Khajeh_Abdollahe_Ansari.setStyleSheet(style)
 
-            self.ui.DS.setText("Khajeh Abdollah-e Ansari");
-        self.check_enable();
+            self.ui.DS.setText("Khajeh Abdollah-e Ansari")
+        self.check_enable()
 
-    def on_Payaneh_Javanmard_clicked(self):
+    def on_Payaneh_Javanmard_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Payaneh_Javanmard.setStyleSheet(style);
+            self.ui.Payaneh_Javanmard.setStyleSheet(style)
 
-            self.ui.OR.setText("Payaneh Javanmard");
+            self.ui.OR.setText("Payaneh Javanmard")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Payaneh_Javanmard.setStyleSheet(style);
+            self.ui.Payaneh_Javanmard.setStyleSheet(style)
 
-            self.ui.DS.setText("Payaneh Javanmard");
-        self.check_enable();
+            self.ui.DS.setText("Payaneh Javanmard")
+        self.check_enable()
 
-    def on_Bimeh_clicked(self):
+    def on_Bimeh_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Bimeh.setStyleSheet(style);
+            self.ui.Bimeh.setStyleSheet(style)
 
-            self.ui.OR.setText("Bimeh");
+            self.ui.OR.setText("Bimeh")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Bimeh.setStyleSheet(style);
+            self.ui.Bimeh.setStyleSheet(style)
 
-            self.ui.DS.setText("Bimeh");
-        self.check_enable();
+            self.ui.DS.setText("Bimeh")
+        self.check_enable()
 
-    def on_Tehran_Pars_clicked(self):
+    def on_Tehran_Pars_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Tehran_Pars.setStyleSheet(style);
+            self.ui.Tehran_Pars.setStyleSheet(style)
 
-            self.ui.OR.setText("Tehran Pars");
+            self.ui.OR.setText("Tehran Pars")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Tehran_Pars.setStyleSheet(style);
+            self.ui.Tehran_Pars.setStyleSheet(style)
 
-            self.ui.DS.setText("Tehran Pars");
-        self.check_enable();
+            self.ui.DS.setText("Tehran Pars")
+        self.check_enable()
 
-    def on_Mahdie_clicked(self):
+    def on_Mahdie_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Mahdie.setStyleSheet(style);
+            self.ui.Mahdie.setStyleSheet(style)
 
-            self.ui.OR.setText("Mahdiyeh");
+            self.ui.OR.setText("Mahdiyeh")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Mahdie.setStyleSheet(style);
+            self.ui.Mahdie.setStyleSheet(style)
 
-            self.ui.DS.setText("Mahdiyeh");
-        self.check_enable();
+            self.ui.DS.setText("Mahdiyeh")
+        self.check_enable()
 
-    def on_Moniriyeh_clicked(self):
+    def on_Moniriyeh_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Moniriyeh.setStyleSheet(style);
+            self.ui.Moniriyeh.setStyleSheet(style)
 
-            self.ui.OR.setText("Moniriyeh");
+            self.ui.OR.setText("Moniriyeh")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Moniriyeh.setStyleSheet(style);
+            self.ui.Moniriyeh.setStyleSheet(style)
 
-            self.ui.DS.setText("Moniriyeh");
-        self.check_enable();
+            self.ui.DS.setText("Moniriyeh")
+        self.check_enable()
 
-    def on_Javadie_clicked(self):
+    def on_Javadie_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Javadie.setStyleSheet(style);
+            self.ui.Javadie.setStyleSheet(style)
 
-            self.ui.OR.setText("Javadiyeh");
+            self.ui.OR.setText("Javadiyeh")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Javadie.setStyleSheet(style);
+            self.ui.Javadie.setStyleSheet(style)
 
-            self.ui.DS.setText("Javadiyeh");
-        self.check_enable();
+            self.ui.DS.setText("Javadiyeh")
+        self.check_enable()
 
-    def on_Zamzam_clicked(self):
+    def on_Zamzam_click(self):
 
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Zamzam.setStyleSheet(style);
-            self.ui.OR.setText("Zamzam");
+            self.ui.Zamzam.setStyleSheet(style)
+            self.ui.OR.setText("Zamzam")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Zamzam.setStyleSheet(style);
-            self.ui.DS.setText("Zamzam");
-        self.check_enable();
+            self.ui.Zamzam.setStyleSheet(style)
+            self.ui.DS.setText("Zamzam")
+        self.check_enable()
 
-    def on_Azadegan_clicked(self):
+    def on_Azadegan_click(self):
         if (self.ui.OR.text() == "Empty"):
-            self.ui.Azadegan.setStyleSheet(style);
-            self.ui.OR.setText("Azadegan");
+            self.ui.Azadegan.setStyleSheet(style)
+            self.ui.OR.setText("Azadegan")
         elif (self.ui.DS.text() == "Empty"):
-            self.ui.Azadegan.setStyleSheet(style);
-            self.ui.DS.setText("Azadegan");
-        self.check_enable();
+            self.ui.Azadegan.setStyleSheet(style)
+            self.ui.DS.setText("Azadegan")
+        self.check_enable()
 
     def check_enable(self):
         if self.ui.OR.text() != "Empty" and self.ui.DS.text() != "Empty":
