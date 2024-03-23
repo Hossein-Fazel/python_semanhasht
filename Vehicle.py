@@ -4,7 +4,7 @@ class machine:
         try:
             file = open(f"v{name}.txt")
         except FileNotFoundError:
-            raise ValueError(f"{name} file does not exist")
+            raise ValueError(f"File with name v{name}.txt is missing!")
         self.speed = int(file.readline())
         self.traffic_speed = int(file.readline())
 
