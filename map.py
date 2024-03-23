@@ -1,6 +1,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from ui_file.form_ui import Ui_Form
 
+import sys
 from city import *
 
 style     =    "QPushButton {font: 11px ; color: #333; border: 2px solid #555; border-radius: 20px;border-style: outset;background: #00ff7f ;}";
@@ -888,11 +889,15 @@ class Map_UI(QtWidgets.QWidget):
         self.ui.T1.setTime(QtCore.QTime(hour, t1.get_minute()))
 
     def show_error(self, ewhat:str ):
-        mbox = QtWidgets.QMessageBox();
-        mbox.setIconPixmap(QtGui.QPixmap("./../img/error.png"));
-        mbox.setWindowTitle("ERROR");
-        mbox.setText(ewhat);
-        mbox.exec();
+        mbox = QtWidgets.QMessageBox()
+        mbox.setIconPixmap(QtGui.QPixmap("./img/error.png"))
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("./img/error.png"))
+        mbox.setWindowIcon(icon)
+        mbox.setWindowTitle("ERROR")
+        mbox.setText(ewhat)
+        mbox.exec()
+        sys.exit()
 
     def cal_sp(self):
         path = self.ct1.find_shortest_path(self.ui.OR.text(), self.ui.DS.text())

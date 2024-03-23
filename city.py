@@ -100,7 +100,7 @@ class Tehran:
                         self.lines[line].append(stat2)
 
             except:
-                raise ValueError(f"There is no file with name {name}")
+                raise ValueError(f"There is no file with name {name}.txt")
     
     def get_min(self, dj_table: dd, visited: set):
 
