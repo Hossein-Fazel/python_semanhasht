@@ -1,6 +1,8 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from ui_file.form_ui import Ui_Form
 
+from city import *
+
 style     =    "QPushButton {font: 11px ; color: #333; border: 2px solid #555; border-radius: 20px;border-style: outset;background: #00ff7f ;}";
 taxi     =     "QPushButton {font: 11px ; color: #333; border: 2px solid #555; border-radius: 20px;border-style: outset;background: #d10042 ;}";
 def_style = "QPushButton {color: #a9fefe; border: 2px solid #555; border-radius: 20px;border-style: outset;background:  qradialgradient(cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,radius: 1.35, stop: 0 #fff, stop: 1 #a9fefe);padding: 5px;}QPushButton:hover {background:  qradialgradient(cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,radius: 1.35, stop: 0 #fff, stop: 1 #639595);}";
@@ -865,3 +867,15 @@ class Map_UI(QtWidgets.QWidget):
             self.ui.Dis_btn.setEnabled(0)
             self.ui.Time_btn.setEnabled(0)
             self.ui.Cost_btn.setEnabled(0)
+    
+    def show_clock(self, t1: Time):
+        hour = 0;
+        if t1.get_type().lower() == "pm" :
+            hour = t1.get_hour() + 12;
+        else:
+            if t1.get_hour() == 12 :
+                hour = 0;
+            else:
+                hour = t1.get_hour();
+
+        self.ui.T1.setTime(QtCore.QTime(hour, t1.get_minute()))
