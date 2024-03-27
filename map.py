@@ -950,6 +950,7 @@ class Map_UI(QtWidgets.QWidget):
         self.show_clock(t1 + self.ct1.get_arrive_time_sp(path, t1))
     
     def cal_bt(self): # Calculate best time
+        self.ui.value.clear()
         t1 = Time(self.ui.T1.text())
         path = self.ct1.find_best_time(self.ui.OR.text(), self.ui.DS.text(), t1)
         
